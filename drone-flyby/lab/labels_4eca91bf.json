@@ -1,0 +1,33 @@
+{
+  "sequence": "4eca91bf1c5f43289de0aec2f4d2761f",
+  "note": "TEST SET ONLY - never a training input. Each object is labelled once in source pixels at ref_frame and propagated by the measured homography. The hangar box came from dark-blob segmentation, independent of the detector, so scoring against it is not circular.",
+  "homography": [[1.006717, -0.001017, -13.137368],
+                 [-0.000075, 1.013482, 52.979149],
+                 [0.0, -1e-06, 1.0]],
+  "objects": [
+    {
+      "object_id": "hangar",
+      "ref_frame": 61,
+      "bbox": [1092, 364, 1228, 528],
+      "source": "dark-blob segmentation; propagation verified against frames 69 and 77 to within 7 px"
+    },
+    {
+      "object_id": "jet_plane",
+      "ref_frame": 69,
+      "bbox": [1160, 1005, 1218, 1062],
+      "source": "read off a gridded magnification of frame 69; delta wings and tail match the reference"
+    },
+    {
+      "object_id": "medium_plane",
+      "ref_frame": 69,
+      "bbox": [1020, 1068, 1092, 1118],
+      "source": "read off frame 69; straight-wing aircraft, size 72x50 closest to the medium_plane reference"
+    },
+    {
+      "object_id": "helicopter",
+      "ref_frame": 69,
+      "bbox": [2598, 1749, 2722, 1851],
+      "source": "visible rotor disc on the allotment paths; size from the Helsinki reference (124x102). Least certain of the four."
+    }
+  ]
+}

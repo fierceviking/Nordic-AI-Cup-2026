@@ -12,3 +12,14 @@ requests>=2.31            # [2.34.2]
 # Only needed by local_evaluator.py. It is the same scorer the competition
 # uses, and the same version range.
 faster-coco-eval>=1.7.2,<2  # [1.7.2]
+
+# The detection stack this solution adds. Install torch from the CUDA index
+# that matches the deployment GPU, e.g. for Blackwell (sm_120):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch>=2.4                # [2.11.0+cu128]
+torchvision>=0.19         # [0.26.0+cu128]
+ultralytics>=8.3          # [8.4.154]
+
+# Lets uvicorn use a C HTTP parser. The request body is a 1.4 MB JSON document
+# once per frame, so this is not free.
+httptools>=0.6            # [0.7.1]

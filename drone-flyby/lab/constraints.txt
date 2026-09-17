@@ -1,0 +1,14 @@
+# Pins that pip must not "helpfully" upgrade.
+#
+# This environment runs an RTX 5070 (sm_120), which needs CUDA 12.8 wheels.
+# A plain `pip install rfdetr` will happily pull a generic torch build and
+# leave the GPU unusable, so every install here goes through:
+#
+#   pip install -c lab/constraints.txt <package>
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+# rfdetr[train] pulls opencv; leave the installed build alone. Note that 5.0
+# removed cv2.HOGDescriptor, which lab/exp02 works around - a silent downgrade
+# or upgrade here would change behaviour without any error.
+opencv-python==5.0.0.93
+numpy==2.3.5

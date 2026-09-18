@@ -1,0 +1,13 @@
+{
+  "default": {},
+  "early": {
+    "EARLY_BOOST": true
+  },
+  "barren": {
+    "BARREN_PATIENCE": 25.0
+  },
+  "early_barren": {
+    "EARLY_BOOST": true,
+    "BARREN_PATIENCE": 25.0
+  }
+}

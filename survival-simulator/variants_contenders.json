@@ -1,0 +1,14 @@
+{
+  "default": {},
+  "no_shrink": {
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0
+  },
+  "scan_fast": {
+    "SCAN_RATE": 0.7
+  },
+  "territory_wide": {
+    "TERRITORY": true,
+    "HOME_RADIUS": 140.0
+  }
+}

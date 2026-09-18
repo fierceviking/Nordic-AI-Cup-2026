@@ -1,0 +1,25 @@
+{
+  "baseline": {},
+  "A_headroom": {
+    "HEADROOM_PRICING": true
+  },
+  "B_highpop": {
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0,
+    "POP_MIN": 10,
+    "POP_MAX": 24,
+    "POP_HARD": 40,
+    "SPAWN_MIN": 200.0,
+    "SPAWN_COOLDOWN": 2.0
+  },
+  "C_both": {
+    "HEADROOM_PRICING": true,
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0,
+    "POP_MIN": 10,
+    "POP_MAX": 24,
+    "POP_HARD": 40,
+    "SPAWN_MIN": 200.0,
+    "SPAWN_COOLDOWN": 2.0
+  }
+}

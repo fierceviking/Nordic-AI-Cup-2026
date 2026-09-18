@@ -1,0 +1,7 @@
+# Minimal runtime deps for the agent endpoint only.
+# The policy itself is pure stdlib (math, random, typing), and the simulator,
+# pygame and numpy are NOT needed to serve predictions.
+fastapi
+uvicorn[standard]
+pydantic
+orjson

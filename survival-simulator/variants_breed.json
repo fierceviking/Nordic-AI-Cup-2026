@@ -1,0 +1,15 @@
+{
+  "target_375": {},
+  "target_250": {
+    "SPRINT_SAFE_MAX_ENERGY": 250.0
+  },
+  "target_500": {
+    "SPRINT_SAFE_MAX_ENERGY": 500.0
+  },
+  "target_750": {
+    "SPRINT_SAFE_MAX_ENERGY": 750.0
+  },
+  "target_1000": {
+    "SPRINT_SAFE_MAX_ENERGY": 1000.0
+  }
+}

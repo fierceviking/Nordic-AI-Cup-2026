@@ -1,0 +1,12 @@
+{
+  "r220_default": {},
+  "r350": {
+    "FRUIT_RANGE": 350.0
+  },
+  "r500": {
+    "FRUIT_RANGE": 500.0
+  },
+  "r800": {
+    "FRUIT_RANGE": 800.0
+  }
+}

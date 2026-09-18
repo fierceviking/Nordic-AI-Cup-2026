@@ -1,0 +1,15 @@
+{
+  "default": {},
+  "dump_fast": {
+    "AGING_COOLDOWN": 0.1,
+    "AGING_DUMP": true
+  },
+  "dump_capped": {
+    "AGING_COOLDOWN": 0.1,
+    "AGING_DUMP": false
+  },
+  "dump_slow": {
+    "AGING_COOLDOWN": 1.0,
+    "AGING_DUMP": true
+  }
+}

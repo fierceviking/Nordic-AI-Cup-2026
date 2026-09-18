@@ -1,0 +1,23 @@
+{
+  "default": {},
+  "no_shrink": {
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0
+  },
+  "aggressive": {
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0,
+    "POP_MIN": 6,
+    "POP_MAX": 16,
+    "SPAWN_MIN": 200.0,
+    "SPAWN_COOLDOWN": 2.0
+  },
+  "max_pop": {
+    "NET_GROW": -9.0,
+    "NET_SHRINK": -9.0,
+    "POP_MIN": 10,
+    "POP_MAX": 22,
+    "SPAWN_MIN": 150.0,
+    "SPAWN_COOLDOWN": 1.0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "m1.0_default": {},
+  "m1.6": {
+    "NOSPRINT_MARGIN": 1.6
+  },
+  "m2.2": {
+    "NOSPRINT_MARGIN": 2.2
+  },
+  "m3.0": {
+    "NOSPRINT_MARGIN": 3.0
+  }
+}

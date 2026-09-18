@@ -1,0 +1,15 @@
+oracle with perfect information
+{"seed": 12, "score": 896.8, "sim_time": 840.2, "alive": 0, "peak_agents": 28, "survived": false, "eaten": 31, "starved": 144, "unprofitable_now": 1762}
+{"seed": 13, "score": 1368.6, "sim_time": 1281.7, "alive": 0, "peak_agents": 34, "survived": false, "eaten": 25, "starved": 175, "unprofitable_now": 2154}
+{"seed": 15, "score": 914.7, "sim_time": 848.1, "alive": 0, "peak_agents": 34, "survived": false, "eaten": 23, "starved": 137, "unprofitable_now": 823}
+{"seed": 14, "score": 1507.6, "sim_time": 1416.8, "alive": 0, "peak_agents": 36, "survived": false, "eaten": 31, "starved": 214, "unprofitable_now": 1504}
+{"seed": 16, "score": 1430.1, "sim_time": 1331.4, "alive": 0, "peak_agents": 57, "survived": false, "eaten": 34, "starved": 210, "unprofitable_now": 2740}
+{"seed": 17, "score": 1146.0, "sim_time": 1047.1, "alive": 0, "peak_agents": 37, "survived": false, "eaten": 19, "starved": 209, "unprofitable_now": 1681}
+{"seed": 20, "score": 1222.0, "sim_time": 1142.6, "alive": 0, "peak_agents": 38, "survived": false, "eaten": 35, "starved": 176, "unprofitable_now": 1839}
+{"seed": 11, "score": 950.3, "sim_time": 858.6, "alive": 0, "peak_agents": 50, "survived": false, "eaten": 28, "starved": 189, "unprofitable_now": 2531}
+{"seed": 19, "score": 1558.1, "sim_time": 1454.6, "alive": 0, "peak_agents": 45, "survived": false, "eaten": 39, "starved": 223, "unprofitable_now": 3008}
+{"seed": 18, "score": 706.3, "sim_time": 677.3, "alive": 0, "peak_agents": 27, "survived": false, "eaten": 41, "starved": 99, "unprofitable_now": 1231}
+
+mean 1170.0 | median 1184.0 | sd 294.0 | se 93.0 | min 706.3 | max 1558.1 | survived 0/10
+deaths: eaten 306 | starved 1776 (15% predation)
+Hive baseline on these seeds is ~772.

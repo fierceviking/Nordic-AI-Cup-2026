@@ -1,0 +1,17 @@
+{
+  "baseline": {},
+  "chase_2_5": {
+    "CHASE_BUDGET": 2.5
+  },
+  "chase_3_5": {
+    "CHASE_BUDGET": 3.5
+  },
+  "chase_3_5_soft": {
+    "CHASE_BUDGET": 3.5,
+    "CHASE_SPENT": 100.0
+  },
+  "chase_3_5_hard": {
+    "CHASE_BUDGET": 3.5,
+    "CHASE_SPENT": 400.0
+  }
+}

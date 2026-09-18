@@ -1,0 +1,19 @@
+[   140s] trial  10 mean=  661.2 scores=[707, 580, 1111, 427, 688, 358, 671, 750]
+[   251s] trial  11 mean=  670.0 scores=[536, 748, 1177, 291, 694, 644, 658, 612]
+[   333s] trial  12 mean=  490.9 scores=[671, 347, 810, 191, 530, 512, 514, 352]
+[   430s] trial  13 mean=  617.9 scores=[683, 598, 590, 529, 556, 984, 378, 626]
+[   538s] trial  14 mean=  707.3 scores=[850, 614, 685, 406, 682, 886, 868, 668]
+[   637s] trial  15 mean=  527.2 scores=[742, 348, 593, 303, 398, 376, 834, 624]
+[   732s] trial  16 mean=  621.8 scores=[725, 361, 1026, 441, 723, 374, 506, 817]
+[   854s] trial  17 mean=  764.7 scores=[582, 657, 800, 615, 695, 1393, 902, 474]
+[   958s] trial  18 mean=  775.1 scores=[898, 491, 1060, 667, 874, 1168, 610, 433]
+[  1065s] trial  19 mean=  795.3 scores=[665, 597, 1077, 422, 759, 1230, 731, 881]
+[  1111s] trial  20 pruned at 4 seeds (mean   645.7)
+[  1157s] trial  21 pruned at 4 seeds (mean   602.8)
+[  1204s] trial  22 pruned at 4 seeds (mean   633.1)
+[  1245s] trial  23 pruned at 4 seeds (mean   630.5)
+[  1327s] trial  24 mean=  656.2 scores=[996, 275, 934, 550, 633, 697, 583, 582]
+[  1374s] trial  25 pruned at 4 seeds (mean   495.5)
+[  1416s] trial  26 pruned at 4 seeds (mean   625.4)
+[  1493s] trial  27 mean=  599.7 scores=[981, 746, 595, 411, 547, 444, 527, 547]
+[  1539s] trial  28 pruned at 4 seeds (mean   632.2)

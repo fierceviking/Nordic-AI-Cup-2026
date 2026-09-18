@@ -1,0 +1,18 @@
+{
+  "baseline": {},
+  "scout_1": {
+    "SCOUT": 1
+  },
+  "scout_1_eager": {
+    "SCOUT": 1,
+    "SCOUT_MIN_POP": 4
+  },
+  "scout_1_long": {
+    "SCOUT": 1,
+    "SCOUT_COMMIT": 60.0
+  },
+  "scout_2": {
+    "SCOUT": 2,
+    "SCOUT_MIN_POP": 6
+  }
+}

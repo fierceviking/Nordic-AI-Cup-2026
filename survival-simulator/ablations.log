@@ -1,0 +1,58 @@
+=== full  [319s] ===
+{"seed": 14, "score": 817.2, "sim_time": 780.9, "alive": 0, "peak_agents=== tree_age  [336s] ===
+mean 1140.9 | median 1163.0 | sd 130.9 | se 41.4 | min 809.2 | max 1274.4 | survived 0/10
+=== predator_state  [261s] ===
+mean 1035.0 | median 980.4 | sd 279.2 | se 88.3 | min 609.6 | max 1498.8 | survived 0/10
+=== fruit_value  [220s] ===
+mean 1093.9 | median 1063.5 | sd 193.0 | se 61.0 | min 832.4 | max 1399.9 | survived 0/10
+
+
+ "alive": 0, "peak_agents": 25, "survived": false, "eaten": 67, "starved": 155}
+{"seed": 16, "score": 1224.6, "sim_time": 1128.8, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 28, "starved": 223}
+{"seed": 11, "score": 1158.2, "sim_time": 1071.9, "alive": 0, "peak_agents": 44, "survived": false, "eaten": 47, "starved": 232}
+{"seed": 17, "score": 1218.5, "sim_time": 1170.5, "alive": 0, "peak_agents": 38, "survived": false, "eaten": 86, "starved": 175}
+{"seed": 20, "score": 824.4, "sim_time": 780.2, "alive": 0, "peak_agents": 37, "survived": false, "eaten": 32, "starved": 138}
+{"seed": 18, "score": 1155.0, "sim_time": 1126.2, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 67, "starved": 189}
+{"seed": 19, "score": 1717.8, "sim_time": 1632.7, "alive": 0, "peak_agents": 36, "survived": false, "eaten": 80, "starved": 237}
+mean 1141.5 | median 1156.6 | sd 268.4 | se 84.9 | min 817.2 | max 1717.8 | survived 0/10
+
+=== tree_age  [308s] ===
+{"seed": 13, "score": 809.2, "sim_time": 765.6, "alive": 0, "peak_agents": 23, "survived": false, "eaten": 32, "starved": 109}
+{"seed": 15, "score": 1085.7, "sim_time": 1044.8, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 66, "starved": 140}
+{"seed": 12, "score": 1150.0, "sim_time": 1145.5, "alive": 0, "peak_agents": 29, "survived": false, "eaten": 84, "starved": 130}
+{"seed": 14, "score": 1176.1, "sim_time": 1133.9, "alive": 0, "peak_agents": 30, "survived": false, "eaten": 76, "starved": 176}
+{"seed": 11, "score": 1139.4, "sim_time": 1049.2, "alive": 0, "peak_agents": 42, "survived": false, "eaten": 45, "starved": 243}
+{"seed": 16, "score": 1233.5, "sim_time": 1199.1, "alive": 0, "peak_agents": 39, "survived": false, "eaten": 69, "starved": 210}
+{"seed": 17, "score": 1222.7, "sim_time": 1122.4, "alive": 0, "peak_agents": 38, "survived": false, "eaten": 46, "starved": 248}
+{"seed": 18, "score": 1214.5, "sim_time": 1121.0, "alive": 0, "peak_agents": 32, "survived": false, "eaten": 26, "starved": 224}
+{"seed": 20, "score": 1103.3, "sim_time": 1022.1, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 28, "starved": 185}
+{"seed": 19, "score": 1274.4, "sim_time": 1243.8, "alive": 0, "peak_agents": 36, "survived": false, "eaten": 70, "starved": 203}
+mean 1140.9 | median 1163.0 | sd 130.9 | se 41.4 | min 809.2 | max 1274.4 | survived 0/10
+
+=== predator_state  [253s] ===
+{"seed": 13, "score": 609.6, "sim_time": 571.2, "alive": 0, "peak_agents": 23, "survived": false, "eaten": 20, "starved": 96}
+{"seed": 15, "score": 756.8, "sim_time": 699.9, "alive": 0, "peak_agents": 36, "survived": false, "eaten": 12, "starved": 124}
+{"seed": 12, "score": 895.6, "sim_time": 830.0, "alive": 0, "peak_agents": 26, "survived": false, "eaten": 23, "starved": 153}
+{"seed": 17, "score": 912.2, "sim_time": 852.5, "alive": 0, "peak_agents": 38, "survived": false, "eaten": 45, "starved": 176}
+{"seed": 16, "score": 1182.1, "sim_time": 1109.9, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 44, "starved": 237}
+{"seed": 11, "score": 1255.6, "sim_time": 1218.5, "alive": 0, "peak_agents": 44, "survived": false, "eaten": 68, "starved": 219}
+{"seed": 18, "score": 854.8, "sim_time": 781.4, "alive": 0, "peak_agents": 32, "survived": false, "eaten": 23, "starved": 174}
+{"seed": 14, "score": 1498.8, "sim_time": 1448.2, "alive": 0, "peak_agents": 28, "survived": false, "eaten": 73, "starved": 203}
+{"seed": 20, "score": 1048.5, "sim_time": 983.4, "alive": 0, "peak_agents": 32, "survived": false, "eaten": 43, "starved": 172}
+{"seed": 19, "score": 1335.7, "sim_time": 1250.3, "alive": 0, "peak_agents": 39, "survived": false, "eaten": 41, "starved": 240}
+mean 1035.0 | median 980.4 | sd 279.2 | se 88.3 | min 609.6 | max 1498.8 | survived 0/10
+
+=== fruit_value  [187s] ===
+{"seed": 13, "score": 832.4, "sim_time": 827.1, "alive": 0, "peak_agents": 26, "survived": false, "eaten": 35, "starved": 90}
+{"seed": 15, "score": 1031.4, "sim_time": 978.4, "alive": 0, "peak_agents": 26, "survived": false, "eaten": 14, "starved": 112}
+{"seed": 14, "score": 859.6, "sim_time": 828.5, "alive": 0, "peak_agents": 29, "survived": false, "eaten": 36, "starved": 110}
+{"seed": 12, "score": 1093.6, "sim_time": 1078.2, "alive": 0, "peak_agents": 27, "survived": false, "eaten": 34, "starved": 99}
+{"seed": 17, "score": 1033.5, "sim_time": 971.0, "alive": 0, "peak_agents": 33, "survived": false, "eaten": 38, "starved": 150}
+{"seed": 16, "score": 1347.6, "sim_time": 1282.7, "alive": 0, "peak_agents": 28, "survived": false, "eaten": 60, "starved": 161}
+{"seed": 11, "score": 1232.3, "sim_time": 1173.2, "alive": 0, "peak_agents": 35, "survived": false, "eaten": 48, "starved": 143}
+{"seed": 20, "score": 944.2, "sim_time": 899.5, "alive": 0, "peak_agents": 22, "survived": false, "eaten": 24, "starved": 115}
+{"seed": 18, "score": 1164.4, "sim_time": 1107.3, "alive": 0, "peak_agents": 35, "survived": false, "eaten": 43, "starved": 143}
+{"seed": 19, "score": 1399.9, "sim_time": 1311.7, "alive": 0, "peak_agents": 34, "survived": false, "eaten": 30, "starved": 182}
+mean 1093.9 | median 1063.5 | sd 193.0 | se 61.0 | min 832.4 | max 1399.9 | survived 0/10
+
+ALL CONDITIONS COMPLETE

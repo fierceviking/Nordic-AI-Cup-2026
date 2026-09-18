@@ -1,0 +1,18 @@
+{
+  "baseline": {},
+  "site_only": {
+    "BREED_HOLD_ONLY": false
+  },
+  "site_low": {
+    "BREED_HOLD_ONLY": false,
+    "SPRINT_SAFE_MAX_ENERGY": 250.0
+  },
+  "site_high": {
+    "BREED_HOLD_ONLY": false,
+    "SPRINT_SAFE_MAX_ENERGY": 1000.0
+  },
+  "site_tight": {
+    "BREED_HOLD_ONLY": false,
+    "BREED_SITE_RADIUS": 40.0
+  }
+}

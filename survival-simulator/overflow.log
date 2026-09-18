@@ -1,0 +1,18 @@
+{"seed": 15, "score": 510.5, "bites": 942, "offered": 39051, "absorbed": 29499, "wasted": 9552, "waste_share": 0.2446, "bites_with_waste": 299, "bites_with_waste_share": 0.3174, "median_headroom": 143.0, "mean_fruit_value": 41.5, "targeted_bites": 720, "incidental_bites": 222, "targeted_waste": 4548, "incidental_waste": 5004}
+{"seed": 12, "score": 477.0, "bites": 974, "offered": 38860, "absorbed": 29264, "wasted": 9596, "waste_share": 0.2469, "bites_with_waste": 318, "bites_with_waste_share": 0.3265, "median_headroom": 145.9, "mean_fruit_value": 39.9, "targeted_bites": 784, "incidental_bites": 190, "targeted_waste": 4982, "incidental_waste": 4614}
+{"seed": 16, "score": 491.1, "bites": 1335, "offered": 57485, "absorbed": 33796, "wasted": 23689, "waste_share": 0.4121, "bites_with_waste": 714, "bites_with_waste_share": 0.5348, "median_headroom": 28.0, "mean_fruit_value": 43.1, "targeted_bites": 1023, "incidental_bites": 312, "targeted_waste": 13279, "incidental_waste": 10410}
+{"seed": 13, "score": 682.1, "bites": 1157, "offered": 47821, "absorbed": 35532, "wasted": 12289, "waste_share": 0.257, "bites_with_waste": 376, "bites_with_waste_share": 0.325, "median_headroom": 120.2, "mean_fruit_value": 41.3, "targeted_bites": 935, "incidental_bites": 222, "targeted_waste": 6469, "incidental_waste": 5820}
+{"seed": 14, "score": 800.2, "bites": 1451, "offered": 59816, "absorbed": 39414, "wasted": 20402, "waste_share": 0.3411, "bites_with_waste": 594, "bites_with_waste_share": 0.4094, "median_headroom": 82.0, "mean_fruit_value": 41.2, "targeted_bites": 1137, "incidental_bites": 314, "targeted_waste": 10794, "incidental_waste": 9608}
+{"seed": 11, "score": 961.4, "bites": 1857, "offered": 77597, "absorbed": 55035, "wasted": 22562, "waste_share": 0.2908, "bites_with_waste": 743, "bites_with_waste_share": 0.4001, "median_headroom": 81.9, "mean_fruit_value": 41.8, "targeted_bites": 1463, "incidental_bites": 394, "targeted_waste": 13573, "incidental_waste": 8989}
+
+=== EATING WHILE FULL ===
+  7716 bites, 320630 energy offered, 222540 absorbed
+  DESTROYED: 98090  (30.6% of everything harvested)
+  bites that lost something: 3044/7716 (39.5%)
+
+  --- what could actually be reassigned ---
+  targeted   :  6062 bites,  53645 wasted (54.7% of waste)  <- fixable by assignment
+  incidental :  1654 bites,  44445 wasted (45.3% of waste)  <- only fixable by pathing
+  median headroom at the moment of biting: 101  (a ripe fruit is 60)
+
+  a spawn costs 100 and yields a 75-energy child, so the waste above is worth ~981 children across 6 runs

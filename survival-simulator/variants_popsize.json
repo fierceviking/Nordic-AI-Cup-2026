@@ -1,0 +1,39 @@
+{
+  "pop_default": {},
+  "pop_1": {
+    "POP_MIN": 1,
+    "POP_MAX": 1,
+    "RESCUE_POP": 0,
+    "POP_SLACK": 1
+  },
+  "pop_1_rescue": {
+    "POP_MIN": 1,
+    "POP_MAX": 1,
+    "RESCUE_POP": 1,
+    "POP_SLACK": 1
+  },
+  "pop_2": {
+    "POP_MIN": 2,
+    "POP_MAX": 2,
+    "RESCUE_POP": 1,
+    "POP_SLACK": 1
+  },
+  "pop_3": {
+    "POP_MIN": 3,
+    "POP_MAX": 3,
+    "RESCUE_POP": 2,
+    "POP_SLACK": 1
+  },
+  "pop_5": {
+    "POP_MIN": 5,
+    "POP_MAX": 5,
+    "RESCUE_POP": 2,
+    "POP_SLACK": 1
+  },
+  "pop_8": {
+    "POP_MIN": 8,
+    "POP_MAX": 8,
+    "RESCUE_POP": 2,
+    "POP_SLACK": 1
+  }
+}

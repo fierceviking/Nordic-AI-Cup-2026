@@ -1,0 +1,3 @@
+25 tunables, population 13, 5 seeds/candidate, horizon 1200
+65 episodes per generation
+gen   0  best   815.5  mean   676.8  worst   554.9  sigma 0.696  [371s]

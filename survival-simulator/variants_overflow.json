@@ -1,0 +1,15 @@
+{
+  "default": {},
+  "overflow_60": {
+    "OVERFLOW_SPAWN": true,
+    "OVERFLOW_HEADROOM": 60.0
+  },
+  "overflow_100": {
+    "OVERFLOW_SPAWN": true,
+    "OVERFLOW_HEADROOM": 100.0
+  },
+  "overflow_150": {
+    "OVERFLOW_SPAWN": true,
+    "OVERFLOW_HEADROOM": 150.0
+  }
+}

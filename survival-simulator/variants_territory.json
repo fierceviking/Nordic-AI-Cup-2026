@@ -1,0 +1,14 @@
+{
+  "off": {},
+  "territory": {
+    "TERRITORY": true
+  },
+  "territory_wide": {
+    "TERRITORY": true,
+    "HOME_RADIUS": 140.0
+  },
+  "territory_tight": {
+    "TERRITORY": true,
+    "HOME_RADIUS": 70.0
+  }
+}

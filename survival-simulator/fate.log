@@ -1,0 +1,16 @@
+{"seed": 14, "score": 345.7, "fruit_seen": 848, "eaten": 671, "rotted": 220, "eaten_share": 0.753, "mean_visitors_eaten": 0.01, "near_full_bites": 254, "mean_visitors_near_full": 0.01, "contested_near_full": 0, "contested_share": 0.0}
+{"seed": 12, "score": 592.8, "fruit_seen": 1215, "eaten": 1183, "rotted": 332, "eaten_share": 0.781, "mean_visitors_eaten": 0.01, "near_full_bites": 566, "mean_visitors_near_full": 0.01, "contested_near_full": 0, "contested_share": 0.0}
+{"seed": 15, "score": 937.8, "fruit_seen": 1392, "eaten": 1253, "rotted": 634, "eaten_share": 0.664, "mean_visitors_eaten": 0.01, "near_full_bites": 606, "mean_visitors_near_full": 0.0, "contested_near_full": 0, "contested_share": 0.0}
+{"seed": 11, "score": 919.2, "fruit_seen": 1885, "eaten": 1765, "rotted": 1010, "eaten_share": 0.636, "mean_visitors_eaten": 0.0, "near_full_bites": 1007, "mean_visitors_near_full": 0.0, "contested_near_full": 0, "contested_share": 0.0}
+{"seed": 16, "score": 1021.6, "fruit_seen": 2053, "eaten": 1921, "rotted": 1048, "eaten_share": 0.647, "mean_visitors_eaten": 0.0, "near_full_bites": 1014, "mean_visitors_near_full": 0.0, "contested_near_full": 0, "contested_share": 0.0}
+{"seed": 13, "score": 1230.7, "fruit_seen": 1586, "eaten": 1542, "rotted": 598, "eaten_share": 0.721, "mean_visitors_eaten": 0.01, "near_full_bites": 612, "mean_visitors_near_full": 0.0, "contested_near_full": 0, "contested_share": 0.0}
+
+=== WOULD ANYONE ELSE HAVE EATEN IT? ===
+  fruit eaten 8335 | rotted 3842 (68.4% harvested)
+  mean distinct agents in reach, per eaten fruit : 0.01
+  ...for fruit taken by a NEAR-FULL agent        : 0.00
+  near-full bites where someone else also passed : 0/4059 (0.0%)
+
+  A share near 0% means skipping just lets it rot and the detour is wasted.
+  A high share means the food is contested and a skip transfers it to a
+  hungrier agent, which is the only way routing recovers energy.

@@ -1,0 +1,12 @@
+{
+  "baseline": {},
+  "spread_25": {
+    "SPREAD": 25.0
+  },
+  "spread_50": {
+    "SPREAD": 50.0
+  },
+  "spread_100": {
+    "SPREAD": 100.0
+  }
+}

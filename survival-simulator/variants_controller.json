@@ -1,0 +1,16 @@
+{
+  "hive": {},
+  "burst1": {
+    "__controller__": "burst",
+    "BURST_STEPS": 1
+  },
+  "burst1_pop20": {
+    "__controller__": "burst",
+    "BURST_STEPS": 1,
+    "POP_CAP": 20
+  },
+  "burst3": {
+    "__controller__": "burst",
+    "BURST_STEPS": 3
+  }
+}

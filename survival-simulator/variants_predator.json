@@ -1,0 +1,15 @@
+{
+  "default": {},
+  "scan_fast": {
+    "SCAN_RATE": 0.7
+  },
+  "wary": {
+    "SCAN_RATE": 0.7,
+    "RISK_AVERSION": 1.2
+  },
+  "homebody": {
+    "SCAN_RATE": 0.7,
+    "PATROL_RANGE": 170.0,
+    "FRUIT_RANGE": 150.0
+  }
+}

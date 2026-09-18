@@ -1,0 +1,17 @@
+{
+  "baseline": {},
+  "prior_50": {
+    "FRUIT_PRIOR": 0.5
+  },
+  "prior_100": {
+    "FRUIT_PRIOR": 1.0
+  },
+  "prior_100_moveon": {
+    "FRUIT_PRIOR": 1.0,
+    "MOVE_ON": 84.0
+  },
+  "prior_50_evidence": {
+    "FRUIT_PRIOR": 0.5,
+    "PRIOR_EVIDENCE": 15.0
+  }
+}

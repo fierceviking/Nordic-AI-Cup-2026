@@ -35,6 +35,10 @@ def main():
     parser.add_argument('--stage', type=int, default=1, choices=(1, 2))
     parser.add_argument('--lr0', type=float, default=None,
                         help='override the stage learning rate')
+    parser.add_argument('--optimizer', default='auto',
+                        choices=('auto', 'SGD', 'Adam', 'AdamW'),
+                        help="'auto' silently replaces lr0, so pass an explicit "
+                             "optimizer whenever --lr0 is meant to be honoured")
     parser.add_argument('--light-aug', action='store_true',
                         help='flips and mild scale only, the recipe current '
                              'transfer work uses; preserves pretrained features')
@@ -51,6 +55,11 @@ def main():
     stage_two = arguments.stage == 2
     light = arguments.light_aug
     model = YOLO(arguments.model)
+    requested_lr = (arguments.lr0 if arguments.lr0 is not None
+                    else (0.0002 if stage_two else 0.01))
+    if arguments.lr0 is not None and arguments.optimizer == 'auto':
+        parser.error('--lr0 with --optimizer auto is ignored by Ultralytics; '
+                     'pass --optimizer AdamW or SGD')
 
     if arguments.monitor_every > 0:
         sys.path.insert(0, str(LAB))
@@ -75,11 +84,11 @@ def main():
         save_period=arguments.save_period,
         cache=False,
         pretrained=True,
-        optimizer='auto',
+        optimizer=arguments.optimizer,
         cos_lr=True,
         # Fine-tuning starts from a converged model, so it needs a small,
         # short schedule; restarting at the stage-1 rate would undo stage 1.
-        lr0=arguments.lr0 if arguments.lr0 is not None else (0.0002 if stage_two else 0.01),
+        lr0=requested_lr,
         lrf=0.05 if stage_two else 0.01,
         warmup_epochs=0.0 if stage_two else 3.0,
         close_mosaic=3 if stage_two else 10,
@@ -106,6 +115,11 @@ def main():
         plots=True,
         seed=0,
     )
+    effective = model.trainer.args
+    print(f'optimizer {effective.optimizer}  lr0 requested {requested_lr} '
+          f'-> effective {effective.lr0}')
+    if effective.optimizer != 'auto' and effective.lr0 != requested_lr:
+        print('WARNING: the learning rate was replaced during setup')
     print('best weights:', LAB / 'runs' / arguments.name / 'weights' / 'best.pt')
 
 

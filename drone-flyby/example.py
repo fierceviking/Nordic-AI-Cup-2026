@@ -55,6 +55,18 @@ def _build_solver():
             threshold = os.environ.get('DRONE_VERIFIER_CONF') or None
             solver.detector = VerifiedDetector(solver.detector, checkpoint,
                                                threshold=float(threshold) if threshold is not None else None)
+        camera_ckpt = os.environ.get('DRONE_CAMERA_CKPT')
+        if camera_ckpt:
+            # Swap the fixed loop for the fitted linear scorer. Fresh instance
+            # per sequence (state_for calls the factory once per attempt), which
+            # also resets its coverage-age grid. from_checkpoint enforces the
+            # detector-sha guard, so this only loads against the detector the
+            # policy was fitted on.
+            from camera_policy import LearnedCameraPolicy
+            LearnedCameraPolicy.from_checkpoint(camera_ckpt, WEIGHTS)  # validate now, fail loud
+            solver.policy_factory = lambda: LearnedCameraPolicy.from_checkpoint(camera_ckpt, WEIGHTS)
+            MODEL_STATUS['camera_ckpt'] = str(camera_ckpt)
+            logger.info('Camera policy: learned scorer from %s', camera_ckpt)
         logger.info('Solver ready')
         return solver
     except Exception as error:

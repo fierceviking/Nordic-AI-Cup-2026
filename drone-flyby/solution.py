@@ -74,6 +74,48 @@ DETECT_CONF = float(os.environ.get('DRONE_CONF', '0.05'))
 ALTERNATE_CLASSES = int(os.environ.get('DRONE_ALTERNATES', '2'))
 ALTERNATE_DAMPING = float(os.environ.get('DRONE_ALTERNATE_DAMPING', '0.5'))
 
+# Measured on the recorded competition flight: output grows from 110 to 367
+# boxes per frame while Helsinki holds ~10 real objects per frame. These bound
+# how long unconfirmed belief survives and how much of it is emitted.
+MAX_AGE = int(os.environ.get('DRONE_MAX_AGE', '45'))
+MIN_HITS = int(os.environ.get('DRONE_MIN_HITS', '1'))
+REPORT_MAX = int(os.environ.get('DRONE_REPORT_MAX', '400'))
+
+# lab/domain_gap.py measured the training scene at saturation 129, brightness
+# 88 and median local texture 3570, against 104 / 113 / 1975 on the real
+# flight: softer, brighter and flatter than anything the detector was trained
+# on. Matching each view to those targets is a no-op on the training scene, so
+# it can be regression-tested there. Sharpening is off by default because it
+# measurably cost confident detections on the real flight (2.18 -> 1.76 per
+# frame) while the photometric match alone was near neutral at 2.07.
+DOMAIN_MATCH = int(os.environ.get('DRONE_DOMAIN', '0'))
+DOMAIN_SATURATION = float(os.environ.get('DRONE_DOMAIN_SAT', '129.0'))
+DOMAIN_VALUE = float(os.environ.get('DRONE_DOMAIN_VAL', '88.0'))
+DOMAIN_TEXTURE = float(os.environ.get('DRONE_DOMAIN_TEX', '3570.0'))
+DOMAIN_MAX_SHARPEN = float(os.environ.get('DRONE_DOMAIN_SHARPEN', '0.0'))
+
+
+def match_training_domain(view: np.ndarray) -> np.ndarray:
+    """Rescale saturation and brightness, then sharpen toward the training scene."""
+    hsv = cv2.cvtColor(view, cv2.COLOR_BGR2HSV).astype(np.float32)
+    saturation, value = hsv[:, :, 1], hsv[:, :, 2]
+    mean_saturation, mean_value = float(saturation.mean()), float(value.mean())
+    if mean_saturation > 1.0:
+        hsv[:, :, 1] = np.clip(saturation * (DOMAIN_SATURATION / mean_saturation), 0, 255)
+    if mean_value > 1.0:
+        hsv[:, :, 2] = np.clip(value * (DOMAIN_VALUE / mean_value), 0, 255)
+    out = cv2.cvtColor(hsv.astype(np.uint8), cv2.COLOR_HSV2BGR)
+
+    grey = cv2.cvtColor(out, cv2.COLOR_BGR2GRAY)
+    energy = cv2.Laplacian(grey, cv2.CV_32F)
+    texture = float(np.median(cv2.blur(energy * energy, (17, 17))))
+    if texture > 1.0 and texture < DOMAIN_TEXTURE:
+        amount = min(DOMAIN_MAX_SHARPEN, np.sqrt(DOMAIN_TEXTURE / texture) - 1.0)
+        if amount > 0.01:
+            blurred = cv2.GaussianBlur(out, (0, 0), 1.1)
+            out = cv2.addWeighted(out, 1.0 + amount, blurred, -amount, 0)
+    return out
+
 # The scene holds exactly one instance of each class (run_metadata.json), so
 # class assignment is a global matching problem, not an independent choice per
 # track. 0 disables it.
@@ -165,6 +207,8 @@ class Detector:
             self._infer(blank)
 
     def _infer(self, view: np.ndarray):
+        if DOMAIN_MATCH:
+            view = match_training_domain(view)
         return self.model.predict(
             view, imgsz=self.imgsz, conf=self.confidence, iou=0.55,
             device=self.device, half=True, verbose=False, max_det=120)[0]
@@ -247,7 +291,7 @@ class WorldModel:
     MAX_MISSES_IN_VIEW = int(os.environ.get('DRONE_MAX_MISSES', '3'))
     # A track the camera has not revisited is kept much longer: the homography
     # is accurate enough to carry it, and recall is what the metric rewards.
-    MAX_AGE_UNSEEN = 45
+    MAX_AGE_UNSEEN = MAX_AGE
 
     def __init__(self, homography: np.ndarray = DEFAULT_HOMOGRAPHY):
         self.homography = homography
@@ -407,7 +451,7 @@ class WorldModel:
         return {int(c): OBJECT_CLASSES[int(r)]
                 for r, c in zip(rows, columns) if scores[r, c] > 0}
 
-    def report(self, maximum: int = 400) -> List[dict]:
+    def report(self, maximum: int = REPORT_MAX) -> List[dict]:
         """Current belief about the whole frame, deduplicated and ranked.
 
         Confidence decays with how long it has been since the object was last
@@ -419,6 +463,8 @@ class WorldModel:
         for index, track in enumerate(self.tracks):
             bbox = clip_to_frame(track.bbox)
             if bbox is None:
+                continue
+            if track.hits < MIN_HITS:
                 continue
             staleness = 1.0 / (1.0 + 0.045 * track.age_since_seen)
             support = min(1.0, 0.55 + 0.15 * track.hits)
@@ -609,12 +655,36 @@ class CameraPolicy:
     """
 
     FULL = (0, IMAGE_WIDTH // 2, IMAGE_HEIGHT // 2)
+    QUADRANTS = ((1, 960, 540), (1, 2880, 540), (1, 2880, 1620), (1, 960, 1620))
     LOOP = (
         FULL, (1, 960, 540),
         FULL, (1, 2880, 540),
         FULL, (1, 2880, 1620),
         FULL, (1, 960, 1620),
     )
+    # Competition validation settles this against the local experiments.
+    # Holding Level 0 every frame scored 0.1157 against 0.153 for the even
+    # alternation, so Level-1 resolution is worth real score even though
+    # exp11 and exp12 found no Level-1 benefit on the supplied scene. Both of
+    # those were measured in-domain on a scene the detector was trained from.
+    # The gradient runs toward more resolution, so these spend more of the
+    # flight at Level 1. Ground drifts about 66 px per frame downward, so new
+    # terrain arrives at the top: 'l1top' pans the top band where objects
+    # first appear, giving the longest possible track life per object.
+    _MODES = {
+        'l0': (FULL,),
+        'l1': QUADRANTS,
+        'l1top': ((1, 960, 540), (1, 2880, 540)),
+        'l1heavy': (FULL,) + QUADRANTS,
+        # Data-collection only: raster the whole frame at Level 2 (native
+        # resolution) so a recorded run captures real L2 pixels of every
+        # object. Whole-frame score is poor (L2 sees 1/16 of the frame), which
+        # is expected - this mode exists to gather real L2 training crops, not
+        # to score. 16 tiles tiling L2 bounds x[480,3360] y[270,1890].
+        'l2raster': tuple((2, cx, cy) for cy in (270, 810, 1350, 1890)
+                          for cx in (480, 1440, 2400, 3360)),
+    }
+    LOOP = _MODES.get(os.environ.get('DRONE_CAMERA', 'loop'), LOOP)
 
     def __init__(self, loop=None):
         self.loop = tuple(loop) if loop is not None else self.LOOP

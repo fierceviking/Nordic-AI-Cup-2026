@@ -23,7 +23,73 @@ from fastapi import FastAPI, HTTPException
 def configure_experiment():
     import argparse
 
-    names = ('baseline', 'v4s1', 'verifier-v1')
+    root = Path(__file__).resolve().parent
+    # Everything below v4s1 changes exactly one variable against it, so a
+    # validation run measures that variable and nothing else.
+    base = dict(DRONE_IMGSZ='960', DRONE_CONF='0.05', DRONE_ALTERNATES='2',
+                DRONE_ALTERNATE_DAMPING='0.5', DRONE_ASSIGN='0', DRONE_MAX_MISSES='3',
+                DRONE_MAX_AGE='45', DRONE_MIN_HITS='1', DRONE_REPORT_MAX='400',
+                DRONE_DOMAIN='0', DRONE_CAMERA='loop')
+    presets = {
+        'v4s1': {},
+        'verifier-v1': {},
+        # Measured by replaying the recorded flight: alternate damping, class
+        # assignment, track age (15 or 90) and a 500 cap all leave real output
+        # unchanged, so they are not offered. Only these move it.
+        # Competition validation, v4s1 = 0.153: alt0 (104 boxes) = 0.129,
+        # conf02 (260 boxes) = 0.1322. Both directions are worse, so output
+        # volume is not the lever and this axis is exhausted.
+        'alt0': {'DRONE_ALTERNATES': '0'},          # 104 boxes/frame
+        'alt4': {'DRONE_ALTERNATES': '4'},          # 157, saturates by 4
+        'conf02': {'DRONE_CONF': '0.02'},           # 260
+        'conf25': {'DRONE_CONF': '0.25'},           # 28
+        'cap60': {'DRONE_REPORT_MAX': '60'},        # 60
+        'misses1': {'DRONE_MAX_MISSES': '1'},       # 69, drops confident ones too
+        # Photometric rather than volume: matches each incoming view to the
+        # training scene's saturation, brightness and sharpness.
+        'domainfix': {'DRONE_DOMAIN': '1'},
+        # Camera, not model. l0only scored 0.1157 against 0.153, so Level-1
+        # resolution earns score on the real scene and the gradient runs
+        # toward more of it, not less.
+        'l0only': {'DRONE_CAMERA': 'l0'},
+        'l1only': {'DRONE_CAMERA': 'l1'},
+        'l1top': {'DRONE_CAMERA': 'l1top'},
+        'l1heavy': {'DRONE_CAMERA': 'l1heavy'},
+        # Learned linear camera scorer vs the fixed loop, same v4s1 detector.
+        # DOCUMENTED DEAD-END (lab/exp15_camera_gate.py, 2026-09-18): differential
+        # -evolution fit of camera_policy.LearnedCameraPolicy over the 13 features
+        # does NOT beat the hand-tuned loop on held-out Helsinki frames: seed-median
+        # gap -0.0023 (seeds swing -0.021..+0.028 = pure fit noise), 5-fold median
+        # learned 0.9615 vs fixed 0.9604 (+0.001, under margin). The alternating
+        # loop already captures the camera headroom. Kept inert for the record.
+        'learned-cam': {'DRONE_CAMERA_CKPT': str(root / 'lab' / 'runs' / 'camera_gate_v1' / 'camera.json')},
+        # Different detector, not a knob. Trained on the same 236 sprites over
+        # 5000 foreign aerial backgrounds so background cannot predict class,
+        # which is what broke every Helsinki-built representation so far.
+        'v7n': {'DRONE_WEIGHTS': str(root / 'model' / 'v7n.pt')},
+        # v7n then fine-tuned on native Helsinki renders mixed with foreign
+        # ground. Fine-tuning on Helsinki alone re-learned the shortcut and
+        # cost more than it recovered, so the two sources train together.
+        'v8mix': {'DRONE_WEIGHTS': str(root / 'model' / 'v8mix.pt')},
+        # v4s1's synthetic set plus 107 human-reviewed real validation-flyby
+        # frames (70% temporal split). On the held-out 47 real frames it beat
+        # v4s1 offline: mAP50 0.435 vs 0.345, mAP50-95 0.329 vs 0.157. Same
+        # tracking/camera as v4s1; only the detector weights change.
+        'v9real': {'DRONE_WEIGHTS': str(root / 'model' / 'v9real.pt')},
+        # v9real's set plus the 47 previously held-out real frames folded into
+        # training (all 154 real frames now train), so medium_launcher and
+        # mine_roller enter training for the first time. Offline val is
+        # memorization-inflated (rval is now in train); the API validation is
+        # the real test. Same tracking/camera as v4s1; only the weights change.
+        'v11all': {'DRONE_WEIGHTS': str(root / 'model' / 'v11all.pt')},
+        # Data-collection preset (NOT a scored experiment): best detector +
+        # full-frame Level-2 raster camera. Launch with DRONE_RECORD_DIR set and
+        # run one VALIDATION attempt to capture real L2 crops of every object;
+        # whole-frame score is expected to be poor. Never evaluate.
+        'record-l2': {'DRONE_WEIGHTS': str(root / 'model' / 'v11all.pt'),
+                      'DRONE_CAMERA': 'l2raster'},
+    }
+    names = ('baseline',) + tuple(presets)
     selected = os.environ.get('DRONE_EXPERIMENT', 'baseline')
     report_conf = float(os.environ.get('DRONE_REPORT_CONF', '0.0'))
     verifier_conf = os.environ.get('DRONE_VERIFIER_CONF') or None
@@ -53,11 +119,9 @@ def configure_experiment():
     os.environ['DRONE_REPORT_CONF'] = str(report_conf)
     if verifier_conf is not None:
         os.environ['DRONE_VERIFIER_CONF'] = str(verifier_conf)
-    if selected in ('v4s1', 'verifier-v1'):
-        root = Path(__file__).resolve().parent
-        os.environ.update(DRONE_WEIGHTS=str(root / 'model' / 'v4s1.pt'),
-                          DRONE_IMGSZ='960', DRONE_CONF='0.05', DRONE_ALTERNATES='2',
-                          DRONE_ALTERNATE_DAMPING='0.5', DRONE_ASSIGN='0', DRONE_MAX_MISSES='3')
+    if selected in presets:
+        os.environ.update(base, DRONE_WEIGHTS=str(root / 'model' / 'v4s1.pt'))
+        os.environ.update(presets[selected])
 
 
 configure_experiment()
@@ -123,6 +187,11 @@ def health():
         'imgsz': solution.INFER_IMGSZ,
         'confidence': solution.DETECT_CONF,
         'alternate_classes': solution.ALTERNATE_CLASSES,
+        'max_age_unseen': solution.MAX_AGE,
+        'min_hits_to_report': solution.MIN_HITS,
+        'report_max': solution.REPORT_MAX,
+        'domain_match': bool(solution.DOMAIN_MATCH),
+        'camera_mode': os.environ.get('DRONE_CAMERA', 'loop'),
         'camera_loop': [list(entry) for entry in solution.CameraPolicy.LOOP],
         'recording_to': os.environ.get('DRONE_RECORD_DIR') or None,
         'uptime': '{}'.format(datetime.timedelta(seconds=time.time() - start_time)),

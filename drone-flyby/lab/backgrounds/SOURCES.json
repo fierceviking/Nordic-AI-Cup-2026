@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "LoveDA": {
+      "repo": "mrmeepsle/LoveDa",
+      "licence": "CC-BY-NC-4.0",
+      "gsd_m_per_px": 0.3,
+      "use": "background only, no labels used"
+    },
+    "RESISC45": {
+      "repo": "blanchon/RESISC45",
+      "licence": "research use only",
+      "note": "NWPU-RESISC45",
+      "use": "background only, no labels used"
+    }
+  },
+  "counts": {
+    "resisc45": 5000
+  }
+}

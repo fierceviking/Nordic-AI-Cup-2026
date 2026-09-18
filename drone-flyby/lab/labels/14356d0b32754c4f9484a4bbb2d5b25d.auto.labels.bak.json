@@ -1,0 +1,9357 @@
+{
+ "sequence": "14356d0b32754c4f9484a4bbb2d5b25d",
+ "source": "review_crops",
+ "updated": "2026-09-18T14:36:07.539448+00:00",
+ "frames": {
+  "000242_L0": {
+   "stem": "000242_L0",
+   "frame": 242,
+   "frame_index": 241,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      532.5,
+      46.19,
+      545.5,
+      60.69
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      80.31,
+      396.0,
+      96.19,
+      409.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000243_L1": {
+   "stem": "000243_L1",
+   "frame": 243,
+   "frame_index": 242,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      104.75,
+      121.0,
+      130.12,
+      150.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000244_L1": {
+   "stem": "000244_L1",
+   "frame": 244,
+   "frame_index": 243,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      106.75,
+      150.0,
+      131.0,
+      177.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000245_L0": {
+   "stem": "000245_L0",
+   "frame": 245,
+   "frame_index": 244,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      533.0,
+      88.88,
+      546.0,
+      102.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000246_L0": {
+   "stem": "000246_L0",
+   "frame": 246,
+   "frame_index": 245,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      533.0,
+      102.69,
+      547.0,
+      117.81
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000249_L0": {
+   "stem": "000249_L0",
+   "frame": 249,
+   "frame_index": 248,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      536.0,
+      148.5,
+      548.0,
+      162.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000068_L1": {
+   "stem": "000068_L1",
+   "frame": 68,
+   "frame_index": 67,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      104.0,
+      94.75,
+      112.5,
+      103.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      142.88,
+      293.25,
+      168.38,
+      320.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      124.94,
+      265.75,
+      150.5,
+      291.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000069_L0": {
+   "stem": "000069_L0",
+   "frame": 69,
+   "frame_index": 68,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      531.5,
+      60.16,
+      538.5,
+      66.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      324.57,
+      224.94,
+      331.72,
+      230.66
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      364.55,
+      66.58,
+      370.62,
+      73.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      258.5,
+      243.62,
+      280.5,
+      265.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      298.5,
+      236.5,
+      315.0,
+      252.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      548.5,
+      161.0,
+      565.5,
+      178.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      543.5,
+      149.0,
+      554.5,
+      160.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      256.75,
+      192.75,
+      304.25,
+      245.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      894.5,
+      474.75,
+      907.5,
+      491.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      652.0,
+      423.5,
+      676.0,
+      445.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000072_L0": {
+   "stem": "000072_L0",
+   "frame": 72,
+   "frame_index": 71,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      532.0,
+      101.88,
+      539.0,
+      109.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      368.0,
+      36.38,
+      375.5,
+      45.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      189.0,
+      371.5,
+      199.5,
+      382.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      255.63,
+      296.25,
+      274.5,
+      313.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      295.0,
+      287.0,
+      311.5,
+      303.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      543.0,
+      193.75,
+      558.0,
+      207.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      550.0,
+      208.25,
+      568.0,
+      224.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      252.25,
+      241.5,
+      298.25,
+      295.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      844.0,
+      416.5,
+      888.0,
+      448.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      901.62,
+      535.15,
+      917.8,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      654.0,
+      478.5,
+      684.0,
+      507.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000074_L0": {
+   "stem": "000074_L0",
+   "frame": 74,
+   "frame_index": 73,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      534.0,
+      132.5,
+      540.0,
+      138.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      366.13,
+      64.36,
+      373.74,
+      73.33
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      184.43,
+      408.44,
+      195.11,
+      419.77
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      252.5,
+      332.0,
+      268.5,
+      347.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      293.5,
+      322.5,
+      308.5,
+      337.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      285.76,
+      319.92,
+      310.45,
+      343.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      546.0,
+      227.25,
+      558.0,
+      239.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      553.0,
+      241.75,
+      569.0,
+      256.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      582.0,
+      104.0,
+      595.0,
+      115.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      250.25,
+      276.5,
+      294.75,
+      329.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      855.0,
+      456.0,
+      894.0,
+      483.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000076_L0": {
+   "stem": "000076_L0",
+   "frame": 76,
+   "frame_index": 75,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      533.5,
+      163.12,
+      540.5,
+      170.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      365.5,
+      92.38,
+      372.5,
+      100.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      359.54,
+      170.38,
+      364.58,
+      177.98
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      247.75,
+      367.25,
+      266.75,
+      386.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      288.75,
+      357.0,
+      306.75,
+      376.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      282.74,
+      355.39,
+      307.81,
+      379.14
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      556.5,
+      275.0,
+      569.5,
+      289.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      546.0,
+      259.5,
+      560.0,
+      272.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      582.0,
+      133.75,
+      596.0,
+      145.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      247.0,
+      311.5,
+      292.0,
+      367.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      855.0,
+      497.0,
+      901.0,
+      529.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000080_L0": {
+   "stem": "000080_L0",
+   "frame": 80,
+   "frame_index": 79,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      536.0,
+      225.88,
+      542.0,
+      232.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      239.25,
+      443.75,
+      263.5,
+      466.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      283.25,
+      431.75,
+      301.75,
+      451.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      558.0,
+      346.0,
+      572.0,
+      359.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      548.54,
+      327.76,
+      562.03,
+      341.58
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      558.0,
+      346.0,
+      572.0,
+      359.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      585.0,
+      195.5,
+      601.0,
+      207.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      590.14,
+      198.57,
+      598.85,
+      206.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      890.0,
+      326.5,
+      906.0,
+      341.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      239.25,
+      384.75,
+      286.25,
+      442.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000084_L0": {
+   "stem": "000084_L0",
+   "frame": 84,
+   "frame_index": 83,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      538.0,
+      293.25,
+      544.0,
+      299.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      306.0,
+      497.0,
+      316.0,
+      506.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      232.43,
+      524.26,
+      255.83,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      278.0,
+      513.5,
+      293.0,
+      530.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      561.5,
+      420.5,
+      575.5,
+      434.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      550.5,
+      400.5,
+      564.5,
+      414.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      231.25,
+      460.5,
+      280.5,
+      522.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      425.0,
+      9.09,
+      445.0,
+      29.16
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000086_L0": {
+   "stem": "000086_L0",
+   "frame": 86,
+   "frame_index": 85,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      538.5,
+      327.0,
+      544.5,
+      334.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      832.5,
+      72.62,
+      838.5,
+      78.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      562.0,
+      460.0,
+      576.0,
+      473.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      228.75,
+      500.25,
+      274.25,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      424.5,
+      35.38,
+      445.5,
+      55.44
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000087_L1": {
+   "stem": "000087_L1",
+   "frame": 87,
+   "frame_index": 86,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      119.38,
+      151.88,
+      128.88,
+      161.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      170.25,
+      422.25,
+      193.25,
+      445.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      144.12,
+      377.0,
+      174.62,
+      410.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      233.0,
+      92.0,
+      250.5,
+      106.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      866.0,
+      375.5,
+      899.0,
+      407.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000088_L0": {
+   "stem": "000088_L0",
+   "frame": 88,
+   "frame_index": 87,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      540.0,
+      364.0,
+      546.0,
+      370.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      564.0,
+      500.0,
+      578.0,
+      513.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      553.0,
+      477.5,
+      567.0,
+      493.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      597.28,
+      333.8,
+      606.1,
+      340.9
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      917.0,
+      476.75,
+      934.0,
+      492.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      423.0,
+      62.88,
+      443.0,
+      84.88
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000090_L0": {
+   "stem": "000090_L0",
+   "frame": 90,
+   "frame_index": 89,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      540.0,
+      400.5,
+      547.0,
+      407.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      554.0,
+      520.0,
+      568.0,
+      535.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      594.5,
+      365.75,
+      609.5,
+      378.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      924.0,
+      518.0,
+      941.0,
+      534.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      423.25,
+      91.62,
+      443.25,
+      112.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000092_L0": {
+   "stem": "000092_L0",
+   "frame": 92,
+   "frame_index": 91,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      542.0,
+      439.0,
+      548.0,
+      445.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      422.25,
+      121.62,
+      440.75,
+      142.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000094_L0": {
+   "stem": "000094_L0",
+   "frame": 94,
+   "frame_index": 93,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      542.5,
+      478.75,
+      549.5,
+      485.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      676.0,
+      77.38,
+      682.0,
+      82.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      852.0,
+      193.0,
+      858.0,
+      198.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      421.5,
+      151.5,
+      443.0,
+      174.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000095_L1": {
+   "stem": "000095_L1",
+   "frame": 95,
+   "frame_index": 94,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      127.94,
+      459.5,
+      136.5,
+      468.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      242.0,
+      390.5,
+      266.5,
+      406.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000096_L0": {
+   "stem": "000096_L0",
+   "frame": 96,
+   "frame_index": 95,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      544.0,
+      519.5,
+      550.0,
+      525.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      678.16,
+      106.84,
+      684.25,
+      111.72
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      865.0,
+      81.62,
+      871.0,
+      88.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      602.0,
+      485.29,
+      614.36,
+      493.42
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000159_L1": {
+   "stem": "000159_L1",
+   "frame": 159,
+   "frame_index": 158,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      628.5,
+      263.5,
+      645.5,
+      280.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      562.5,
+      272.0,
+      580.5,
+      288.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      267.0,
+      125.75,
+      285.0,
+      143.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      619.0,
+      87.12,
+      642.0,
+      114.38
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000160_L0": {
+   "stem": "000160_L0",
+   "frame": 160,
+   "frame_index": 159,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      312.5,
+      145.5,
+      322.5,
+      155.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      279.74,
+      151.45,
+      288.8,
+      159.55
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      131.02,
+      77.38,
+      140.09,
+      86.49
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      307.5,
+      57.91,
+      320.5,
+      71.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000162_L0": {
+   "stem": "000162_L0",
+   "frame": 162,
+   "frame_index": 161,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      309.83,
+      176.75,
+      319.97,
+      187.02
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      276.61,
+      182.84,
+      285.8,
+      191.16
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      125.91,
+      106.83,
+      135.11,
+      116.17
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      304.0,
+      84.75,
+      320.0,
+      101.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000163_L0": {
+   "stem": "000163_L0",
+   "frame": 163,
+   "frame_index": 162,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      308.5,
+      191.0,
+      319.5,
+      202.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      303.0,
+      99.75,
+      318.0,
+      114.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000175_L1": {
+   "stem": "000175_L1",
+   "frame": 175,
+   "frame_index": 174,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      587.0,
+      260.75,
+      607.0,
+      281.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      512.0,
+      272.25,
+      528.0,
+      289.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      578.0,
+      46.0,
+      604.0,
+      73.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000178_L0": {
+   "stem": "000178_L0",
+   "frame": 178,
+   "frame_index": 177,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      287.25,
+      457.5,
+      299.25,
+      470.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      250.04,
+      462.84,
+      262.37,
+      475.21
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      284.5,
+      345.75,
+      298.5,
+      360.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000179_L0": {
+   "stem": "000179_L0",
+   "frame": 179,
+   "frame_index": 178,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      285.5,
+      478.0,
+      297.5,
+      491.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      486.0,
+      63.5,
+      501.0,
+      80.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      619.0,
+      11.97,
+      633.0,
+      24.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      282.0,
+      363.75,
+      297.0,
+      378.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000181_L0": {
+   "stem": "000181_L0",
+   "frame": 181,
+   "frame_index": 180,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      282.75,
+      518.0,
+      294.75,
+      532.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      486.5,
+      93.25,
+      501.5,
+      110.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      622.0,
+      39.31,
+      634.0,
+      51.56
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      280.25,
+      402.5,
+      293.25,
+      415.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000075_L1": {
+   "stem": "000075_L1",
+   "frame": 75,
+   "frame_index": 74,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      730.39,
+      157.21,
+      745.7,
+      175.37
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      721.0,
+      310.0,
+      731.0,
+      325.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000078_L0": {
+   "stem": "000078_L0",
+   "frame": 78,
+   "frame_index": 77,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      363.66,
+      121.63,
+      370.76,
+      129.83
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      314.0,
+      379.5,
+      324.0,
+      388.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      356.0,
+      201.75,
+      364.0,
+      209.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      245.0,
+      404.75,
+      264.25,
+      424.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      287.5,
+      394.75,
+      303.5,
+      411.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      557.0,
+      310.25,
+      571.0,
+      323.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      547.0,
+      292.25,
+      560.0,
+      306.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      589.03,
+      167.28,
+      597.6,
+      174.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      586.0,
+      164.88,
+      598.0,
+      175.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      244.62,
+      347.75,
+      289.5,
+      402.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000082_L0": {
+   "stem": "000082_L0",
+   "frame": 82,
+   "frame_index": 81,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      360.0,
+      181.12,
+      368.0,
+      189.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      236.5,
+      483.5,
+      259.5,
+      505.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      281.5,
+      472.0,
+      297.5,
+      489.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      559.0,
+      382.5,
+      573.0,
+      396.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      586.0,
+      228.5,
+      602.0,
+      239.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      896.0,
+      363.0,
+      912.0,
+      379.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      235.75,
+      422.75,
+      282.75,
+      480.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000029_L0": {
+   "stem": "000029_L0",
+   "frame": 29,
+   "frame_index": 28,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      137.75,
+      220.88,
+      161.75,
+      246.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      140.62,
+      102.12,
+      154.38,
+      115.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      264.5,
+      357.5,
+      276.5,
+      370.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      556.0,
+      204.12,
+      570.0,
+      215.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      458.5,
+      89.12,
+      470.5,
+      102.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000030_L1": {
+   "stem": "000030_L1",
+   "frame": 30,
+   "frame_index": 29,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      278.25,
+      491.5,
+      307.75,
+      521.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      270.5,
+      479.5,
+      312.0,
+      523.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      276.06,
+      233.47,
+      303.76,
+      261.31
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000031_L1": {
+   "stem": "000031_L1",
+   "frame": 31,
+   "frame_index": 30,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      265.17,
+      512.31,
+      307.0,
+      556.92
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      270.96,
+      263.05,
+      298.88,
+      291.26
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      915.0,
+      236.25,
+      939.0,
+      261.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000032_L0": {
+   "stem": "000032_L0",
+   "frame": 32,
+   "frame_index": 31,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      129.12,
+      271.0,
+      156.12,
+      299.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      133.82,
+      278.95,
+      148.81,
+      294.37
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      133.62,
+      147.0,
+      146.38,
+      159.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      333.0,
+      21.0,
+      351.0,
+      39.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      558.0,
+      253.12,
+      571.0,
+      264.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      457.5,
+      132.62,
+      470.5,
+      147.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000033_L0": {
+   "stem": "000033_L0",
+   "frame": 33,
+   "frame_index": 32,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      126.34,
+      287.92,
+      153.56,
+      316.31
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      131.08,
+      295.98,
+      146.19,
+      311.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      130.98,
+      162.26,
+      143.83,
+      174.93
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      335.5,
+      34.56,
+      353.0,
+      52.19
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      558.5,
+      269.0,
+      572.5,
+      281.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      457.0,
+      147.25,
+      471.0,
+      162.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000035_L0": {
+   "stem": "000035_L0",
+   "frame": 35,
+   "frame_index": 34,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      123.88,
+      326.5,
+      145.12,
+      349.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      125.88,
+      194.0,
+      139.38,
+      207.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      333.0,
+      62.55,
+      350.74,
+      80.61
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      552.31,
+      77.8,
+      560.87,
+      85.14
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      559.0,
+      304.0,
+      573.0,
+      315.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      456.75,
+      178.38,
+      470.25,
+      193.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000037_L0": {
+   "stem": "000037_L0",
+   "frame": 37,
+   "frame_index": 36,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      117.25,
+      360.5,
+      138.75,
+      384.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      120.51,
+      226.01,
+      134.22,
+      239.36
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      330.61,
+      91.27,
+      348.58,
+      109.78
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      552.86,
+      106.98,
+      561.55,
+      114.51
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      561.0,
+      339.25,
+      575.0,
+      351.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      457.0,
+      209.75,
+      470.0,
+      224.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000038_L1": {
+   "stem": "000038_L1",
+   "frame": 38,
+   "frame_index": 37,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      228.75,
+      217.42,
+      272.13,
+      266.13
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000039_L0": {
+   "stem": "000039_L0",
+   "frame": 39,
+   "frame_index": 38,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      111.47,
+      397.19,
+      133.34,
+      421.91
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      546.0,
+      283.25,
+      560.0,
+      296.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      115.02,
+      258.88,
+      128.95,
+      272.61
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      343.25,
+      116.56,
+      361.75,
+      135.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      325.5,
+      121.12,
+      345.5,
+      139.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      560.5,
+      375.25,
+      576.5,
+      388.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      456.5,
+      242.75,
+      470.5,
+      258.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000041_L0": {
+   "stem": "000041_L0",
+   "frame": 41,
+   "frame_index": 40,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      106.38,
+      438.75,
+      129.12,
+      461.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      547.5,
+      317.5,
+      562.5,
+      331.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      564.0,
+      414.0,
+      578.0,
+      425.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      278.0,
+      80.38,
+      292.5,
+      94.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      455.25,
+      275.25,
+      470.25,
+      291.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      814.0,
+      15.35,
+      827.0,
+      27.16
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000056_L1": {
+   "stem": "000056_L1",
+   "frame": 56,
+   "frame_index": 55,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      445.0,
+      222.5,
+      458.0,
+      235.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      676.0,
+      64.88,
+      690.0,
+      76.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      556.5,
+      98.5,
+      590.5,
+      130.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      632.0,
+      84.88,
+      656.0,
+      110.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      632.0,
+      84.88,
+      656.0,
+      110.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      558.0,
+      12.56,
+      632.0,
+      98.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000057_L0": {
+   "stem": "000057_L0",
+   "frame": 57,
+   "frame_index": 56,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      220.5,
+      125.0,
+      229.0,
+      134.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      337.0,
+      44.38,
+      344.0,
+      52.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      325.25,
+      421.5,
+      345.25,
+      443.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      278.5,
+      63.0,
+      295.0,
+      79.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      312.0,
+      54.66,
+      328.0,
+      69.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      254.63,
+      335.5,
+      272.5,
+      351.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      273.0,
+      16.62,
+      318.0,
+      66.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      634.5,
+      206.0,
+      663.5,
+      233.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000059_L0": {
+   "stem": "000059_L0",
+   "frame": 59,
+   "frame_index": 58,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      216.47,
+      155.13,
+      225.09,
+      164.37
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      334.56,
+      72.55,
+      341.66,
+      80.87
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      301.59,
+      465.14,
+      320.9,
+      484.74
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      274.5,
+      93.38,
+      294.5,
+      108.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      311.0,
+      82.75,
+      325.5,
+      97.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      250.75,
+      372.0,
+      266.25,
+      389.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      550.26,
+      17.02,
+      556.93,
+      24.33
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      271.5,
+      44.06,
+      314.5,
+      93.56
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      813.0,
+      188.25,
+      849.0,
+      218.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      803.0,
+      344.0,
+      819.0,
+      359.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      634.0,
+      224.75,
+      678.0,
+      268.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000061_L0": {
+   "stem": "000061_L0",
+   "frame": 61,
+   "frame_index": 60,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      212.15,
+      186.01,
+      220.9,
+      195.49
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      306.5,
+      505.5,
+      322.5,
+      524.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      566.63,
+      522.38,
+      579.25,
+      535.84
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      309.0,
+      111.88,
+      324.5,
+      127.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      245.5,
+      408.75,
+      262.0,
+      425.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      550.37,
+      44.59,
+      557.14,
+      52.07
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      266.5,
+      72.0,
+      314.0,
+      122.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      818.0,
+      219.25,
+      854.0,
+      250.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      643.0,
+      277.75,
+      667.0,
+      301.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      639.0,
+      264.5,
+      675.0,
+      302.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000073_L1": {
+   "stem": "000073_L1",
+   "frame": 73,
+   "frame_index": 72,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      373.46,
+      239.66,
+      394.63,
+      262.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      494.75,
+      80.38,
+      555.0,
+      133.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      574.5,
+      65.12,
+      623.5,
+      110.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      585.0,
+      68.62,
+      619.0,
+      104.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000176_L0": {
+   "stem": "000176_L0",
+   "frame": 176,
+   "frame_index": 175,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      253.38,
+      424.0,
+      265.5,
+      436.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      286.75,
+      310.0,
+      299.75,
+      324.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000168_L1": {
+   "stem": "000168_L1",
+   "frame": 168,
+   "frame_index": 167,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      221.5,
+      394.5,
+      240.5,
+      413.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      594.0,
+      352.0,
+      624.0,
+      382.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000169_L0": {
+   "stem": "000169_L0",
+   "frame": 169,
+   "frame_index": 168,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      107.97,
+      213.37,
+      117.54,
+      222.74
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      295.5,
+      192.0,
+      310.5,
+      206.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000171_L0": {
+   "stem": "000171_L0",
+   "frame": 171,
+   "frame_index": 170,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      102.68,
+      245.79,
+      112.41,
+      255.42
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      293.5,
+      224.25,
+      307.5,
+      238.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000185_L1": {
+   "stem": "000185_L1",
+   "frame": 185,
+   "frame_index": 184,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      118.88,
+      469.5,
+      140.38,
+      491.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      546.0,
+      421.0,
+      576.0,
+      450.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000186_L0": {
+   "stem": "000186_L0",
+   "frame": 186,
+   "frame_index": 185,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      56.07,
+      525.06,
+      66.92,
+      536.24
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      486.0,
+      168.0,
+      502.0,
+      187.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      605.5,
+      107.88,
+      626.5,
+      128.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      271.5,
+      501.5,
+      285.5,
+      515.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000066_L1": {
+   "stem": "000066_L1",
+   "frame": 66,
+   "frame_index": 65,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      656.5,
+      354.5,
+      670.5,
+      365.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      734.5,
+      49.75,
+      746.5,
+      64.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      526.0,
+      392.5,
+      570.0,
+      430.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      596.0,
+      369.75,
+      644.0,
+      417.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      528.0,
+      297.5,
+      611.0,
+      394.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000067_L0": {
+   "stem": "000067_L0",
+   "frame": 67,
+   "frame_index": 66,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      327.03,
+      192.94,
+      334.08,
+      198.51
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      366.5,
+      38.5,
+      372.5,
+      45.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      262.0,
+      212.0,
+      282.0,
+      231.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      301.0,
+      204.25,
+      317.0,
+      219.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      236.0,
+      532.0,
+      249.5,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      549.0,
+      130.12,
+      565.0,
+      147.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      258.0,
+      161.12,
+      308.0,
+      214.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      829.0,
+      321.0,
+      873.0,
+      359.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      829.0,
+      503.5,
+      844.0,
+      516.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      885.0,
+      434.5,
+      900.0,
+      451.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000004_L1": {
+   "stem": "000004_L1",
+   "frame": 4,
+   "frame_index": 3,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      827.5,
+      372.0,
+      852.5,
+      392.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000005_L1": {
+   "stem": "000005_L1",
+   "frame": 5,
+   "frame_index": 4,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      828.0,
+      404.5,
+      852.0,
+      422.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000006_L0": {
+   "stem": "000006_L0",
+   "frame": 6,
+   "frame_index": 5,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      413.57,
+      218.22,
+      425.66,
+      227.34
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      484.5,
+      318.5,
+      504.5,
+      332.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000008_L0": {
+   "stem": "000008_L0",
+   "frame": 8,
+   "frame_index": 7,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      412.95,
+      250.64,
+      425.22,
+      260.02
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      485.25,
+      356.0,
+      504.75,
+      370.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000010_L0": {
+   "stem": "000010_L0",
+   "frame": 10,
+   "frame_index": 9,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      409.5,
+      285.0,
+      422.5,
+      296.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      483.75,
+      392.5,
+      505.25,
+      406.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000011_L1": {
+   "stem": "000011_L1",
+   "frame": 11,
+   "frame_index": 10,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      824.0,
+      65.88,
+      846.0,
+      82.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000012_L0": {
+   "stem": "000012_L0",
+   "frame": 12,
+   "frame_index": 11,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      411.56,
+      320.28,
+      422.64,
+      328.77
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      485.0,
+      430.75,
+      505.5,
+      445.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000013_L0": {
+   "stem": "000013_L0",
+   "frame": 13,
+   "frame_index": 12,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      411.1,
+      337.95,
+      422.27,
+      346.57
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      288.5,
+      98.62,
+      298.5,
+      108.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      485.0,
+      449.5,
+      505.0,
+      465.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000020_L1": {
+   "stem": "000020_L1",
+   "frame": 20,
+   "frame_index": 19,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      813.0,
+      402.5,
+      837.0,
+      418.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000021_L0": {
+   "stem": "000021_L0",
+   "frame": 21,
+   "frame_index": 20,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      405.92,
+      491.19,
+      418.02,
+      499.31
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      302.25,
+      154.5,
+      314.25,
+      166.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000023_L0": {
+   "stem": "000023_L0",
+   "frame": 23,
+   "frame_index": 22,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      404.77,
+      532.0,
+      417.08,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      299.4,
+      185.54,
+      311.57,
+      197.35
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      459.0,
+      5.59,
+      471.0,
+      19.06
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000043_L0": {
+   "stem": "000043_L0",
+   "frame": 43,
+   "frame_index": 42,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      549.0,
+      355.0,
+      563.0,
+      367.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      566.0,
+      453.5,
+      579.0,
+      463.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      456.0,
+      310.5,
+      469.0,
+      324.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      776.59,
+      86.91,
+      782.13,
+      92.22
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      821.0,
+      43.5,
+      833.0,
+      56.31
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000044_L1": {
+   "stem": "000044_L1",
+   "frame": 44,
+   "frame_index": 43,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      139.2,
+      206.54,
+      167.45,
+      230.9
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      169.0,
+      406.25,
+      200.25,
+      426.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000045_L0": {
+   "stem": "000045_L0",
+   "frame": 45,
+   "frame_index": 44,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      550.5,
+      391.75,
+      564.5,
+      404.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      565.03,
+      493.21,
+      580.79,
+      503.37
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      272.25,
+      138.88,
+      286.25,
+      153.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      455.0,
+      346.0,
+      470.0,
+      361.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      780.06,
+      116.55,
+      785.71,
+      122.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      824.0,
+      70.0,
+      838.0,
+      84.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000047_L0": {
+   "stem": "000047_L0",
+   "frame": 47,
+   "frame_index": 46,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      551.2,
+      429.72,
+      565.45,
+      442.6
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      336.75,
+      241.75,
+      357.75,
+      263.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      566.17,
+      534.32,
+      582.22,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      270.25,
+      169.75,
+      284.75,
+      183.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      454.75,
+      381.75,
+      470.25,
+      398.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      828.0,
+      98.38,
+      842.0,
+      111.88
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000191_L0": {
+   "stem": "000191_L0",
+   "frame": 191,
+   "frame_index": 190,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      466.0,
+      262.75,
+      479.0,
+      274.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      376.0,
+      125.06,
+      386.0,
+      135.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000197_L0": {
+   "stem": "000197_L0",
+   "frame": 197,
+   "frame_index": 196,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      466.0,
+      368.0,
+      480.0,
+      381.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      616.0,
+      283.0,
+      636.0,
+      305.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000200_L0": {
+   "stem": "000200_L0",
+   "frame": 200,
+   "frame_index": 199,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      466.0,
+      425.5,
+      479.0,
+      438.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      68.38,
+      181.75,
+      78.25,
+      192.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      643.0,
+      337.75,
+      659.0,
+      353.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      368.69,
+      266.22,
+      380.78,
+      278.39
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      448.25,
+      30.56,
+      463.75,
+      46.06
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      416.0,
+      172.75,
+      433.5,
+      189.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000202_L0": {
+   "stem": "000202_L0",
+   "frame": 202,
+   "frame_index": 201,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      465.5,
+      464.5,
+      479.5,
+      478.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      645.66,
+      374.04,
+      661.95,
+      390.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      366.5,
+      301.5,
+      378.5,
+      312.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      459.0,
+      70.5,
+      472.0,
+      83.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      517.0,
+      95.12,
+      535.0,
+      115.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000203_L0": {
+   "stem": "000203_L0",
+   "frame": 203,
+   "frame_index": 202,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      465.5,
+      485.0,
+      481.5,
+      500.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      46.62,
+      234.75,
+      67.38,
+      256.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      485.5,
+      468.25,
+      496.5,
+      483.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      647.0,
+      393.5,
+      661.0,
+      407.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      365.5,
+      318.5,
+      377.5,
+      330.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      458.73,
+      84.94,
+      471.82,
+      97.85
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      516.5,
+      110.5,
+      535.5,
+      130.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000205_L0": {
+   "stem": "000205_L0",
+   "frame": 205,
+   "frame_index": 204,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      465.75,
+      526.0,
+      481.25,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      651.5,
+      432.25,
+      663.5,
+      444.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      364.0,
+      355.0,
+      376.0,
+      366.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000098_L0": {
+   "stem": "000098_L0",
+   "frame": 98,
+   "frame_index": 97,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      426.0,
+      102.31,
+      432.0,
+      108.81
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      680.41,
+      137.12,
+      686.61,
+      142.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      871.5,
+      110.62,
+      877.5,
+      117.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000099_L1": {
+   "stem": "000099_L1",
+   "frame": 99,
+   "frame_index": 98,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      850.81,
+      234.5,
+      862.89,
+      247.67
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000100_L0": {
+   "stem": "000100_L0",
+   "frame": 100,
+   "frame_index": 99,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      425.0,
+      132.25,
+      431.0,
+      138.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      870.0,
+      292.0,
+      876.0,
+      298.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      878.0,
+      139.62,
+      884.0,
+      148.38
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000108_L0": {
+   "stem": "000108_L0",
+   "frame": 108,
+   "frame_index": 107,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      421.75,
+      258.5,
+      428.25,
+      266.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      894.0,
+      438.5,
+      902.0,
+      446.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.0,
+      236.5,
+      468.5,
+      251.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000110_L0": {
+   "stem": "000110_L0",
+   "frame": 110,
+   "frame_index": 109,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      420.0,
+      292.0,
+      428.5,
+      299.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      900.0,
+      478.75,
+      908.0,
+      486.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.0,
+      270.0,
+      468.0,
+      285.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      906.0,
+      301.0,
+      914.0,
+      310.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000115_L0": {
+   "stem": "000115_L0",
+   "frame": 115,
+   "frame_index": 114,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      418.5,
+      381.25,
+      425.5,
+      388.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      710.0,
+      424.5,
+      716.0,
+      429.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      669.38,
+      68.71,
+      680.12,
+      77.04
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      457.4,
+      357.23,
+      467.83,
+      373.34
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      923.0,
+      391.75,
+      931.0,
+      403.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      637.0,
+      45.72,
+      675.0,
+      93.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      648.03,
+      85.02,
+      662.88,
+      99.81
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000116_L1": {
+   "stem": "000116_L1",
+   "frame": 116,
+   "frame_index": 115,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      836.3,
+      259.52,
+      850.41,
+      273.73
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      917.0,
+      214.0,
+      933.0,
+      243.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000117_L0": {
+   "stem": "000117_L0",
+   "frame": 117,
+   "frame_index": 116,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      417.5,
+      419.5,
+      424.5,
+      426.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      714.0,
+      464.0,
+      720.0,
+      469.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.46,
+      395.45,
+      466.54,
+      410.55
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      930.5,
+      430.0,
+      938.5,
+      440.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      655.0,
+      113.12,
+      717.0,
+      144.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      637.0,
+      72.88,
+      675.0,
+      119.38
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000119_L0": {
+   "stem": "000119_L0",
+   "frame": 119,
+   "frame_index": 118,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      416.5,
+      458.0,
+      423.5,
+      466.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      718.0,
+      504.5,
+      724.0,
+      509.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.39,
+      433.32,
+      466.61,
+      448.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      937.5,
+      469.0,
+      946.5,
+      481.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      937.5,
+      469.0,
+      946.5,
+      481.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      657.29,
+      143.23,
+      720.25,
+      175.82
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      637.5,
+      102.31,
+      680.5,
+      155.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000121_L0": {
+   "stem": "000121_L0",
+   "frame": 121,
+   "frame_index": 120,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      415.63,
+      497.94,
+      422.75,
+      506.19
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      677.78,
+      156.68,
+      687.86,
+      164.79
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      944.5,
+      509.0,
+      956.5,
+      524.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      692.78,
+      170.74,
+      703.37,
+      179.86
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      641.0,
+      131.25,
+      684.0,
+      181.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000187_L1": {
+   "stem": "000187_L1",
+   "frame": 187,
+   "frame_index": 186,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      186.88,
+      2.6,
+      222.12,
+      35.78
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      757.0,
+      133.25,
+      777.0,
+      151.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000190_L0": {
+   "stem": "000190_L0",
+   "frame": 190,
+   "frame_index": 189,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      85.38,
+      41.81,
+      103.5,
+      57.44
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      630.5,
+      170.75,
+      644.5,
+      184.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      375.85,
+      109.55,
+      386.06,
+      118.89
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000199_L1": {
+   "stem": "000199_L1",
+   "frame": 199,
+   "frame_index": 198,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      139.25,
+      330.5,
+      163.5,
+      354.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      739.0,
+      499.0,
+      763.0,
+      523.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      919.0,
+      58.28,
+      942.0,
+      81.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      841.0,
+      319.0,
+      865.0,
+      342.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000207_L1": {
+   "stem": "000207_L1",
+   "frame": 207,
+   "frame_index": 206,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      92.0,
+      54.97,
+      113.0,
+      78.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      724.0,
+      242.88,
+      750.0,
+      266.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      837.0,
+      43.1,
+      856.0,
+      61.9
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000208_L1": {
+   "stem": "000208_L1",
+   "frame": 208,
+   "frame_index": 207,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      85.0,
+      89.56,
+      107.0,
+      113.31
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      722.5,
+      279.0,
+      749.5,
+      305.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      835.94,
+      77.88,
+      855.09,
+      96.96
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000212_L0": {
+   "stem": "000212_L0",
+   "frame": 212,
+   "frame_index": 211,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      28.75,
+      388.5,
+      39.69,
+      400.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      357.0,
+      489.0,
+      371.0,
+      502.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      457.0,
+      222.25,
+      470.0,
+      236.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000215_L0": {
+   "stem": "000215_L0",
+   "frame": 215,
+   "frame_index": 214,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      19.62,
+      446.5,
+      29.16,
+      456.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000216_L0": {
+   "stem": "000216_L0",
+   "frame": 216,
+   "frame_index": 215,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      13.5,
+      465.5,
+      25.62,
+      480.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000219_L0": {
+   "stem": "000219_L0",
+   "frame": 219,
+   "frame_index": 218,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_launcher",
+     "bbox": [
+      1.2,
+      527.5,
+      14.5,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      510.98,
+      365.94,
+      545.89,
+      396.89
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000040_L1": {
+   "stem": "000040_L1",
+   "frame": 40,
+   "frame_index": 39,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      648.52,
+      272.25,
+      688.8,
+      310.23
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      912.45,
+      518.74,
+      940.67,
+      550.17
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000049_L0": {
+   "stem": "000049_L0",
+   "frame": 49,
+   "frame_index": 48,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      335.0,
+      275.0,
+      354.0,
+      296.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      267.25,
+      200.5,
+      280.75,
+      214.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      267.25,
+      200.5,
+      280.75,
+      214.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      453.91,
+      419.38,
+      469.68,
+      436.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      782.0,
+      178.25,
+      795.0,
+      190.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      831.91,
+      128.36,
+      846.15,
+      142.21
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000051_L0": {
+   "stem": "000051_L0",
+   "frame": 51,
+   "frame_index": 50,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      332.25,
+      308.75,
+      351.75,
+      330.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      264.5,
+      232.75,
+      279.5,
+      246.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      453.41,
+      457.87,
+      469.45,
+      475.4
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      787.24,
+      208.71,
+      799.85,
+      219.35
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      840.5,
+      160.25,
+      852.5,
+      172.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      629.5,
+      115.38,
+      651.5,
+      136.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000053_L0": {
+   "stem": "000053_L0",
+   "frame": 53,
+   "frame_index": 52,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      330.5,
+      343.25,
+      352.5,
+      367.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      312.25,
+      351.0,
+      332.25,
+      370.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      563.37,
+      368.22,
+      572.96,
+      377.61
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      260.5,
+      267.0,
+      273.5,
+      281.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      791.5,
+      97.62,
+      835.5,
+      127.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      790.5,
+      242.5,
+      803.5,
+      254.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000055_L0": {
+   "stem": "000055_L0",
+   "frame": 55,
+   "frame_index": 54,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      325.5,
+      383.0,
+      345.5,
+      405.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      564.55,
+      405.21,
+      574.31,
+      414.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      315.5,
+      28.0,
+      329.5,
+      42.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      256.5,
+      300.5,
+      271.5,
+      316.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      275.5,
+      0.0,
+      319.0,
+      35.81
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      792.0,
+      125.88,
+      838.0,
+      162.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      633.0,
+      171.0,
+      661.0,
+      199.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000093_L1": {
+   "stem": "000093_L1",
+   "frame": 93,
+   "frame_index": 92,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      392.5,
+      127.25,
+      401.5,
+      134.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000101_L1": {
+   "stem": "000101_L1",
+   "frame": 101,
+   "frame_index": 100,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      415.25,
+      363.25,
+      423.25,
+      371.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      801.39,
+      309.6,
+      813.51,
+      327.32
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000102_L0": {
+   "stem": "000102_L0",
+   "frame": 102,
+   "frame_index": 101,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      688.5,
+      197.0,
+      693.5,
+      202.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      875.0,
+      326.5,
+      881.0,
+      333.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      459.5,
+      140.5,
+      469.5,
+      155.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      882.0,
+      169.88,
+      890.0,
+      178.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000103_L0": {
+   "stem": "000103_L0",
+   "frame": 103,
+   "frame_index": 102,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      689.94,
+      212.9,
+      694.99,
+      217.97
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      878.0,
+      344.5,
+      884.0,
+      351.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000107_L0": {
+   "stem": "000107_L0",
+   "frame": 107,
+   "frame_index": 106,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      696.0,
+      279.5,
+      702.0,
+      284.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      890.5,
+      419.5,
+      897.5,
+      427.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.0,
+      220.0,
+      468.5,
+      235.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000114_L1": {
+   "stem": "000114_L1",
+   "frame": 114,
+   "frame_index": 113,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      457.5,
+      272.0,
+      466.5,
+      280.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      879.0,
+      205.94,
+      895.17,
+      226.24
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000034_L1": {
+   "stem": "000034_L1",
+   "frame": 34,
+   "frame_index": 33,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      144.25,
+      127.0,
+      161.25,
+      141.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000052_L1": {
+   "stem": "000052_L1",
+   "frame": 52,
+   "frame_index": 51,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      165.62,
+      160.25,
+      184.62,
+      178.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000060_L1": {
+   "stem": "000060_L1",
+   "frame": 60,
+   "frame_index": 59,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      172.0,
+      464.0,
+      197.0,
+      490.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000188_L0": {
+   "stem": "000188_L0",
+   "frame": 188,
+   "frame_index": 187,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      485.75,
+      199.5,
+      501.75,
+      218.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      606.86,
+      137.65,
+      628.2,
+      159.19
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      377.58,
+      80.88,
+      387.65,
+      89.99
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000198_L0": {
+   "stem": "000198_L0",
+   "frame": 198,
+   "frame_index": 197,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      486.0,
+      372.5,
+      501.5,
+      389.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      639.0,
+      301.0,
+      657.0,
+      319.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      616.5,
+      299.0,
+      638.5,
+      322.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000104_L1": {
+   "stem": "000104_L1",
+   "frame": 104,
+   "frame_index": 103,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      802.5,
+      186.62,
+      814.5,
+      197.38
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000105_L0": {
+   "stem": "000105_L0",
+   "frame": 105,
+   "frame_index": 104,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      884.0,
+      381.0,
+      890.0,
+      388.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      458.5,
+      187.5,
+      468.5,
+      201.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      891.0,
+      217.25,
+      899.0,
+      227.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      417.0,
+      334.0,
+      441.0,
+      359.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000014_L1": {
+   "stem": "000014_L1",
+   "frame": 14,
+   "frame_index": 13,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      574.25,
+      226.63,
+      594.38,
+      246.89
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000015_L0": {
+   "stem": "000015_L0",
+   "frame": 15,
+   "frame_index": 14,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      285.5,
+      126.75,
+      296.5,
+      139.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      310.0,
+      67.38,
+      320.5,
+      77.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      484.25,
+      490.5,
+      504.75,
+      505.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000017_L0": {
+   "stem": "000017_L0",
+   "frame": 17,
+   "frame_index": 16,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      282.5,
+      157.25,
+      293.5,
+      169.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      552.0,
+      28.41,
+      562.0,
+      37.47
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      307.0,
+      94.75,
+      319.0,
+      106.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      484.61,
+      531.25,
+      505.48,
+      540.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000019_L0": {
+   "stem": "000019_L0",
+   "frame": 19,
+   "frame_index": 18,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      280.0,
+      188.75,
+      289.0,
+      198.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "tank",
+     "bbox": [
+      551.0,
+      55.44,
+      563.0,
+      64.81
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      304.37,
+      124.16,
+      316.53,
+      136.22
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000016_L1": {
+   "stem": "000016_L1",
+   "frame": 16,
+   "frame_index": 15,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      140.0,
+      28.88,
+      164.0,
+      47.69
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000024_L1": {
+   "stem": "000024_L1",
+   "frame": 24,
+   "frame_index": 23,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      149.75,
+      258.0,
+      171.5,
+      271.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000025_L0": {
+   "stem": "000025_L0",
+   "frame": 25,
+   "frame_index": 24,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      553.5,
+      141.75,
+      566.5,
+      152.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      458.5,
+      33.0,
+      471.5,
+      46.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000027_L0": {
+   "stem": "000027_L0",
+   "frame": 27,
+   "frame_index": 26,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      554.5,
+      172.75,
+      567.5,
+      183.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "spacecraft",
+     "bbox": [
+      458.25,
+      60.31,
+      471.75,
+      74.81
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000036_L1": {
+   "stem": "000036_L1",
+   "frame": 36,
+   "frame_index": 35,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      158.25,
+      106.12,
+      188.25,
+      122.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000062_L0": {
+   "stem": "000062_L0",
+   "frame": 62,
+   "frame_index": 61,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      270.25,
+      133.5,
+      288.75,
+      152.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      306.5,
+      126.62,
+      323.5,
+      142.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      243.75,
+      428.5,
+      260.75,
+      446.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      544.5,
+      57.91,
+      562.5,
+      74.88
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      265.0,
+      85.75,
+      313.0,
+      136.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      811.0,
+      234.5,
+      859.0,
+      274.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      812.5,
+      401.0,
+      827.5,
+      416.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      644.0,
+      293.5,
+      666.0,
+      316.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      640.01,
+      281.4,
+      676.33,
+      319.43
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000064_L0": {
+   "stem": "000064_L0",
+   "frame": 64,
+   "frame_index": 63,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      268.0,
+      165.75,
+      285.0,
+      181.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      304.5,
+      157.25,
+      320.5,
+      173.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      241.5,
+      469.0,
+      254.5,
+      484.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      549.0,
+      86.38,
+      563.0,
+      101.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      264.5,
+      116.75,
+      309.5,
+      166.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      822.5,
+      270.5,
+      864.5,
+      303.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      817.0,
+      440.5,
+      837.0,
+      455.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      646.23,
+      328.4,
+      668.63,
+      352.07
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      642.15,
+      315.96,
+      679.13,
+      355.08
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000065_L0": {
+   "stem": "000065_L0",
+   "frame": 65,
+   "frame_index": 64,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      265.5,
+      181.25,
+      284.5,
+      199.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      303.0,
+      172.0,
+      320.0,
+      188.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      239.5,
+      489.0,
+      254.5,
+      504.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      548.0,
+      100.75,
+      564.0,
+      117.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      261.0,
+      130.5,
+      309.5,
+      182.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      824.0,
+      286.0,
+      868.0,
+      320.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      882.0,
+      400.0,
+      894.0,
+      414.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      646.0,
+      346.5,
+      674.0,
+      373.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000071_L0": {
+   "stem": "000071_L0",
+   "frame": 71,
+   "frame_index": 70,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      255.75,
+      277.5,
+      278.75,
+      300.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      296.5,
+      269.75,
+      312.5,
+      286.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      544.0,
+      179.75,
+      557.0,
+      192.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      549.0,
+      192.5,
+      567.0,
+      208.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      253.12,
+      225.25,
+      300.0,
+      279.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      843.0,
+      395.5,
+      886.0,
+      429.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      898.0,
+      514.5,
+      914.0,
+      531.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      657.0,
+      462.0,
+      681.0,
+      484.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      660.99,
+      466.07,
+      673.61,
+      477.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000081_L1": {
+   "stem": "000081_L1",
+   "frame": 81,
+   "frame_index": 80,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      467.5,
+      379.75,
+      529.5,
+      435.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      563.0,
+      365.0,
+      599.0,
+      405.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      479.5,
+      269.0,
+      567.5,
+      383.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000180_L1": {
+   "stem": "000180_L1",
+   "frame": 180,
+   "frame_index": 179,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      279.69,
+      51.13,
+      307.91,
+      76.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000193_L0": {
+   "stem": "000193_L0",
+   "frame": 193,
+   "frame_index": 192,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      634.5,
+      218.25,
+      648.5,
+      231.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000194_L0": {
+   "stem": "000194_L0",
+   "frame": 194,
+   "frame_index": 193,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      635.0,
+      234.38,
+      650.0,
+      248.88
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000204_L1": {
+   "stem": "000204_L1",
+   "frame": 204,
+   "frame_index": 203,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      336.84,
+      284.24,
+      365.09,
+      311.64
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000048_L1": {
+   "stem": "000048_L1",
+   "frame": 48,
+   "frame_index": 47,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      536.83,
+      370.89,
+      566.03,
+      399.26
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000054_L1": {
+   "stem": "000054_L1",
+   "frame": 54,
+   "frame_index": 53,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      517.47,
+      27.72,
+      543.66,
+      56.12
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000022_L1": {
+   "stem": "000022_L1",
+   "frame": 22,
+   "frame_index": 21,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      601.66,
+      339.85,
+      625.84,
+      363.15
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000111_L1": {
+   "stem": "000111_L1",
+   "frame": 111,
+   "frame_index": 110,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      369.5,
+      26.62,
+      388.5,
+      41.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      398.25,
+      51.88,
+      416.25,
+      66.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      329.0,
+      58.62,
+      357.0,
+      87.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      308.0,
+      0.0,
+      371.0,
+      66.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000112_L1": {
+   "stem": "000112_L1",
+   "frame": 112,
+   "frame_index": 111,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      372.0,
+      53.38,
+      393.0,
+      69.44
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      400.5,
+      78.56,
+      420.5,
+      95.19
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      330.0,
+      84.88,
+      359.0,
+      113.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      310.0,
+      11.56,
+      376.0,
+      96.94
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000113_L0": {
+   "stem": "000113_L0",
+   "frame": 113,
+   "frame_index": 112,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      667.1,
+      40.53,
+      677.68,
+      48.66
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      457.54,
+      321.68,
+      467.8,
+      337.32
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      916.0,
+      354.75,
+      924.0,
+      364.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      650.0,
+      56.25,
+      709.0,
+      81.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      635.0,
+      17.0,
+      671.0,
+      65.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      645.99,
+      56.46,
+      660.6,
+      70.89
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000120_L1": {
+   "stem": "000120_L1",
+   "frame": 120,
+   "frame_index": 119,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      393.25,
+      282.5,
+      413.25,
+      298.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      423.0,
+      310.25,
+      444.0,
+      328.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      324.0,
+      235.5,
+      401.0,
+      329.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000123_L0": {
+   "stem": "000123_L0",
+   "frame": 123,
+   "frame_index": 122,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      680.18,
+      188.15,
+      690.42,
+      196.47
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      695.43,
+      202.58,
+      706.2,
+      211.94
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000131_L1": {
+   "stem": "000131_L1",
+   "frame": 131,
+   "frame_index": 130,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      426.0,
+      103.0,
+      448.0,
+      121.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      458.5,
+      135.0,
+      481.5,
+      154.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      354.0,
+      56.88,
+      428.0,
+      156.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      430.5,
+      133.75,
+      452.5,
+      152.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000132_L0": {
+   "stem": "000132_L0",
+   "frame": 132,
+   "frame_index": 131,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      694.6,
+      339.34,
+      705.7,
+      348.85
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      650.0,
+      309.5,
+      706.0,
+      374.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      674.0,
+      357.5,
+      740.0,
+      400.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      652.5,
+      315.5,
+      744.5,
+      403.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      324.0,
+      118.25,
+      340.0,
+      135.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000134_L0": {
+   "stem": "000134_L0",
+   "frame": 134,
+   "frame_index": 133,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      697.93,
+      375.81,
+      709.23,
+      385.6
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      656.0,
+      349.5,
+      708.0,
+      408.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      676.0,
+      389.5,
+      748.0,
+      437.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      324.0,
+      149.0,
+      339.0,
+      165.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000009_L1": {
+   "stem": "000009_L1",
+   "frame": 9,
+   "frame_index": 8,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      6.97,
+      170.0,
+      47.9,
+      197.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000206_L0": {
+   "stem": "000206_L0",
+   "frame": 206,
+   "frame_index": 205,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      363.25,
+      372.5,
+      375.75,
+      384.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      416.5,
+      273.0,
+      431.0,
+      287.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000209_L0": {
+   "stem": "000209_L0",
+   "frame": 209,
+   "frame_index": 208,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      361.25,
+      430.25,
+      373.25,
+      441.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      456.0,
+      174.38,
+      469.0,
+      186.62
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      412.5,
+      323.25,
+      430.5,
+      340.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000210_L0": {
+   "stem": "000210_L0",
+   "frame": 210,
+   "frame_index": 209,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "tank",
+     "bbox": [
+      359.5,
+      449.0,
+      372.5,
+      461.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000058_L1": {
+   "stem": "000058_L1",
+   "frame": 58,
+   "frame_index": 57,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      140.25,
+      6.93,
+      153.5,
+      21.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      335.5,
+      468.25,
+      349.5,
+      481.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000079_L1": {
+   "stem": "000079_L1",
+   "frame": 79,
+   "frame_index": 78,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      157.0,
+      118.5,
+      181.0,
+      141.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      157.0,
+      118.5,
+      181.0,
+      141.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "medium_plane",
+     "bbox": [
+      136.38,
+      80.5,
+      163.12,
+      107.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      814.0,
+      77.0,
+      845.0,
+      107.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000156_L0": {
+   "stem": "000156_L0",
+   "frame": 156,
+   "frame_index": 155,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      310.0,
+      0.15,
+      326.5,
+      18.38
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      238.3,
+      535.01,
+      294.12,
+      540.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000158_L0": {
+   "stem": "000158_L0",
+   "frame": 158,
+   "frame_index": 157,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      309.0,
+      29.11,
+      323.0,
+      44.38
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000165_L0": {
+   "stem": "000165_L0",
+   "frame": 165,
+   "frame_index": 164,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      301.0,
+      130.0,
+      315.5,
+      145.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000167_L0": {
+   "stem": "000167_L0",
+   "frame": 167,
+   "frame_index": 166,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      298.75,
+      160.38,
+      312.75,
+      174.62
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000172_L0": {
+   "stem": "000172_L0",
+   "frame": 172,
+   "frame_index": 171,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      291.5,
+      240.5,
+      306.5,
+      255.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000174_L0": {
+   "stem": "000174_L0",
+   "frame": 174,
+   "frame_index": 173,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      289.0,
+      274.75,
+      303.0,
+      289.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000182_L0": {
+   "stem": "000182_L0",
+   "frame": 182,
+   "frame_index": 181,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      278.0,
+      421.0,
+      291.5,
+      435.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000184_L0": {
+   "stem": "000184_L0",
+   "frame": 184,
+   "frame_index": 183,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      274.5,
+      460.5,
+      288.5,
+      473.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000211_L1": {
+   "stem": "000211_L1",
+   "frame": 211,
+   "frame_index": 210,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      915.0,
+      413.0,
+      939.0,
+      438.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      915.0,
+      413.0,
+      939.0,
+      438.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      915.0,
+      413.0,
+      939.0,
+      438.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000221_L1": {
+   "stem": "000221_L1",
+   "frame": 221,
+   "frame_index": 220,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      911.0,
+      215.75,
+      938.0,
+      246.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      911.0,
+      215.75,
+      938.0,
+      246.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000222_L0": {
+   "stem": "000222_L0",
+   "frame": 222,
+   "frame_index": 221,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      455.31,
+      396.53,
+      468.92,
+      412.01
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      455.31,
+      396.53,
+      468.92,
+      412.01
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      512.0,
+      392.5,
+      558.0,
+      431.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000223_L0": {
+   "stem": "000223_L0",
+   "frame": 223,
+   "frame_index": 222,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      455.18,
+      415.4,
+      468.91,
+      431.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      455.18,
+      415.4,
+      468.91,
+      431.12
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      512.32,
+      411.32,
+      558.72,
+      450.92
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000226_L0": {
+   "stem": "000226_L0",
+   "frame": 226,
+   "frame_index": 225,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      453.5,
+      474.5,
+      469.5,
+      491.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      513.35,
+      468.92,
+      561.0,
+      510.39
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      118.84,
+      150.67,
+      139.56,
+      169.92
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000227_L0": {
+   "stem": "000227_L0",
+   "frame": 227,
+   "frame_index": 226,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      453.39,
+      494.43,
+      469.53,
+      511.19
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      516.5,
+      494.5,
+      543.5,
+      516.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      116.22,
+      165.94,
+      137.09,
+      185.44
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      118.0,
+      130.25,
+      137.75,
+      152.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000109_L1": {
+   "stem": "000109_L1",
+   "frame": 109,
+   "frame_index": 108,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      918.0,
+      507.5,
+      936.0,
+      535.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000122_L1": {
+   "stem": "000122_L1",
+   "frame": 122,
+   "frame_index": 121,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_tower",
+     "bbox": [
+      936.87,
+      519.48,
+      960.0,
+      540.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000077_L1": {
+   "stem": "000077_L1",
+   "frame": 77,
+   "frame_index": 76,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      216.75,
+      304.0,
+      233.75,
+      319.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000201_L1": {
+   "stem": "000201_L1",
+   "frame": 201,
+   "frame_index": 200,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      56.15,
+      149.75,
+      115.12,
+      200.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      57.1,
+      150.5,
+      89.88,
+      182.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000217_L1": {
+   "stem": "000217_L1",
+   "frame": 217,
+   "frame_index": 216,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      61.25,
+      120.0,
+      130.62,
+      181.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      92.0,
+      142.75,
+      128.62,
+      179.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000218_L1": {
+   "stem": "000218_L1",
+   "frame": 218,
+   "frame_index": 217,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      61.53,
+      155.75,
+      130.75,
+      216.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000220_L0": {
+   "stem": "000220_L0",
+   "frame": 220,
+   "frame_index": 219,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_launcher",
+     "bbox": [
+      511.24,
+      384.31,
+      546.45,
+      415.73
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000070_L1": {
+   "stem": "000070_L1",
+   "frame": 70,
+   "frame_index": 69,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      737.0,
+      230.75,
+      783.0,
+      266.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      359.0,
+      353.0,
+      384.0,
+      376.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000091_L1": {
+   "stem": "000091_L1",
+   "frame": 91,
+   "frame_index": 90,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      845.22,
+      213.0,
+      885.5,
+      255.78
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000106_L1": {
+   "stem": "000106_L1",
+   "frame": 106,
+   "frame_index": 105,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      832.97,
+      163.93,
+      881.37,
+      214.66
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000225_L1": {
+   "stem": "000225_L1",
+   "frame": 225,
+   "frame_index": 224,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      242.88,
+      271.25,
+      284.0,
+      309.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000230_L0": {
+   "stem": "000230_L0",
+   "frame": 230,
+   "frame_index": 229,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      110.38,
+      176.5,
+      128.62,
+      198.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000236_L1": {
+   "stem": "000236_L1",
+   "frame": 236,
+   "frame_index": 235,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      184.0,
+      96.25,
+      225.0,
+      128.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000237_L1": {
+   "stem": "000237_L1",
+   "frame": 237,
+   "frame_index": 236,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      172.5,
+      127.25,
+      221.25,
+      172.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      178.75,
+      132.25,
+      220.0,
+      160.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000238_L0": {
+   "stem": "000238_L0",
+   "frame": 238,
+   "frame_index": 237,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      83.21,
+      351.61,
+      107.8,
+      374.69
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      86.37,
+      354.14,
+      107.16,
+      368.35
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000239_L0": {
+   "stem": "000239_L0",
+   "frame": 239,
+   "frame_index": 238,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      80.13,
+      369.85,
+      104.93,
+      393.28
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "mine_roller",
+     "bbox": [
+      83.32,
+      372.43,
+      104.29,
+      386.84
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000042_L1": {
+   "stem": "000042_L1",
+   "frame": 42,
+   "frame_index": 41,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      589.5,
+      144.75,
+      600.5,
+      155.25
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      672.06,
+      58.62,
+      698.28,
+      82.53
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000050_L1": {
+   "stem": "000050_L1",
+   "frame": 50,
+   "frame_index": 49,
+   "level": 1,
+   "region": [
+    1920,
+    0,
+    3840,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      610.5,
+      385.5,
+      635.5,
+      406.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "ta-ta",
+     "bbox": [
+      708.15,
+      286.99,
+      736.9,
+      315.05
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000146_L0": {
+   "stem": "000146_L0",
+   "frame": 146,
+   "frame_index": 145,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      402.0,
+      340.0,
+      417.0,
+      354.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      308.0,
+      349.0,
+      325.0,
+      367.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      263.5,
+      339.0,
+      308.5,
+      385.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000149_L1": {
+   "stem": "000149_L1",
+   "frame": 149,
+   "frame_index": 148,
+   "level": 1,
+   "region": [
+    0,
+    1080,
+    1920,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      802.0,
+      254.75,
+      826.0,
+      278.75
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      603.86,
+      266.37,
+      647.21,
+      309.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000150_L0": {
+   "stem": "000150_L0",
+   "frame": 150,
+   "frame_index": 149,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      399.0,
+      415.0,
+      414.0,
+      429.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      258.0,
+      399.5,
+      321.5,
+      461.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      300.6,
+      422.14,
+      322.44,
+      443.79
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000152_L0": {
+   "stem": "000152_L0",
+   "frame": 152,
+   "frame_index": 151,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      398.5,
+      453.75,
+      413.5,
+      468.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000154_L0": {
+   "stem": "000154_L0",
+   "frame": 154,
+   "frame_index": 153,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      397.5,
+      496.0,
+      411.5,
+      509.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "large_tower",
+     "bbox": [
+      394.0,
+      475.0,
+      442.5,
+      518.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      242.12,
+      494.0,
+      297.0,
+      540.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000139_L1": {
+   "stem": "000139_L1",
+   "frame": 139,
+   "frame_index": 138,
+   "level": 1,
+   "region": [
+    1920,
+    1080,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      488.5,
+      441.0,
+      512.5,
+      463.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      368.5,
+      352.0,
+      466.5,
+      474.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      457.0,
+      439.5,
+      483.0,
+      461.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000140_L0": {
+   "stem": "000140_L0",
+   "frame": 140,
+   "frame_index": 139,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      726.35,
+      510.67,
+      738.47,
+      522.1
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "hangar",
+     "bbox": [
+      657.0,
+      460.0,
+      724.0,
+      532.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      688.0,
+      502.5,
+      758.0,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      315.0,
+      244.0,
+      332.0,
+      262.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000124_L0": {
+   "stem": "000124_L0",
+   "frame": 124,
+   "frame_index": 123,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      645.0,
+      178.0,
+      687.0,
+      229.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000126_L0": {
+   "stem": "000126_L0",
+   "frame": 126,
+   "frame_index": 125,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      645.5,
+      208.5,
+      691.5,
+      263.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000130_L0": {
+   "stem": "000130_L0",
+   "frame": 130,
+   "frame_index": 129,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      649.5,
+      278.75,
+      696.5,
+      333.25
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000136_L0": {
+   "stem": "000136_L0",
+   "frame": 136,
+   "frame_index": 135,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      658.0,
+      386.5,
+      709.0,
+      447.5
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      321.56,
+      180.06,
+      336.77,
+      197.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000138_L0": {
+   "stem": "000138_L0",
+   "frame": 138,
+   "frame_index": 137,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      659.0,
+      421.75,
+      713.0,
+      484.75
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000142_L0": {
+   "stem": "000142_L0",
+   "frame": 142,
+   "frame_index": 141,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "hangar",
+     "bbox": [
+      667.0,
+      500.0,
+      721.0,
+      540.0
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jammer",
+     "bbox": [
+      311.5,
+      273.5,
+      332.5,
+      295.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000135_L1": {
+   "stem": "000135_L1",
+   "frame": 135,
+   "frame_index": 134,
+   "level": 1,
+   "region": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      645.57,
+      328.86,
+      675.78,
+      362.3
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000144_L0": {
+   "stem": "000144_L0",
+   "frame": 144,
+   "frame_index": 143,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      308.85,
+      308.01,
+      330.17,
+      330.64
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  },
+  "000148_L0": {
+   "stem": "000148_L0",
+   "frame": 148,
+   "frame_index": 147,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jammer",
+     "bbox": [
+      303.25,
+      384.5,
+      324.75,
+      405.5
+     ],
+     "difficult": false
+    }
+   ],
+   "done": true
+  }
+ }
+}

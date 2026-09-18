@@ -1,0 +1,333 @@
+{
+ "sequence": "14356d0b32754c4f9484a4bbb2d5b25d",
+ "frames": {
+  "000001_L0": {
+   "stem": "000001_L0",
+   "frame": 1,
+   "frame_index": 0,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:20.174453+00:00"
+  },
+  "000006_L0": {
+   "stem": "000006_L0",
+   "frame": 6,
+   "frame_index": 5,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:23.673442+00:00"
+  },
+  "000012_L0": {
+   "stem": "000012_L0",
+   "frame": 12,
+   "frame_index": 11,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:30.795766+00:00"
+  },
+  "000019_L0": {
+   "stem": "000019_L0",
+   "frame": 19,
+   "frame_index": 18,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:31.343421+00:00"
+  },
+  "000025_L0": {
+   "stem": "000025_L0",
+   "frame": 25,
+   "frame_index": 24,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:31.775482+00:00"
+  },
+  "000029_L0": {
+   "stem": "000029_L0",
+   "frame": 29,
+   "frame_index": 28,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:32.432146+00:00"
+  },
+  "000033_L0": {
+   "stem": "000033_L0",
+   "frame": 33,
+   "frame_index": 32,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:32.994134+00:00"
+  },
+  "000039_L0": {
+   "stem": "000039_L0",
+   "frame": 39,
+   "frame_index": 38,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:34.229029+00:00"
+  },
+  "000043_L0": {
+   "stem": "000043_L0",
+   "frame": 43,
+   "frame_index": 42,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:34.842171+00:00"
+  },
+  "000047_L0": {
+   "stem": "000047_L0",
+   "frame": 47,
+   "frame_index": 46,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [],
+   "done": false,
+   "updated": "2026-09-18T07:10:35.172127+00:00"
+  },
+  "000053_L0": {
+   "stem": "000053_L0",
+   "frame": 53,
+   "frame_index": 52,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      632.83,
+      146.97,
+      657.34,
+      167.66
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      283.23,
+      10.81,
+      298.53,
+      22.91
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      317.67,
+      1.38,
+      331.99,
+      15.08
+     ],
+     "difficult": false
+    }
+   ],
+   "done": false,
+   "updated": "2026-09-18T07:13:55.728303+00:00"
+  },
+  "000057_L0": {
+   "stem": "000057_L0",
+   "frame": 57,
+   "frame_index": 56,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      274.94,
+      19.3,
+      315.61,
+      61.53
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      278.94,
+      63.79,
+      294.75,
+      79.08
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      313.7,
+      56.32,
+      327.25,
+      69.87
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      634.85,
+      206.48,
+      662.52,
+      233.17
+     ],
+     "difficult": false
+    }
+   ],
+   "done": false,
+   "updated": "2026-09-18T07:14:52.067995+00:00"
+  },
+  "000061_L0": {
+   "stem": "000061_L0",
+   "frame": 61,
+   "frame_index": 60,
+   "level": 0,
+   "region": [
+    0,
+    0,
+    3840,
+    2160
+   ],
+   "boxes": [
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      266.44,
+      72.04,
+      313.44,
+      120.56
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "jet_plane",
+     "bbox": [
+      272.14,
+      121.26,
+      288.83,
+      136.41
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      308.99,
+      111.8,
+      324.42,
+      127.65
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_plane",
+     "bbox": [
+      538.73,
+      33.44,
+      553.19,
+      45.34
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "helicopter",
+     "bbox": [
+      538.84,
+      49.79,
+      552.19,
+      59.91
+     ],
+     "difficult": false
+    },
+    {
+     "object_id": "small_launcher",
+     "bbox": [
+      640.17,
+      276.22,
+      666.87,
+      300.0
+     ],
+     "difficult": false
+    }
+   ],
+   "done": false,
+   "updated": "2026-09-18T07:17:11.578825+00:00"
+  }
+ }
+}

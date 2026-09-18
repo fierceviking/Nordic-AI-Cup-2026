@@ -1,6 +1,9 @@
 # Rendered by visualize.py on demand
 annotated/
 
+# Local secrets (API key, tunnel URL) — never commit
+secrets.ps1
+
 # Generic Python files (Source: https://github.com/github/gitignore/blob/main/Python.gitignore)
 __pycache__/
 *.py[cod]

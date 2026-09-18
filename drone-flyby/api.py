@@ -11,12 +11,13 @@ rather than just the host.
 import datetime
 import logging
 import time
+from contextlib import asynccontextmanager
 
 import uvicorn
 from fastapi import FastAPI
 
 from dtos import DroneFlybyPredictRequestDto, DroneFlybyPredictResponseDto
-from example import predict
+from solution import predict, Detector
 from utils import validate_response
 
 HOST = '0.0.0.0'
@@ -25,7 +26,27 @@ PORT = 9053
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Load + warm the detector before the server accepts any frame.
+
+    The evaluator polls ``/`` and only starts the 3 fps clock once it answers.
+    Uvicorn does not begin serving until this startup phase finishes, so paying
+    the CUDA init + warmup here (on the dedicated inference thread, via
+    Detector.get) means the FIRST real frame is already warm. Without this the
+    first served frame stalls ~2 s and the realtime clock skips the opening of
+    the sequence -- measured as 0.643 -> 0.302.
+    """
+    try:
+        Detector.get()
+        logger.info('Detector warmed up; ready to serve.')
+    except Exception:
+        logger.exception('Detector warmup failed; will retry lazily per frame.')
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
 start_time = time.time()
 
 

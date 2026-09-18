@@ -1,0 +1,5 @@
+path: C:\Users\marti\Desktop\Nordic-AI-Cup-2026.worktrees\drone-flyby-optimization-strategy\drone-flyby\experiments\dataset
+train: images/train
+val: images/val
+nc: 16
+names: ['hangar', 'helicopter', 'jet_plane', 'large_launcher', 'large_tower', 'medium_launcher', 'medium_plane', 'mine_roller', 'small_launcher', 'small_plane', 'small_tower', 'ta-ta', 'tank', 'condor', 'jammer', 'spacecraft']

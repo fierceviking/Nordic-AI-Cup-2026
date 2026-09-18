@@ -1,0 +1,391 @@
+question_id,transcript_id,question,question_type,label,prediction,correct,gold_start,gold_end,pred_start,pred_end,tiou
+sample_19_yes_q04,sample_19,Is the patient still being treated for asthma?,positive,1,1,1,26.3,28.12,26.554599999999997,29.745400000000004,0.4543449236663385
+sample_19_off_topic_q01,sample_19,Did the patient discuss baking a cake in the conversation?,off_topic,0,0,1,,,,,
+sample_19_hard_no_q03,sample_19,Does the doctor describe the medication as unstable and in need of change?,hard_negative,0,0,1,,,43.316399999999994,44.723600000000005,
+sample_19_hard_no_q01,sample_19,"Alongside asthma, is the patient treated for diabetes?",hard_negative,0,0,1,,,,,
+sample_19_yes_q01,sample_19,Were three prescriptions renewed in total?,positive,1,1,1,68.24,71.64,71.029,71.711,0.17602996254681752
+sample_19_off_topic_q02,sample_19,Did the conversation mention anything about the patient planning a trip?,off_topic,0,0,1,,,,,
+sample_19_yes_q02,sample_19,Has Esomeprazole been renewed as well?,positive,1,1,1,68.24,71.64,68.3758,71.68419999999999,0.9477382265838241
+sample_19_yes_q03,sample_19,Is Airomir among the renewed medicines?,positive,1,1,1,68.24,71.64,68.3758,71.68419999999999,0.9477382265838241
+sample_19_hard_no_q04,sample_19,Were the prescriptions stopped rather than renewed?,hard_negative,0,0,1,,,71.029,71.711,
+sample_19_hard_no_q02,sample_19,Was Pantoprazole the acid-reducing drug that was renewed?,hard_negative,0,0,1,,,75.95199999999998,76.928,
+sample_39_yes_q02,sample_39,Does the patient have pain in the lower back?,positive,1,1,1,22.64,23.92,22.596599999999995,24.0234,0.8971124194000546
+sample_39_hard_no_q04,sample_39,Has the patient been referred for surgery?,hard_negative,0,0,1,,,,,
+sample_39_off_topic_q02,sample_39,Is the patient discussing their pet?,off_topic,0,0,1,,,,,
+sample_39_off_topic_q01,sample_39,At any point does the patient express interest in learning digital photography techniques?,off_topic,0,0,1,,,,,
+sample_39_yes_q04,sample_39,Was reduced mobility found during the examination?,positive,1,1,1,47.34,53.04,47.339999999999996,51.06,0.6526315789473679
+sample_39_yes_q03,sample_39,Were painkillers part of the treatment plan?,positive,1,1,1,63.56,65.8,63.800000000000004,67.52000000000001,0.5050505050505022
+sample_39_hard_no_q01,sample_39,Does the pain radiate down the leg?,hard_negative,0,0,1,,,30.240199999999998,32.019800000000004,
+sample_39_yes_q01,sample_39,"The pain was assessed as nonspecific musculoskeletal pain, right?",positive,1,1,1,55.32,60.68,55.394999999999996,60.585,0.9682835820895532
+sample_39_hard_no_q03,sample_39,Did the doctor conclude that the pain came from a herniated disc?,hard_negative,0,0,1,,,,,
+sample_39_hard_no_q02,sample_39,Was the patient's mobility completely unaffected?,hard_negative,0,0,1,,,47.339999999999996,51.06,
+sample_48_hard_no_q02,sample_48,Does the doctor attribute the fatigue to a thyroid disorder?,hard_negative,0,1,0,,,,,
+sample_48_off_topic_q01,sample_48,Does the doctor ask about the patient's experience with specific technology?,off_topic,0,1,0,,,,,
+sample_48_yes_q03,sample_48,Was the TSH normal?,positive,1,1,1,28.34,35.82,,,0.0
+sample_48_yes_q06,sample_48,Did the glucose test come back normal too?,positive,1,1,1,38.96,43.04,,,0.0
+sample_48_yes_q05,sample_48,Were both blood tests within normal limits?,positive,1,1,1,41.74,44.36,,,0.0
+sample_48_hard_no_q01,sample_48,Is the tiredness described as brief and occasional?,hard_negative,0,1,0,,,,,
+sample_48_yes_q04,sample_48,Has the patient been left without any specific treatment?,positive,1,1,1,77.42,81.2,,,0.0
+sample_48_yes_q02,sample_48,Is the patient's tiredness persistent?,positive,1,1,1,11.18,18.78,,,0.0
+sample_48_yes_q07,sample_48,Does the doctor rule out an endocrine cause?,positive,1,1,1,48.06,52.34,,,0.0
+sample_48_yes_q01,sample_48,"The thyroid test gave a normal result, right?",positive,1,1,1,28.34,35.82,,,0.0
+sample_55_yes_q02,sample_55,Does the plan include routine follow-up?,positive,1,1,1,79.42,80.84,77.1198,80.82019999999999,0.37637761410676357
+sample_55_hard_no_q01,sample_55,Does the plan include an urgent referral to a kidney specialist?,hard_negative,0,0,1,,,56.30239999999999,60.257600000000004,
+sample_55_off_topic_q01,sample_55,Does the conversation indicate the patient was thinking about joining a hiking club?,off_topic,0,0,1,,,,,
+sample_55_yes_q03,sample_55,Will the current treatment be continued?,positive,1,1,1,71.12,74.22,71.1726,74.16740000000001,0.966064516129038
+sample_55_yes_q01,sample_55,Did the HbA1c come out at 43 mmol/mol?,positive,1,1,1,32.56,36.72,32.682599999999994,36.6574,0.9554807692307722
+sample_55_hard_no_q05,sample_55,Did the tests show albuminuria?,hard_negative,0,0,1,,,58.599199999999996,60.280800000000006,
+sample_55_hard_no_q04,sample_55,Is the HbA1c reported as 53 mmol/mol?,hard_negative,0,0,1,,,32.682599999999994,36.6574,
+sample_55_hard_no_q02,sample_55,Was the creatinine found to be raised?,hard_negative,0,0,1,,,56.30239999999999,60.257600000000004,
+sample_55_hard_no_q03,sample_55,Has the patient reported tiredness and thirst?,hard_negative,0,0,1,,,15.886999999999999,20.293,
+sample_55_off_topic_q02,sample_55,Does the patient mention having a preference for tea?,off_topic,0,0,1,,,,,
+sample_64_yes_q04,sample_64,Is dry skin the reason for this consultation?,positive,1,1,1,39.42,41.64,38.07079999999999,46.769200000000005,0.255219350685183
+sample_64_yes_q01,sample_64,Was the condition assessed as xerosis?,positive,1,1,1,72.26,73.98,72.108,76.61200000000001,0.3818827708703368
+sample_64_hard_no_q01,sample_64,Did the doctor prescribe an antifungal cream?,hard_negative,0,0,1,,,88.2502,92.9698,
+sample_64_yes_q03,sample_64,"A moisturizing cream was prescribed, wasn't it?",positive,1,1,1,88.04,91.22,88.2502,92.9698,0.6024179479897749
+sample_64_hard_no_q03,sample_64,Were open sores found on the feet?,hard_negative,0,1,0,,,63.32979999999999,66.05019999999999,
+sample_64_hard_no_q04,sample_64,Was intense itching the main complaint?,hard_negative,0,0,1,,,39.5954,46.784600000000005,
+sample_64_hard_no_q02,sample_64,Does the patient complain of dryness on the hands?,hard_negative,0,0,1,,,51.4554,52.764599999999994,
+sample_64_hard_no_q05,sample_64,Was the skin problem assessed as eczema?,hard_negative,0,0,1,,,72.108,76.61200000000001,
+sample_64_yes_q02,sample_64,Did the examination rule out any wounds?,positive,1,1,1,0.0,0.16,63.32979999999999,66.05019999999999,0.0
+sample_64_off_topic_q01,sample_64,Does the patient express a desire to change their employment status?,off_topic,0,0,1,,,113.9128,118.88719999999999,
+sample_71_hard_no_q02,sample_71,Has the patient been troubled by increased thirst?,hard_negative,0,0,1,,,,,
+sample_71_off_topic_q01,sample_71,Was the patient discussing their pet?,off_topic,0,0,1,,,,,
+sample_71_yes_q03,sample_71,Did the creatinine come back normal?,positive,1,1,1,78.86,80.46,78.91799999999999,80.482,0.9506781750924794
+sample_71_hard_no_q03,sample_71,Is the LDL cholesterol 4.2 mmol/L?,hard_negative,0,0,1,,,70.87680000000002,74.2832,
+sample_71_yes_q04,sample_71,Was the HbA1c 42 mmol/mol?,positive,1,1,1,53.7,57.78,53.961,57.779,0.9357843137254918
+sample_71_hard_no_q01,sample_71,Did the creatinine turn out to be elevated?,hard_negative,0,0,1,,,78.91799999999999,80.482,
+sample_71_off_topic_q02,sample_71,"According to the conversation, was a specific type of sport played by the patient discussed?",off_topic,0,0,1,,,,,
+sample_71_yes_q05,sample_71,Are there no signs of complications?,positive,1,1,1,89.46,91.64,89.76140000000001,91.65859999999999,0.854452833621392
+sample_71_yes_q01,sample_71,Is the LDL cholesterol 2.2 mmol/L?,positive,1,1,1,70.34,74.32,70.87680000000002,74.2832,0.8558793969849209
+sample_71_yes_q02,sample_71,"The diabetes was described as stable, right?",positive,1,1,1,85.68,88.92,86.4274,88.91260000000001,0.7670370370370401
+sample_82_hard_no_q02,sample_82,Was the growth suspected to be a basal cell carcinoma?,hard_negative,0,0,1,,,,,
+sample_82_hard_no_q01,sample_82,Were seven small lesions counted in the area?,hard_negative,0,0,1,,,,,
+sample_82_off_topic_q01,sample_82,Does the patient express interest in using a particular software?,off_topic,0,0,1,,,,,
+sample_82_hard_no_q03,sample_82,Has a cream been prescribed as the treatment?,hard_negative,0,0,1,,,,,
+sample_82_off_topic_q02,sample_82,Did they talk about the weather being unusually hot?,off_topic,0,0,1,,,,,
+sample_82_hard_no_q04,sample_82,Will the lesions be removed surgically?,hard_negative,0,0,1,,,,,
+sample_82_yes_q03,sample_82,"The lesions will be treated with freezing, right?",positive,1,1,1,65.96,67.4,71.9584,73.5616,0.0
+sample_82_yes_q01,sample_82,Do the elements resemble molluscs?,positive,1,0,0,52.66,55.56,,,0.0
+sample_82_yes_q02,sample_82,Has the patient noticed a wart-like growth?,positive,1,1,1,27.16,28.46,24.561999999999998,28.477999999999998,0.3319713993871299
+sample_82_yes_q04,sample_82,Were three small lesions seen in the same area of the thorax?,positive,1,1,1,40.24,45.36,40.2342,45.345800000000004,0.9960981700417504
+sample_95_hard_no_q05,sample_95,Does the plan involve a check every third month from now on?,hard_negative,0,0,1,,,,,
+sample_95_hard_no_q03,sample_95,Have the results of the blood tests already been gone through?,hard_negative,0,0,1,,,,,
+sample_95_yes_q02,sample_95,Were blood tests taken at this visit?,positive,1,1,1,38.92,40.52,38.8134,41.88660000000001,0.520629962254327
+sample_95_yes_q03,sample_95,Has the patient been free of side effects?,positive,1,1,1,25.52,27.76,27.5186,29.1414,0.06665930303197719
+sample_95_off_topic_q01,sample_95,Does the patient talk about having a pet hamster?,off_topic,0,0,1,,,,,
+sample_95_hard_no_q04,sample_95,Was the follow-up handled by telephone?,hard_negative,0,0,1,,,,,
+sample_95_yes_q01,sample_95,"The treatment is considered well tolerated, right?",positive,1,1,1,32.22,34.26,75.27619999999999,78.6238,0.0
+sample_95_hard_no_q02,sample_95,Is the treatment being stopped because it is poorly tolerated?,hard_negative,0,0,1,,,,,
+sample_95_hard_no_q01,sample_95,Did the patient report muscle pain as a side effect?,hard_negative,0,0,1,,,,,
+sample_95_hard_no_q06,sample_95,Has the dose been increased at this consultation?,hard_negative,0,0,1,,,,,
+sample_18_yes_q04,sample_18,Should kidney function be monitored?,positive,1,1,1,41.82,45.58,42.2164,45.583600000000004,0.8937187798915918
+sample_18_off_topic_q01,sample_18,Is there any reference to the patient planning a specific fitness challenge?,off_topic,0,0,1,,,,,
+sample_18_yes_q02,sample_18,Did the patient ask for a renewal of the Ibumetin prescription?,positive,1,1,1,17.24,18.5,17.156200000000002,18.543799999999997,0.9080426635918173
+sample_18_yes_q01,sample_18,Has the Ibumetin prescription been issued?,positive,1,1,1,69.38,72.04,70.3784,71.9816,0.6027067669172912
+sample_18_yes_q07,sample_18,Is the patient also taking Pantoprazole?,positive,1,1,1,20.92,26.3,25.1144,26.3256,0.21932810418824938
+sample_18_hard_no_q01,sample_18,Were liver values the focus of the planned blood tests?,hard_negative,0,0,1,,,,,
+sample_18_hard_no_q02,sample_18,Should the blood pressure readings be taken at the clinic instead of at home?,hard_negative,0,0,1,,,,,
+sample_18_yes_q06,sample_18,Will the blood tests include cholesterol and blood sugar?,positive,1,1,1,62.5,65.94,62.2398,65.94019999999999,0.9296292292725136
+sample_18_yes_q03,sample_18,Does the doctor consider the NSAID use long-standing and high?,positive,1,1,1,33.0,38.66,32.78099999999999,38.559000000000005,0.9455689743153598
+sample_18_yes_q05,sample_18,Was blood pressure to be measured at home over three days?,positive,1,1,1,50.74,55.1,50.66799999999999,55.172000000000004,0.9680284191829458
+sample_37_yes_q05,sample_37,Is the skin intact?,positive,1,1,1,28.5,30.0,28.0024,29.997600000000002,0.7496996395674825
+sample_37_hard_no_q01,sample_37,Was erythema migrans seen around the bite?,hard_negative,0,1,0,,,30.7614,32.6586,
+sample_37_hard_no_q03,sample_37,Is the risk of Borrelia considered high?,hard_negative,0,0,1,,,44.7628,46.7972,
+sample_37_yes_q03,sample_37,Was erythema migrans absent?,positive,1,1,1,30.68,32.62,30.7614,32.6586,0.9393510563024355
+sample_37_yes_q04,sample_37,Are redness and swelling absent?,positive,1,1,1,17.58,22.18,51.620200000000004,55.35980000000001,0.0
+sample_37_yes_q06,sample_37,"The plan involves no treatment, right?",positive,1,1,1,60.02,61.34,60.0156,61.34440000000001,0.9933774834437027
+sample_37_off_topic_q01,sample_37,Does the conversation indicate the patient discussed their employment as a freelancer?,off_topic,0,0,1,,,,,
+sample_37_hard_no_q02,sample_37,Has the bite area become red and swollen?,hard_negative,0,1,0,,,17.4966,18.923400000000004,
+sample_37_yes_q01,sample_37,Did the patient get a tick bite?,positive,1,1,1,13.74,14.52,7.2432,9.3168,0.0
+sample_37_yes_q02,sample_37,Has the patient been told simply to keep an eye on the area?,positive,1,1,1,56.02,59.34,58.8272,59.332800000000006,0.1522891566265085
+sample_47_yes_q03,sample_47,Has penicillin treatment been started?,positive,1,1,1,71.86,79.4,71.7364,77.0636,0.6790020355968465
+sample_47_hard_no_q04,sample_47,Is the patient able to swallow without any discomfort?,hard_negative,0,0,1,,,9.524000000000001,11.676,
+sample_47_hard_no_q03,sample_47,Did the doctor prescribe erythromycin?,hard_negative,0,0,1,,,,,
+sample_47_hard_no_q01,sample_47,Does the patient complain of hoarseness as the main symptom?,hard_negative,0,0,1,,,8.316200000000002,11.6638,
+sample_47_hard_no_q05,sample_47,Was the patient told to manage with symptom relief only?,hard_negative,0,0,1,,,71.7064,74.0936,
+sample_47_off_topic_q01,sample_47,Does the conversation indicate the patient discussed their desire to learn digital photography techniques?,off_topic,0,0,1,,,,,
+sample_47_yes_q01,sample_47,Were coatings seen on the tonsils?,positive,1,1,1,25.72,28.66,25.811199999999996,28.668799999999997,0.96608790016278
+sample_47_hard_no_q06,sample_47,Has the throat problem been assessed as a viral infection?,hard_negative,0,0,1,,,50.083800000000004,52.2162,
+sample_47_yes_q02,sample_47,Does the patient have a sore throat?,positive,1,1,1,8.32,11.7,8.316200000000002,11.6638,0.9881789703883216
+sample_47_hard_no_q02,sample_47,Were the tonsils pale and free of coatings?,hard_negative,0,0,1,,,25.811199999999996,28.668799999999997,
+sample_54_hard_no_q02,sample_54,Is the blood pressure elevated?,hard_negative,0,0,1,,,38.93560000000001,40.2644,
+sample_54_yes_q04,sample_54,Was the foot examination normal?,positive,1,1,1,51.62,54.6,51.7708,52.6292,0.28805369127516606
+sample_54_off_topic_q01,sample_54,Does the patient discuss their job?,off_topic,0,0,1,,,,,
+sample_54_hard_no_q04,sample_54,Was the patient given a pneumococcal vaccination?,hard_negative,0,0,1,,,,,
+sample_54_hard_no_q01,sample_54,Has the diabetes become unstable?,hard_negative,0,0,1,,,68.9824,70.9776,
+sample_54_yes_q03,sample_54,Has the patient received a flu vaccination?,positive,1,1,1,13.82,15.76,14.4948,15.7452,0.6445360824742274
+sample_54_yes_q02,sample_54,Did the plan include continued monitoring?,positive,1,1,1,80.38,82.2,79.9866,84.3534,0.41678116698726947
+sample_54_hard_no_q03,sample_54,Does the plan involve a check-up only every second year?,hard_negative,0,0,1,,,82.7388,84.38119999999999,
+sample_54_off_topic_q02,sample_54,Was the doctor concerned that the patient's symptoms might be related to exposure to the dark side of the Force?,off_topic,0,0,1,,,,,
+sample_54_yes_q01,sample_54,Does the doctor regard the diabetes as stable?,positive,1,1,1,68.74,70.98,68.9824,70.9776,0.8907142857142808
+sample_63_hard_no_q01,sample_63,Have complications of the diabetes been identified?,hard_negative,0,0,1,,,57.3878,61.8722,
+sample_63_hard_no_q04,sample_63,Did the patient describe new episodes of dizziness?,hard_negative,0,0,1,,,26.868799999999997,27.5312,
+sample_63_hard_no_q02,sample_63,Is the treatment being changed to a new medication?,hard_negative,0,0,1,,,65.1056,67.4144,
+sample_63_off_topic_q01,sample_63,Was the patient's condition described as being caused by a mysterious disturbance in the Force?,off_topic,0,0,1,,,57.3878,61.8722,
+sample_63_hard_no_q03,sample_63,Did the blood tests show impaired kidney function?,hard_negative,0,0,1,,,47.7412,49.61880000000001,
+sample_63_yes_q01,sample_63,Was the diabetes control judged to be good?,positive,1,1,1,57.2,61.92,57.36959999999999,60.0704,0.5722033898305103
+sample_63_yes_q02,sample_63,"The lipid profile came back normal, didn't it?",positive,1,1,1,0.0,0.26,50.8822,52.857800000000005,0.0
+sample_63_yes_q03,sample_63,Was the HbA1c measured at 41 mmol/mol?,positive,1,1,1,36.72,41.92,36.675,41.865,0.9809342230695899
+sample_63_yes_q05,sample_63,Are annual check-ups planned to continue?,positive,1,1,1,64.76,70.16,68.3794,70.08059999999999,0.3150370370370349
+sample_63_yes_q04,sample_63,Did the patient report no new symptoms?,positive,1,1,1,24.46,27.46,26.868799999999997,27.5312,0.19249804636624274
+sample_70_yes_q04,sample_70,"The vaccination went as planned, didn't it?",positive,1,1,1,80.46000000000001,83.34,54.7018,58.598200000000006,0.0
+sample_70_yes_q06,sample_70,Was the vaccine actually given?,positive,1,1,1,54.54,56.32,54.026399999999995,54.4536,0.0
+sample_70_hard_no_q03,sample_70,Was blood taken during the same visit?,hard_negative,0,0,1,,,,,
+sample_70_yes_q01,sample_70,Were no further measures decided on?,positive,1,1,1,116.98,118.92,115.09320000000001,116.1868,0.0
+sample_70_yes_q05,sample_70,Is this vaccination something the patient receives annually?,positive,1,1,1,19.48,25.54,19.4016,23.278399999999998,0.6187931708588552
+sample_70_hard_no_q01,sample_70,Was the vaccination postponed to a later date?,hard_negative,0,0,1,,,,,
+sample_70_yes_q02,sample_70,Can the patient leave without any additional treatment?,positive,1,1,1,116.98,124.66,121.50680000000001,121.97319999999999,0.06072916666666397
+sample_70_off_topic_q01,sample_70,Did the patient discuss their college courses online?,off_topic,0,0,1,,,,,
+sample_70_yes_q03,sample_70,Is the patient free of side effects after the vaccine?,positive,1,1,1,80.46000000000001,83.34,80.66919999999999,83.3308,0.9241666666666706
+sample_70_hard_no_q02,sample_70,Is the patient asked to come back in a week for a second dose?,hard_negative,0,0,1,,,,,
+sample_81_yes_q02,sample_81,Is a viral cause thought to be the most likely explanation?,positive,1,1,1,63.88,68.32,63.827200000000005,68.2528,0.9732905982905988
+sample_81_hard_no_q02,sample_81,Has the patient been given antibiotics for the illness?,hard_negative,0,0,1,,,,,
+sample_81_hard_no_q04,sample_81,Is admission to hospital part of the plan?,hard_negative,0,0,1,,,95.24959999999999,97.95039999999999,
+sample_81_yes_q03,sample_81,Did the patient receive advice about fluid intake?,positive,1,1,1,86.58,89.34,86.86399999999999,90.976,0.5632393084622414
+sample_81_hard_no_q01,sample_81,Is the patient complaining of chest symptoms?,hard_negative,0,0,1,,,20.3812,22.258800000000004,
+sample_81_yes_q01,sample_81,Does the patient describe symptoms of gastroenteritis?,positive,1,1,1,12.62,14.64,10.504199999999999,14.6358,0.4874026790463755
+sample_81_yes_q04,sample_81,Was gastroenteritis the diagnosis arrived at?,positive,1,1,1,63.88,68.32,63.827200000000005,68.2528,0.9732905982905988
+sample_81_off_topic_q01,sample_81,Does the conversation indicate the patient discussed their recent purchase of groceries?,off_topic,0,0,1,,,,,
+sample_81_hard_no_q03,sample_81,Was the patient told to restrict fluid intake?,hard_negative,0,0,1,,,98.94060000000002,102.7194,
+sample_81_hard_no_q05,sample_81,Was a bacterial cause considered the most likely one?,hard_negative,0,0,1,,,63.827200000000005,68.2528,
+sample_92_off_topic_q01,sample_92,At any point does the patient talk about their pet?,off_topic,0,0,1,,,,,
+sample_92_hard_no_q02,sample_92,Has the result of the urine analysis already come back?,hard_negative,0,0,1,,,116.1606,117.9794,
+sample_92_hard_no_q03,sample_92,Is the pulse recorded as 92?,hard_negative,0,0,1,,,88.6364,90.0436,
+sample_92_yes_q03,sample_92,Has a urine sample been sent off for albumin/creatinine ratio analysis?,positive,1,1,1,108.62,110.98,108.4282,110.9918,0.92058043376502
+sample_92_yes_q02,sample_92,Does the patient work as a staff manager in a retail chain?,positive,1,1,1,74.38,78.22,74.6308,77.44919999999998,0.7339583333333282
+sample_92_hard_no_q04,sample_92,Are the patient's exercise habits limited to less than an hour a week?,hard_negative,0,0,1,,,69.66460000000001,71.8754,
+sample_92_yes_q01,sample_92,Did the patient ask to have his cholesterol level checked?,positive,1,1,1,23.24,26.38,25.055,26.325,0.40445859872611445
+sample_92_off_topic_q02,sample_92,Is there any reference to the patient using specific software for work?,off_topic,0,0,1,,,,,
+sample_92_yes_q04,sample_92,Was the previous LDL value 3.9?,positive,1,1,1,30.92,33.0,30.9164,32.323600000000006,0.6736417738529488
+sample_92_hard_no_q01,sample_92,Was the blood pressure measured at 160/95?,hard_negative,0,0,1,,,83.303,87.317,
+sample_6_yes_q03,sample_6,Was the patient's voice noted to sound congested?,positive,1,1,1,24.4,26.34,24.559800000000003,26.3002,0.8971134020618537
+sample_6_hard_no_q02,sample_6,Should the fungal infection be treated with Brentan gel?,hard_negative,0,0,1,,,,,
+sample_6_off_topic_q01,sample_6,Does the patient talk about needing a new vehicle for their daily commute?,off_topic,0,0,1,,,,,
+sample_6_yes_q04,sample_6,Are four daily doses of one million IU of penicillin planned?,positive,1,1,1,62.9,69.68,65.3068,69.69319999999999,0.6437614084672932
+sample_6_yes_q05,sample_6,Does the patient also have a fungal infection in the mouth?,positive,1,1,1,72.96,77.6,13.378400000000001,14.9816,0.0
+sample_6_yes_q07,sample_6,Did the patient ask for penicillin?,positive,1,1,1,17.9,19.18,17.8954,19.2046,0.9776963030858544
+sample_6_yes_q01,sample_6,Will the patient take Fluconazole 50 mg?,positive,1,1,1,73.52,77.6,73.2072,77.63279999999999,0.9219088937093295
+sample_6_hard_no_q01,sample_6,Does the patient want to avoid antibiotics?,hard_negative,0,0,1,,,,,
+sample_6_yes_q02,sample_6,Is the patient complaining of sinus symptoms?,positive,1,1,1,9.06,12.28,10.7184,12.3216,0.4787834191807698
+sample_6_yes_q06,sample_6,Has penicillin been prescribed for seven days?,positive,1,1,1,64.18,69.68,65.3068,69.69319999999999,0.7932235362403004
+sample_17_yes_q03,sample_17,Is the medicine to be taken after a meal?,positive,1,1,1,46.1,47.52,46.0376,47.562400000000004,0.931269674711435
+sample_17_hard_no_q06,sample_17,Has the patient been told that the condition needs no treatment?,hard_negative,0,0,1,,,37.076,38.444,
+sample_17_yes_q02,sample_17,Should the daily dose be 100 mg?,positive,1,1,1,42.84,44.42,41.7402,45.479800000000004,0.4225050807572995
+sample_17_hard_no_q05,sample_17,Were bacteria identified in the sample?,hard_negative,0,0,1,,,27.686600000000002,30.093400000000003,
+sample_17_hard_no_q03,sample_17,Did the swab come from the throat?,hard_negative,0,0,1,,,19.675800000000002,22.984199999999998,
+sample_17_hard_no_q02,sample_17,Was the prescribed dose 200 mg daily?,hard_negative,0,0,1,,,41.7402,45.479800000000004,
+sample_17_off_topic_q01,sample_17,Is there any mention of attending a concert?,off_topic,0,0,1,,,,,
+sample_17_hard_no_q01,sample_17,"The treatment is planned to run for six weeks, right?",hard_negative,0,0,1,,,42.78959999999999,45.4904,
+sample_17_hard_no_q04,sample_17,Should the tablets be taken on an empty stomach?,hard_negative,0,0,1,,,46.0376,47.562400000000004,
+sample_17_yes_q01,sample_17,Will the treatment last two weeks?,positive,1,1,1,48.18,50.7,42.78959999999999,45.4904,0.0
+sample_33_yes_q06,sample_33,"The visit is a follow-up on allergic rhinitis, correct?",positive,1,1,1,13.94,17.42,14.087,16.532999999999998,0.7028735632183898
+sample_33_hard_no_q01,sample_33,Does the doctor plan to refer the patient to an allergy specialist?,hard_negative,0,0,1,,,,,
+sample_33_hard_no_q02,sample_33,Were daily doses made mandatory going forward?,hard_negative,0,0,1,,,,,
+sample_33_off_topic_q01,sample_33,Is there any talk about the patient's recent purchase of a vehicle?,off_topic,0,0,1,,,,,
+sample_33_yes_q02,sample_33,Is the patient free of symptoms at the moment?,positive,1,1,1,27.02,31.5,27.221,29.079,0.41473214285714294
+sample_33_yes_q04,sample_33,Did the antihistamine work well?,positive,1,1,1,58.82,61.32,59.02460000000001,61.235400000000006,0.8843199999999996
+sample_33_yes_q03,sample_33,Has the medication helped the patient?,positive,1,1,1,55.34,58.28,25.889599999999998,26.6304,0.0
+sample_33_yes_q05,sample_33,Are the findings unremarkable?,positive,1,1,1,44.86,52.62,44.684799999999996,46.915200000000006,0.2589978828510946
+sample_33_yes_q01,sample_33,Should the patient carry on with the treatment as needed?,positive,1,1,1,69.06,71.0,68.86399999999999,71.01599999999999,0.9014869888475822
+sample_33_hard_no_q03,sample_33,Was anything abnormal picked up at the examination?,hard_negative,0,1,0,,,50.483999999999995,52.636,
+sample_43_yes_q02,sample_43,Does the patient have a sore throat?,positive,1,1,1,4.82,6.24,4.8166,6.243399999999999,0.9952340902719378
+sample_43_hard_no_q03,sample_43,Is the infection thought to be bacterial?,hard_negative,0,0,1,,,49.0144,50.2256,
+sample_43_yes_q05,sample_43,Did the examination find no pus in the throat?,positive,1,1,1,31.76,34.28,40.4282,41.031800000000004,0.0
+sample_43_off_topic_q01,sample_43,Are the speakers discussing the patient's pet?,off_topic,0,0,1,,,,,
+sample_43_yes_q04,sample_43,Was the strep test negative?,positive,1,1,1,23.06,23.78,23.01,23.79,0.923076923076929
+sample_43_yes_q01,sample_43,Is the infection considered to be viral?,positive,1,1,1,44.22,46.78,44.1092,46.7708,0.955069642054816
+sample_43_hard_no_q01,sample_43,Does the patient describe abdominal pain as the main problem?,hard_negative,0,0,1,,,,,
+sample_43_hard_no_q02,sample_43,Were the tonsils covered in coatings?,hard_negative,0,0,1,,,40.4282,41.031800000000004,
+sample_43_yes_q03,sample_43,Has the doctor decided against antibiotics?,positive,1,1,1,59.48,63.9,58.962599999999995,59.0174,0.0
+sample_43_hard_no_q04,sample_43,Did the doctor see pus in the throat?,hard_negative,0,0,1,,,40.4282,41.031800000000004,
+sample_52_yes_q02,sample_52,Did the doctor plan continued follow-up?,positive,1,1,1,83.42,86.4,83.4122,86.36779999999999,0.9866122230403573
+sample_52_hard_no_q06,sample_52,Has the patient been discharged from any further follow-up?,hard_negative,0,0,1,,,,,
+sample_52_yes_q03,sample_52,Was the patient seen as engaged during the consultation?,positive,1,1,1,59.06,62.7,60.841,62.69900000000001,0.5104395604395634
+sample_52_hard_no_q05,sample_52,Does the plan involve starting insulin?,hard_negative,0,0,1,,,,,
+sample_52_hard_no_q04,sample_52,Is the patient's grasp of the treatment considered inadequate?,hard_negative,0,0,1,,,,,
+sample_52_hard_no_q02,sample_52,Was the patient found to be poorly motivated?,hard_negative,0,0,1,,,,,
+sample_52_yes_q01,sample_52,"The patient understands the treatment well, right?",positive,1,1,1,70.22,75.36,70.0554,75.28459999999998,0.9547562492930646
+sample_52_hard_no_q03,sample_52,Were the classes the patient attended about hypertension?,hard_negative,0,0,1,,,,,
+sample_52_off_topic_q01,sample_52,Does the doctor ask about the patient's plans for the holidays?,off_topic,0,0,1,,,,,
+sample_52_hard_no_q01,sample_52,Did the patient skip the diabetes education?,hard_negative,0,0,1,,,,,
+sample_69_yes_q02,sample_69,Does the patient feel well?,positive,1,1,1,30.92,33.08,30.983399999999996,33.0766,0.969074074074077
+sample_69_yes_q01,sample_69,Was the blood pressure normal?,positive,1,1,1,42.5,43.68,42.512,45.448,0.39620081411126157
+sample_69_yes_q03,sample_69,Is the foot status normal?,positive,1,1,1,44.22,45.46,42.512,45.448,0.41655359565807376
+sample_69_yes_q04,sample_69,Will the regular check-ups be continued?,positive,1,1,1,68.26,69.96,68.2632,72.29679999999999,0.4203329369797865
+sample_69_yes_q06,sample_69,"The diabetes was judged to be stable, right?",positive,1,1,1,57.68,58.9,57.1964,60.5636,0.36231884057970937
+sample_69_yes_q05,sample_69,Are there no signs of complications?,positive,1,1,1,59.28,60.52,63.1852,63.4948,0.0
+sample_69_hard_no_q01,sample_69,Were wounds discovered on the feet?,hard_negative,0,0,1,,,50.156,51.524,
+sample_69_off_topic_q01,sample_69,Does the patient express interest in changing their work schedule?,off_topic,0,0,1,,,,,
+sample_69_hard_no_q02,sample_69,Is blood pressure medication being started?,hard_negative,0,0,1,,,,,
+sample_69_hard_no_q03,sample_69,Have early complications of the diabetes been detected?,hard_negative,0,0,1,,,57.1964,60.5636,
+sample_79_yes_q02,sample_79,Is chondromalacia patellae suspected on clinical grounds?,positive,1,1,1,82.96,87.4,81.8332,86.84679999999999,0.6982108212976923
+sample_79_hard_no_q03,sample_79,Has the patient been referred to a physiotherapist instead of further procedures?,hard_negative,0,0,1,,,125.49,128.23000000000002,
+sample_79_off_topic_q01,sample_79,Does the patient express interest in learning Spanish?,off_topic,0,0,1,,,,,
+sample_79_yes_q05,sample_79,Do the pains come and go rather than being constant?,positive,1,1,1,24.72,28.16,40.612,41.58800000000001,0.0
+sample_79_hard_no_q04,sample_79,Does the pain sit on the back of the thigh?,hard_negative,0,0,1,,,58.58519999999999,62.814800000000005,
+sample_79_yes_q03,sample_79,Does the patient have pain behind the kneecap?,positive,1,1,1,24.72,26.9,23.410399999999996,28.149599999999996,0.4599932478055367
+sample_79_yes_q01,sample_79,Did the patient show up in person for the consultation?,positive,1,1,1,0.0,2.8,0.23380000000000004,1.3861999999999999,0.41157142857142853
+sample_79_hard_no_q02,sample_79,Was the diagnosis of chondromalacia patellae confirmed by an MRI scan?,hard_negative,0,0,1,,,102.13239999999999,107.06759999999998,
+sample_79_hard_no_q01,sample_79,Are the knee pains constant throughout the day?,hard_negative,0,0,1,,,29.1576,32.6424,
+sample_79_yes_q04,sample_79,Was the suspicion reached without imaging?,positive,1,1,1,80.88,87.4,102.13239999999999,107.06759999999998,0.0
+sample_90_yes_q04,sample_90,Does the doctor consider the change harmless?,positive,1,1,1,27.84,28.98,,,0.0
+sample_90_hard_no_q01,sample_90,Did the doctor find the change suspicious?,hard_negative,0,1,0,,,,,
+sample_90_off_topic_q01,sample_90,Does the patient talk about their job responsibilities?,off_topic,0,1,0,,,,,
+sample_90_yes_q03,sample_90,Did the patient notice a new mole?,positive,1,1,1,14.46,16.42,,,0.0
+sample_90_hard_no_q03,sample_90,Is the new mole sitting on the back?,hard_negative,0,1,0,,,,,
+sample_90_yes_q01,sample_90,Was a photo sent in for assessment?,positive,1,1,1,10.46,12.1,,,0.0
+sample_90_yes_q05,sample_90,Has the doctor reviewed the photograph?,positive,1,1,1,20.08,21.92,,,0.0
+sample_90_off_topic_q02,sample_90,Does the patient mention owning a cat?,off_topic,0,1,0,,,,,
+sample_90_hard_no_q02,sample_90,Does the patient describe the mole as small and unchanged?,hard_negative,0,1,0,,,,,
+sample_90_yes_q02,sample_90,Is the mole located on the thigh?,positive,1,1,1,14.46,16.42,,,0.0
+sample_10_hard_no_q01,sample_10,Has the doctor found the condition to be unstable?,hard_negative,0,0,1,,,60.3644,62.555600000000005,
+sample_10_hard_no_q04,sample_10,Did the patient report new breathing symptoms?,hard_negative,0,0,1,,,22.3348,23.585199999999997,
+sample_10_yes_q01,sample_10,Does the patient need continued treatment?,positive,1,1,1,63.18,64.58,62.964999999999996,65.21499999999999,0.6222222222222236
+sample_10_off_topic_q02,sample_10,Did the patient mention owning a specific pet?,off_topic,0,0,1,,,,,
+sample_10_off_topic_q01,sample_10,Was any problem with housing discussed?,off_topic,0,0,1,,,,,
+sample_10_hard_no_q05,sample_10,Is the stomach acid medication being discontinued?,hard_negative,0,0,1,,,78.4678,79.03219999999999,
+sample_10_hard_no_q03,sample_10,Were abnormal sounds heard over the lungs?,hard_negative,0,0,1,,,56.097,57.563,
+sample_10_yes_q02,sample_10,Were the lungs and heart normal on auscultation?,positive,1,1,1,53.76,57.56,53.803000000000004,55.857,0.5405263157894717
+sample_10_yes_q03,sample_10,"Are the patient's complaints unchanged, with nothing new reported?",positive,1,1,1,22.2,23.56,22.3348,23.585199999999997,0.8844932139763207
+sample_10_hard_no_q02,sample_10,Does the plan include a referral to a lung specialist?,hard_negative,0,0,1,,,,,
+sample_23_yes_q03,sample_23,Was a skin wart found under the right breast?,positive,1,1,1,23.12,25.66,23.0212,26.8588,0.6618720033354181
+sample_23_yes_q05,sample_23,Has the patient been informed about the risk of scarring and infection?,positive,1,1,1,75.26,79.54,75.2846,79.4554,0.9744859813084109
+sample_23_yes_q02,sample_23,Does the patient want the skin changes removed?,positive,1,1,1,85.28,88.5,64.93799999999999,66.502,0.0
+sample_23_off_topic_q02,sample_23,Is there any mention of the patient's pet?,off_topic,0,0,1,,,,,
+sample_23_hard_no_q01,sample_23,Has the patient been told that the procedure carries no risk of scarring?,hard_negative,0,0,1,,,75.2846,79.4554,
+sample_23_yes_q04,sample_23,Is an appointment for the removal going to be arranged?,positive,1,1,1,90.2,92.2,68.101,69.95899999999999,0.0
+sample_23_yes_q06,sample_23,Do the changes on the abdomen and lower leg resemble seborrheic keratoses?,positive,1,1,1,43.44,45.58,33.293,38.287000000000006,0.0
+sample_23_yes_q01,sample_23,Were the skin changes judged to be benign?,positive,1,1,1,53.3,56.2,60.8844,63.0756,0.0
+sample_23_off_topic_q01,sample_23,Does the patient talk about needing a new vehicle?,off_topic,0,0,1,,,,,
+sample_23_hard_no_q02,sample_23,Are the elements on the abdomen about 2 cm across?,hard_negative,0,0,1,,,33.293,38.287000000000006,
+sample_42_yes_q02,sample_42,Was the blood pressure measured at 135/88?,positive,1,1,1,39.16,42.54,39.1164,42.4836,0.9707909802547043
+sample_42_yes_q07,sample_42,Did the doctor assess the patient as slightly overweight?,positive,1,1,1,62.26,65.16,62.1318,65.0482,0.9207449970279367
+sample_42_yes_q06,sample_42,Were exercise recommendations also part of the plan?,positive,1,1,1,89.86,93.12,89.69659999999999,93.0834,0.9415785476426897
+sample_42_yes_q05,sample_42,Does the patient have a BMI of 28?,positive,1,1,1,56.18,58.38,56.4204,58.21960000000001,0.8178181818181836
+sample_42_yes_q03,sample_42,Has the patient been given advice about diet?,positive,1,1,1,89.86,91.76,89.69659999999999,93.0834,0.5610015353726234
+sample_42_hard_no_q02,sample_42,Did the doctor consider the patient severely obese?,hard_negative,0,0,1,,,62.1318,65.0482,
+sample_42_yes_q01,sample_42,Is the patient feeling well?,positive,1,1,1,17.22,18.48,17.3736,18.5064,0.8600746268656719
+sample_42_yes_q04,sample_42,"The visit was a preventive health check, correct?",positive,1,1,1,11.92,14.14,11.9048,14.135200000000001,0.9910522548317826
+sample_42_hard_no_q01,sample_42,Was the blood pressure 155/98?,hard_negative,0,0,1,,,39.1164,42.4836,
+sample_42_off_topic_q01,sample_42,Does the patient talk about wanting to work part-time?,off_topic,0,0,1,,,,,
+sample_50_yes_q04,sample_50,Are further tests needed before the diagnosis can be settled?,positive,1,1,1,60.36,69.66,60.305600000000005,62.6144,0.24099888822372426
+sample_50_hard_no_q01,sample_50,Does the fasting blood sugar lie at 5.0 mmol/L?,hard_negative,0,0,1,,,35.348,39.85200000000001,
+sample_50_off_topic_q01,sample_50,Are the speakers discussing the patient's recent college experience?,off_topic,0,0,1,,,,,
+sample_50_yes_q01,sample_50,"The HbA1c came out at 47 mmol/mol, right?",positive,1,1,1,39.68,43.4,39.6004,43.3596,0.9684177281819145
+sample_50_yes_q03,sample_50,Was the patient's BMI recorded as 29?,positive,1,1,1,23.86,25.96,23.842399999999998,25.8376,0.9338874197204364
+sample_50_hard_no_q03,sample_50,Has metformin treatment been started at this visit?,hard_negative,0,0,1,,,,,
+sample_50_off_topic_q02,sample_50,Was the patient talking about their recent weekend?,off_topic,0,0,1,,,,,
+sample_50_yes_q05,sample_50,Is the patient free of any symptoms at this visit?,positive,1,1,1,20.38,22.78,20.3512,23.2088,0.8398656215005602
+sample_50_yes_q02,sample_50,Does the patient have a fasting blood sugar of 7.0 mmol/L?,positive,1,1,1,35.38,39.0,35.348,39.85200000000001,0.8037300177619866
+sample_50_hard_no_q02,sample_50,Were the results enough to confirm type 2 diabetes already?,hard_negative,0,0,1,,,56.9086,59.51140000000001,
+sample_57_yes_q05,sample_57,Will the patient continue on the current medication?,positive,1,1,1,117.6,122.54,117.31520000000002,122.5248,0.9425815342214088
+sample_57_yes_q07,sample_57,Is the diabetes considered stable?,positive,1,1,1,97.54,100.0,97.40520000000001,101.6348,0.5816152827690559
+sample_57_yes_q04,sample_57,Has the patient kept up the lifestyle changes?,positive,1,1,1,59.74,62.1,59.653,60.727000000000004,0.4033510420923583
+sample_57_yes_q03,sample_57,Was it concluded that no changes to treatment are needed?,positive,1,1,1,117.6,122.54,97.40520000000001,101.6348,0.0
+sample_57_yes_q06,sample_57,Does the patient feel stable?,positive,1,1,1,30.06,33.8,32.178599999999996,33.8014,0.43336718875287333
+sample_57_off_topic_q01,sample_57,Does the doctor ask about the patient's job responsibilities?,off_topic,0,0,1,,,,,
+sample_57_yes_q01,sample_57,Should the patient carry on with the same lifestyle?,positive,1,1,1,117.6,120.1,117.31520000000002,122.5248,0.4798832923832942
+sample_57_hard_no_q01,sample_57,Was the patient advised to stop the current medication?,hard_negative,0,0,1,,,117.31520000000002,122.5248,
+sample_57_hard_no_q02,sample_57,Will the diabetes now be treated with insulin?,hard_negative,0,0,1,,,117.31520000000002,122.5248,
+sample_57_yes_q02,sample_57,"The patient stays on the medicine already in use, correct?",positive,1,1,1,120.9,122.54,117.31520000000002,122.5248,0.3109784106568667
+sample_67_hard_no_q02,sample_67,Has the patient been referred to a dietitian?,hard_negative,0,0,1,,,,,
+sample_67_yes_q02,sample_67,"The doctor described the diabetes as stable, right?",positive,1,1,1,70.32,72.42,70.26459999999999,74.43539999999999,0.5035005274767451
+sample_67_yes_q05,sample_67,Will the treatment be continued unchanged?,positive,1,1,1,89.12,90.98,89.14139999999999,92.99859999999998,0.4740370236683403
+sample_67_off_topic_q01,sample_67,Was the patient planning to cook a specific dish for dinner mentioned?,off_topic,0,0,1,,,,,
+sample_67_yes_q04,sample_67,Is the patient's self-care considered good?,positive,1,1,1,72.78,74.44,72.87819999999999,74.4618,0.9286478772743545
+sample_67_hard_no_q01,sample_67,Is the diabetes described as poorly controlled?,hard_negative,0,0,1,,,70.26459999999999,74.43539999999999,
+sample_67_yes_q01,sample_67,Does the patient say they are doing well?,positive,1,1,1,21.8,24.62,23.949399999999997,24.670599999999997,0.2336096983209102
+sample_67_yes_q06,sample_67,Is the patient sticking to the diet and lifestyle advice?,positive,1,1,1,25.36,27.72,25.406,27.754,0.9665831244778605
+sample_67_yes_q07,sample_67,Has the weight remained stable?,positive,1,1,1,39.48,40.44,39.4922,40.4878,0.9404643778527465
+sample_67_yes_q03,sample_67,Was the HbA1c 43 mmol/mol?,positive,1,1,1,51.68,55.5,51.601800000000004,55.49820000000001,0.9794777076599497
+sample_77_yes_q02,sample_77,Did the patient receive a tetanus vaccination?,positive,1,1,1,77.72,80.36,77.64959999999999,80.3504,0.9704840613931478
+sample_77_hard_no_q01,sample_77,Did the infection appear only two days after the injury?,hard_negative,0,0,1,,,49.577,53.00300000000001,
+sample_77_off_topic_q01,sample_77,Does the patient talk about using a digital device for online shopping?,off_topic,0,0,1,,,,,
+sample_77_yes_q03,sample_77,Was the infection judged to follow a penetrating trauma?,positive,1,1,1,49.56,52.96,46.4676,48.97239999999999,0.0
+sample_77_yes_q07,sample_77,Have about two weeks passed since the injury?,positive,1,1,1,16.5,17.3,15.085,19.294999999999998,0.19002375296912144
+sample_77_yes_q04,sample_77,Did the trouble start after the patient pricked themselves on a thorn?,positive,1,1,1,15.14,19.3,15.085,19.294999999999998,0.9857651245551596
+sample_77_hard_no_q02,sample_77,Was a foreign body found in the toe?,hard_negative,0,0,1,,,41.2558,42.604200000000006,
+sample_77_yes_q06,sample_77,"The patient was treated with penicillin, correct?",positive,1,1,1,67.84,69.56,67.9382,69.5218,0.9206976744186076
+sample_77_yes_q05,sample_77,Is a foreign body ruled out?,positive,1,1,1,32.7,34.9,41.2558,42.604200000000006,0.0
+sample_77_yes_q01,sample_77,Does the patient have an infection in the big toe?,positive,1,1,1,49.56,52.96,46.4676,48.97239999999999,0.0
+sample_86_off_topic_q01,sample_86,Does the conversation mention a specific dish the patient plans to cook for dinner?,off_topic,0,0,1,,,,,
+sample_86_yes_q01,sample_86,Is the patient free of fever?,positive,1,1,1,35.14,35.74,35.12480000000001,37.3552,0.269010043041608
+sample_86_hard_no_q03,sample_86,Is the tenderness in the area described as severe?,hard_negative,0,0,1,,,55.007,57.453,
+sample_86_hard_no_q01,sample_86,Has surgery been scheduled to remove the swelling?,hard_negative,0,0,1,,,109.8162,115.12379999999999,
+sample_86_hard_no_q05,sample_86,Were both testicles found to be enlarged and abnormal?,hard_negative,0,0,1,,,66.596,69.92399999999999,
+sample_86_hard_no_q04,sample_86,Did the patient have a fever when he came in?,hard_negative,0,0,1,,,35.12480000000001,37.3552,
+sample_86_yes_q03,sample_86,"Both testicles felt normal at the examination, correct?",positive,1,1,1,66.5,69.94,66.596,69.92399999999999,0.9674418604651136
+sample_86_hard_no_q02,sample_86,Does the doctor suspect a testicular torsion?,hard_negative,0,0,1,,,80.579,86.161,
+sample_86_hard_no_q06,sample_86,Was the swelling located on the left side of the scrotum?,hard_negative,0,0,1,,,51.0002,54.7398,
+sample_86_yes_q02,sample_86,Was a small swelling found around the epididymis?,positive,1,1,1,50.66,54.7,51.0002,54.7398,0.9068581793225153
+sample_4_yes_q03,sample_4,Did the patient attend for an annual asthma follow-up?,positive,1,1,1,21.62,26.24,24.756999999999998,26.222999999999995,0.31731601731601694
+sample_4_yes_q07,sample_4,Is the heart examination without abnormal findings?,positive,1,1,1,43.5,44.98,40.464999999999996,42.715,0.0
+sample_4_yes_q06,sample_4,Was the patient listened to with a stethoscope?,positive,1,1,1,28.520000000000003,42.72,28.800399999999996,32.5596,0.2647323943661978
+sample_4_yes_q05,sample_4,Were the lungs found to be normal on auscultation?,positive,1,1,1,40.68,44.98,40.464999999999996,42.715,0.45071982281284684
+sample_4_yes_q02,sample_4,Are the patient's asthma findings stable at this visit?,positive,1,1,1,51.48,54.4,51.4136,54.506400000000006,0.94412829798241
+sample_4_hard_no_q01,sample_4,Should the asthma medication dose be increased?,hard_negative,0,0,1,,,65.8176,67.34240000000001,
+sample_4_yes_q01,sample_4,Will the current treatment continue unchanged?,positive,1,1,1,55.64,61.64,58.8834,60.976600000000005,0.34886666666666716
+sample_4_yes_q04,sample_4,Does the visit concern asthma?,positive,1,1,1,24.88,26.24,24.756999999999998,26.222999999999995,0.9055967633175968
+sample_4_off_topic_q01,sample_4,Is there any discussion about cooking?,off_topic,0,0,1,,,,,
+sample_4_hard_no_q02,sample_4,Has an irregular heart rhythm been found?,hard_negative,0,0,1,,,40.464999999999996,42.715,
+sample_5_yes_q01,sample_5,Does the patient take pantoprazole for reflux?,positive,1,1,1,47.08,52.84,,,0.0
+sample_5_hard_no_q02,sample_5,Did the back pain begin after surgery for a lumbar disc prolapse?,hard_negative,0,1,0,,,,,
+sample_5_hard_no_q01,sample_5,Have the pains in the hands been attributed to gout?,hard_negative,0,1,0,,,,,
+sample_5_yes_q05,sample_5,Is the patient still in pain despite regular Ibumetin and Panodil?,positive,1,1,1,36.42,41.58,,,0.0
+sample_5_yes_q02,sample_5,Will the NSAID treatment be continued under cover of a proton pump inhibitor?,positive,1,1,1,142.44,147.88,,,0.0
+sample_5_yes_q06,sample_5,Did the patient undergo surgery for a cervical disc prolapse in 2017?,positive,1,1,1,32.06,34.98,,,0.0
+sample_5_off_topic_q02,sample_5,Does the conversation mention the patient owning a digital camera?,off_topic,0,1,0,,,,,
+sample_5_yes_q03,sample_5,Was muscle tension found in the neck and shoulders?,positive,1,1,1,102.68,105.42,,,0.0
+sample_5_yes_q04,sample_5,Are the menopausal symptoms treated with Activelle?,positive,1,1,1,70.44,73.82,,,0.0
+sample_5_off_topic_q01,sample_5,Is the patient discussing owning a cat?,off_topic,0,1,0,,,,,
+sample_20_hard_no_q03,sample_20,Will the patient be referred to a pain clinic?,hard_negative,0,0,1,,,,,
+sample_20_off_topic_q02,sample_20,Was a specific recipe or cooking activity discussed?,off_topic,0,0,1,,,,,
+sample_20_off_topic_q01,sample_20,At any point does the patient talk about their experiences with a hobby?,off_topic,0,0,1,,,,,
+sample_20_yes_q01,sample_20,Was Ibumetin renewed as well?,positive,1,1,1,182.44,186.3,182.4214,186.27860000000004,0.9896870004640944
+sample_20_hard_no_q01,sample_20,Did the patient ask for morphine to be renewed?,hard_negative,0,0,1,,,,,
+sample_20_hard_no_q02,sample_20,Does the pain affect the lower back alone?,hard_negative,0,0,1,,,77.8448,83.99520000000001,
+sample_20_yes_q05,sample_20,Is Pamol one of the medicines requested?,positive,1,1,1,182.44,184.98,42.4358,43.784200000000006,0.0
+sample_20_yes_q02,sample_20,Has the pain problem been described as stable?,positive,1,1,1,102.3,105.02,168.9674,173.4126,0.0
+sample_20_yes_q04,sample_20,Does the patient still need pain relief?,positive,1,1,1,105.56,107.46,168.9674,173.4126,0.0
+sample_20_yes_q03,sample_20,Were both prescriptions issued?,positive,1,1,1,182.44,184.5,182.4214,186.27860000000004,0.5340661619827812
+sample_56_yes_q01,sample_56,Has the cause of the tiredness remained unexplained?,positive,1,1,1,61.66,64.2,67.01459999999999,68.24539999999999,0.0
+sample_56_off_topic_q01,sample_56,Was the doctor asking about the patient's upcoming movie night?,off_topic,0,0,1,,,,,
+sample_56_hard_no_q02,sample_56,Has iron treatment been started for the tiredness?,hard_negative,0,0,1,,,,,
+sample_56_yes_q02,sample_56,Did the COVID-19 test come back negative?,positive,1,1,1,48.84,50.82,49.1982,50.78180000000001,0.7997979797979867
+sample_56_hard_no_q04,sample_56,Was the patient's thyroid function found to be reduced?,hard_negative,0,0,1,,,44.799600000000005,46.52040000000001,
+sample_56_yes_q04,sample_56,"The patient's thyroid function was checked, wasn't it?",positive,1,1,1,44.92,46.5,44.799600000000005,46.52040000000001,0.918177591817756
+sample_56_hard_no_q01,sample_56,Is the patient complaining mainly of chest pain?,hard_negative,0,0,1,,,,,
+sample_56_hard_no_q03,sample_56,Will treatment for the fatigue begin straight away?,hard_negative,0,0,1,,,83.6824,85.6776,
+sample_56_yes_q03,sample_56,Will further measures be held off for the time being?,positive,1,1,1,81.92,85.66,87.04260000000001,89.0574,0.0
+sample_56_off_topic_q02,sample_56,Are the speakers discussing the weather?,off_topic,0,0,1,,,,,
+sample_66_hard_no_q02,sample_66,Was the patient given a pneumococcal vaccination?,hard_negative,0,0,1,,,,,
+sample_66_yes_q03,sample_66,Was the vaccination given as part of diabetes care?,positive,1,1,1,31.34,35.18,31.1828,35.177200000000006,0.9599719803862721
+sample_66_hard_no_q01,sample_66,Did a local reaction develop at the injection site?,hard_negative,0,1,0,,,97.6806,99.4994,
+sample_66_yes_q04,sample_66,"The diabetes status was described as stable, wasn't it?",positive,1,1,1,113.08,114.86,113.25859999999999,114.88139999999999,0.8889752414788632
+sample_66_hard_no_q03,sample_66,Was the patient's diabetes found to be unstable?,hard_negative,0,0,1,,,105.8534,108.9266,
+sample_66_off_topic_q01,sample_66,Is there any reference to the patient planning to watch a specific movie?,off_topic,0,0,1,,,,,
+sample_66_hard_no_q05,sample_66,Has follow-up been discontinued going forward?,hard_negative,0,0,1,,,125.3448,127.5752,
+sample_66_hard_no_q04,sample_66,Did the doctor decide to adjust the diabetes medication?,hard_negative,0,0,1,,,119.92960000000001,120.6704,
+sample_66_yes_q02,sample_66,Is the patient free of any reaction after the injection?,positive,1,1,1,93.14,96.36,93.2154,94.52459999999999,0.40658385093167404
+sample_66_yes_q01,sample_66,Will the treatment continue without changes?,positive,1,1,1,116.96,122.94,121.1408,122.97919999999999,0.298910154173312
+sample_75_off_topic_q01,sample_75,Does the conversation indicate the patient uses specific software?,off_topic,0,0,1,,,,,
+sample_75_yes_q01,sample_75,Does the patient deny any known exposure to COVID-19?,positive,1,1,1,45.06,46.48,45.2344,46.4456,0.8529577464788751
+sample_75_yes_q02,sample_75,Is the patient also feeling tired?,positive,1,1,1,31.08,31.94,29.8632,31.9368,0.41255778120185016
+sample_75_hard_no_q05,sample_75,Is a bacterial infection thought to be the most likely cause?,hard_negative,0,0,1,,,72.497,73.963,
+sample_75_yes_q04,sample_75,Were rest and fluids recommended?,positive,1,1,1,81.4,83.6,81.20779999999999,83.73219999999999,0.8714942164474682
+sample_75_hard_no_q02,sample_75,Did the patient report a known exposure to COVID-19?,hard_negative,0,0,1,,,45.2344,46.4456,
+sample_75_hard_no_q03,sample_75,Will the patient be starting a course of antibiotics?,hard_negative,0,0,1,,,84.21719999999999,87.66279999999999,
+sample_75_yes_q03,sample_75,Has the patient had a sore throat for a few days?,positive,1,1,1,29.62,35.9,32.171600000000005,33.1084,0.14917197452229275
+sample_75_hard_no_q04,sample_75,Was the patient found to have a fever?,hard_negative,0,0,1,,,56.7388,58.3812,
+sample_75_hard_no_q01,sample_75,Did the throat examination reveal pronounced swelling with pus?,hard_negative,0,0,1,,,52.256800000000005,55.6632,
+sample_84_hard_no_q01,sample_84,Is the check-up being done because the patient has symptoms from the heart?,hard_negative,0,1,0,,,,,
+sample_84_hard_no_q02,sample_84,Does the patient say that exercise is something they rarely do?,hard_negative,0,1,0,,,,,
+sample_84_off_topic_q01,sample_84,Was the patient referred to Doctor Strange for magical treatment?,off_topic,0,1,0,,,,,
+sample_84_yes_q02,sample_84,Was it the patient's grandfather who died of a heart attack?,positive,1,1,1,20.3,23.42,,,0.0
+sample_84_yes_q04,sample_84,Does the patient exercise regularly?,positive,1,1,1,78.28,79.52,,,0.0
+sample_84_yes_q06,sample_84,Will both blood tests and an ECG be carried out?,positive,1,1,1,193.64,201.3,,,0.0
+sample_84_yes_q05,sample_84,Was the blood pressure measured at 138 over 83?,positive,1,1,1,119.92,122.96,,,0.0
+sample_84_yes_q01,sample_84,Does the patient report cardiovascular disease in the family?,positive,1,1,1,27.86,31.68,,,0.0
+sample_84_yes_q03,sample_84,Did that grandfather die at the age of 52?,positive,1,1,1,20.3,25.38,,,0.0
+sample_84_yes_q07,sample_84,Is the patient otherwise healthy and living a healthy life?,positive,1,1,1,69.72,79.52,,,0.0

@@ -17,6 +17,12 @@ from .asr import Transcript, Word
 PAUSE_SPLIT_SECONDS = 0.55
 SENTENCE_END = tuple('.?!')
 
+# Words that tend to open a new clause, used when splitting finer than sentences.
+CLAUSE_STARTERS = frozenset({
+    'and', 'but', 'so', 'then', 'because', 'while', 'although', 'though',
+    'which', 'that', 'if', 'when', 'after', 'before', 'plus', 'also',
+})
+
 
 @dataclass
 class Unit:
@@ -44,8 +50,17 @@ class Window:
         return self.end - self.start
 
 
-def split_units(transcript: Transcript) -> List[Unit]:
-    """Split the transcript at sentence ends and at noticeable pauses."""
+def split_units(
+    transcript: Transcript,
+    pause: float = PAUSE_SPLIT_SECONDS,
+    split_on_clause: bool = False,
+) -> List[Unit]:
+    """Split the transcript at sentence ends and at noticeable pauses.
+
+    ``split_on_clause`` also breaks at commas and at a few conjunctions, which
+    brings a unit closer to the size of an annotated passage (median 2.9 s) than
+    a sentence is.
+    """
     units: List[Unit] = []
 
     for segment in transcript.segments:
@@ -59,7 +74,12 @@ def split_units(transcript: Transcript) -> List[Unit]:
 
         current: List[Word] = []
         for index, word in enumerate(words):
-            if current and word.start - current[-1].end > PAUSE_SPLIT_SECONDS:
+            if current and word.start - current[-1].end > pause:
+                units.append(_unit(current))
+                current = []
+
+            if (split_on_clause and current
+                    and word.word.strip().lower().lstrip(',') in CLAUSE_STARTERS):
                 units.append(_unit(current))
                 current = []
 
@@ -67,8 +87,9 @@ def split_units(transcript: Transcript) -> List[Unit]:
 
             stripped = word.word.strip()
             ends_sentence = stripped.endswith(SENTENCE_END)
+            ends_clause = split_on_clause and stripped.endswith(',')
             is_last = index == len(words) - 1
-            if ends_sentence or is_last:
+            if ends_sentence or ends_clause or is_last:
                 units.append(_unit(current))
                 current = []
 
@@ -170,6 +191,98 @@ def tighten(
         start, end = centre - max_duration / 2, centre + max_duration / 2
 
     return max(0.0, start), max(start + 0.05, end)
+
+
+def matched_unit_span(
+    window: Window,
+    matched_stems: Sequence[str],
+    units: Sequence[Unit],
+) -> Tuple[float, float]:
+    """The one utterance inside the window carrying most of the matched words.
+
+    An annotated passage is a phrase, and an utterance is the closest thing the
+    transcript has to one. Shrinking further, to just the words that matched,
+    clips more than the narrowness wins back.
+    """
+    from .textutil import content_stems
+
+    wanted = set(matched_stems)
+    best_index, best_hits = window.first_unit, -1
+
+    for index in range(window.first_unit, min(window.last_unit, len(units) - 1) + 1):
+        hits = sum(
+            1 for word in units[index].words
+            for token in content_stems(word.word)
+            if token in wanted
+        )
+        if hits > best_hits:
+            best_index, best_hits = index, hits
+
+    unit = units[best_index]
+    return float(unit.start), float(unit.end)
+
+
+def calibrate(
+    span: Tuple[float, float],
+    width_scale: float = 1.0,
+    start_offset: float = 0.0,
+    end_offset: float = 0.0,
+) -> Tuple[float, float]:
+    """Correct the systematic part of the boundary error.
+
+    Utterance boundaries run past the annotated phrase by a fairly constant
+    amount, so a scale about the midpoint and one offset per edge recover most
+    of it. Fitted by ``tools/calibrate_spans.py``; refit whenever the ASR
+    backend or the span policy changes, since the bias belongs to those.
+    """
+    centre = (span[0] + span[1]) / 2.0
+    half = (span[1] - span[0]) / 2.0 * width_scale
+
+    start = max(0.0, centre - half + start_offset)
+    end = max(start + 0.05, centre + half + end_offset)
+    return start, end
+
+
+def matched_run_span(
+    window: Window,
+    matched_stems: Sequence[str],
+    units: Sequence[Unit],
+    max_units: int = 3,
+    skip_prompt: bool = True,
+) -> Tuple[float, float]:
+    """First to last utterance in the window that carries a matched word.
+
+    A claim is often stated across a clause boundary — "and fluconazole, 50
+    milligrams, for seven days" — so the passage is a short run of utterances
+    rather than exactly one. Capped, because an uncapped run degenerates to the
+    whole window, which scores 0.28.
+
+    ``skip_prompt`` walks past a question asked in the room to the reply it
+    elicited. A question put to the patient shares its words with the question
+    we are asked, so lexical matching lands on the prompt while the annotation
+    marks the answer.
+    """
+    from .textutil import content_stems
+
+    wanted = set(matched_stems)
+    last_unit = min(window.last_unit, len(units) - 1)
+
+    hits = [
+        index for index in range(window.first_unit, last_unit + 1)
+        if any(token in wanted
+               for word in units[index].words
+               for token in content_stems(word.word))
+    ]
+    if not hits:
+        return float(window.start), float(window.end)
+
+    first = hits[0]
+    if skip_prompt:
+        while first < len(units) - 1 and units[first].text.strip().endswith('?'):
+            first += 1
+
+    last = min(first + max_units - 1, len(units) - 1, max(hits[-1], first))
+    return float(units[first].start), float(units[last].end)
 
 
 def word_span(words: Sequence[Word]) -> Optional[Tuple[float, float]]:

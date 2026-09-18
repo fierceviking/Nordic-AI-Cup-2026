@@ -1,0 +1,31 @@
+# Apple Silicon (M-series) dependencies. Use this instead of requirements.txt,
+# which installs torch from the CUDA index and faster-whisper.
+#
+# CTranslate2, which faster-whisper runs on, has no Metal backend -- its GPU
+# support is cuBLAS and ROCm only -- so large-v3 falls back to CPU and needs an
+# estimated 66-145 s for a two minute conversation, against a 60 s budget. ASR
+# runs through MLX here instead.
+#
+#   pyenv virtualenv 3.11.13 dm
+#   pyenv activate dm
+#   brew install ffmpeg          # mlx-whisper and parakeet-mlx shell out to it
+#   pip install -r requirements-mac.txt
+#
+# Verified on Python 3.11.13, macOS 26.6, M3 Pro.
+
+fastapi>=0.115            # [0.127.0]
+uvicorn>=0.30             # [0.40.0]
+pydantic>=2.7,<3          # [2.12.5]
+requests>=2.31            # [2.32.5]  local_evaluator.py only
+
+torch>=2.6                # [2.14.0]  plain PyPI wheel: MPS, no CUDA index
+mlx>=0.29                 # [0.32.2]
+mlx-lm>=0.31.3
+parakeet-mlx>=0.5         # [0.5.2]   ASR with word-level timestamps
+mlx-whisper>=0.4          # [0.4.3]   fallback ASR backend
+transformers>=4.50        # [5.17.0]  NLI reader
+accelerate>=1.0           # device placement for transformers
+sentence-transformers>=3  # [6.0.1]   dense retrieval, cross-encoders
+scikit-learn>=1.4         # tools/span_ranker.py and feature_ml only
+rapidfuzz>=3.0            # fuzzy term matching over noisy ASR
+numpy>=1.26

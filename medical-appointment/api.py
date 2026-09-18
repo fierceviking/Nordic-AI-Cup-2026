@@ -17,6 +17,7 @@ from fastapi import FastAPI
 
 from dtos import ASRQuestionRequestDto, ASRQuestionResponseDto
 from example import predict
+from solution import pipeline
 from utils import validate_response
 
 HOST = '0.0.0.0'
@@ -45,6 +46,8 @@ def predict_endpoint(request: ASRQuestionRequestDto):
 def hello():
     return {
         'service': 'medical-appointment-usecase',
+        'approach': pipeline.APPROACH,
+        'asr_model': pipeline.ASR_MODEL,
         'uptime': '{}'.format(datetime.timedelta(seconds=time.time() - start_time)),
     }
 

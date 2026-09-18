@@ -2,9 +2,11 @@
 
 The pipeline, end to end:
 
-1. ``faster-whisper large-v3`` transcribes the MP3 with **word-level
-   timestamps** (CUDA, ~0.06 x real time). Paid once per request and shared by
-   all ten questions.
+1. ``parakeet-tdt-0.6b-v2`` transcribes the MP3 with **word-level timestamps**
+   via MLX on the Apple GPU (~0.018 x real time). Paid once per request and
+   shared by all ten questions. It is a transducer, so the timings are frame
+   alignments rather than attention DTW, which is why they can be trusted as
+   span boundaries.
 2. The transcript is cut into utterances at sentence ends and at pauses, and
    the candidate evidence spans are every run of up to three consecutive
    utterances.
@@ -13,11 +15,13 @@ The pipeline, end to end:
    bi-encoder to widen the shortlist, and a DeBERTa NLI model for *whether*.
    Entailment is what separates a hard negative ("200 mg daily") from the
    positive it imitates ("100 mg daily"); lexical overlap cannot.
-4. The span handed back is the best window tightened to the words that
-   actually matched, because temporal IoU punishes width as hard as position.
+4. The span handed back is the single utterance carrying most of the matched
+   words, corrected by three globally fitted scalars. Emitting the utterance
+   beats shrinking to the matched words, because the annotation is a phrase and
+   an utterance is the closest thing the transcript has to one.
 
 Everything runs locally. See EXPERIMENTS.md for how each piece was chosen and
-what it was worth.
+what it was worth, and RESEARCH.md for the literature behind it.
 """
 
 import logging

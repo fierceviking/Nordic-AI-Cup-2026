@@ -18,6 +18,9 @@ from __future__ import annotations
 import json
 import logging
 import re
+import time
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 from typing import List, Optional, Sequence, Tuple
 
 from ..asr import Transcript, Word
@@ -296,3 +299,400 @@ def align_quote(
 
     start_index, end_index = best_range
     return float(words[start_index].start), float(words[end_index - 1].end)
+
+
+QUOTE_MODEL = 'mlx-community/Qwen3-4B-Instruct-2507-4bit'
+QUOTE_PROMPT = '''Answer the yes/no questions using only the consultation below.
+Return a JSON object keyed by question number (1-based). Each value must contain:
+"answer": a JSON boolean, "unit": the transcript line number where the evidence
+starts, and "quote": a verbatim, contiguous phrase copied from that line or its
+immediate continuation. Do not paraphrase or give timestamps.
+
+For a yes, quote the complete clause that establishes the specific claim,
+including the relevant action, finding, dose, duration or negation. Do not quote
+unrelated sentences. For a no, quote the contradicting detail if there is one;
+if the subject is absent, use "unit": null and "quote": "".
+Questions asked during the consultation are not evidence that their premise is
+true: read the reply too. Use the passage that directly establishes the claim.
+Different questions may legitimately share the same evidence.
+
+Transcript (0-based line numbers):
+{transcript}
+
+Questions:
+{questions}
+
+Return JSON only. Example format:
+{{"1": {{"answer": true, "unit": 7, "quote": "copied phrase"}}}}
+'''
+
+_QUOTE_WORKER = ThreadPoolExecutor(max_workers=1, thread_name_prefix='quote-mlx')
+
+
+def evidence_features(transcript: Transcript, question: str, span: Optional[Span]):
+    import math
+
+    if span is None:
+        return [0.0] * 9
+    text = ''.join(word.word for word in transcript.words
+                   if span[0] <= (word.start + word.end) / 2 <= span[1])
+    terms = set(content_stems(text))
+    query = set(content_stems(question))
+    matched = len(terms & query)
+    return [
+        math.log1p(span[1] - span[0]), math.log1p(len(tokenize(text))),
+        matched / max(1, len(query)), matched / max(1, len(terms)),
+        float(len(terms) <= 1), float(text.strip().endswith('?')),
+        span[0] / max(1.0, transcript.duration),
+        float(matched == 0), float(matched >= 2),
+    ]
+
+
+def pair_features(transcript: Transcript, question: str, first: Optional[Span],
+                  second: Optional[Span], judge_second: bool):
+    from utils import temporal_iou
+
+    left = evidence_features(transcript, question, first)
+    right = evidence_features(transcript, question, second)
+    overlap = temporal_iou(first, second) if first is not None else 0.0
+    return [other - own for own, other in zip(left, right)] + [
+        float(judge_second), overlap, float(judge_second) * overlap,
+    ]
+
+
+def pair_advantage(features, model) -> float:
+    return float(model['intercept'] + sum(
+        weight * (value - mean) / scale
+        for value, mean, scale, weight in zip(
+            features, model['mean'], model['scale'], model['coef'], strict=True)
+    ))
+
+
+def exact_quote_spans(words: Sequence[Word], quote: str) -> List[Span]:
+    tokens, owners = [], []
+    for word_index, word in enumerate(words):
+        word_tokens = tokenize(word.word)
+        tokens.extend(word_tokens)
+        owners.extend([word_index] * len(word_tokens))
+    wanted = tokenize(quote)
+    if not wanted:
+        return []
+    spans = []
+    for start in range(len(tokens) - len(wanted) + 1):
+        if tokens[start:start + len(wanted)] == wanted:
+            spans.append((float(words[owners[start]].start),
+                          float(words[owners[start + len(wanted) - 1]].end)))
+    return spans
+
+
+def quote_span(units: Sequence[Unit], unit_index: int, quote: str) -> Optional[Span]:
+    if not quote.strip():
+        return None
+    words = ([word for unit in units[unit_index:unit_index + 3] for word in unit.words]
+             if 0 <= unit_index < len(units) else [])
+    local = exact_quote_spans(words, quote)
+    if local:
+        return local[0]
+    global_matches = exact_quote_spans([word for unit in units for word in unit.words], quote)
+    if len(global_matches) == 1:
+        return global_matches[0]
+    return align_quote(words, quote, min_ratio=90.0)
+
+
+def parse_quotes(reply: str, units: Sequence[Unit], count: int):
+    match = re.search(r'\{.*\}', reply, re.DOTALL)
+    try:
+        payload = json.loads(match.group(0)) if match else {}
+    except json.JSONDecodeError:
+        payload = {}
+        decoder = json.JSONDecoder()
+        for entry in re.finditer(r'"(\d+)"\s*:\s*(?=\{)', reply):
+            try:
+                value, _ = decoder.raw_decode(reply[entry.end():])
+            except json.JSONDecodeError:
+                continue
+            payload[entry.group(1)] = value
+    if not isinstance(payload, dict):
+        payload = {}
+
+    predictions = []
+    valid_count = 0
+    for index in range(count):
+        item = payload.get(str(index + 1), {})
+        if not isinstance(item, dict) or type(item.get('answer')) is not bool:
+            predictions.append((True, None))
+            continue
+        valid_count += 1
+        anchor, quote = item.get('unit'), item.get('quote')
+        span = (quote_span(units, anchor, quote)
+                if type(anchor) is int and isinstance(quote, str) else None)
+        predictions.append((item['answer'], span))
+    return predictions, valid_count
+
+
+class QuoteApproach:
+    name = 'quote'
+
+    def __init__(self, model_name: str = QUOTE_MODEL, max_tokens: int = 1200,
+                 trace_path: Optional[str] = None, examples_path: Optional[str] = None,
+                 example_count: int = 6, width_scale: float = 1.0,
+                 start_offset: float = 0.0, end_offset: float = 0.0,
+                 adjudicate: bool = False, refine_evidence: bool = False,
+                 reasoned_choice: bool = False, review_transcript: bool = False,
+                 raw_evidence_text: bool = False, pair_selector_path: Optional[str] = None):
+        self.model_name = model_name
+        self.max_tokens = max_tokens
+        self.example_count = example_count
+        self.examples = []
+        if examples_path:
+            self.examples = json.loads(Path(examples_path).read_text(encoding='utf-8'))
+        self.calibration = (width_scale, start_offset, end_offset)
+        self.adjudicate = adjudicate
+        self.refine_evidence = refine_evidence
+        self.reasoned_choice = reasoned_choice
+        self.review_transcript = review_transcript
+        self.raw_evidence_text = raw_evidence_text
+        self.pair_selector = (json.loads(Path(pair_selector_path).read_text(encoding='utf-8'))
+                      if pair_selector_path else None)
+        self.trace_path = Path(trace_path) if trace_path else None
+        self.last_reply = ''
+        self.last_adjudication = ''
+        self.last_valid_count = 0
+        _QUOTE_WORKER.submit(self._load).result()
+
+    def _load(self):
+        from mlx_lm import load
+        from mlx_lm.sample_utils import make_sampler
+
+        self.model, self.tokenizer = load(self.model_name)
+        self.sampler = make_sampler(temp=0.0)
+        self.baseline = None
+        if self.adjudicate:
+            from .neural import NeuralApproach
+            self.baseline = NeuralApproach()
+
+    def predict(self, transcript: Transcript, questions: List[str]):
+        return _QUOTE_WORKER.submit(self._predict, transcript, questions).result()
+
+    def _examples_prompt(self, questions: List[str]) -> str:
+        if not self.examples or self.example_count <= 0:
+            return ''
+        queries = [set(content_stems(question)) for question in questions]
+        def relevance(example):
+            terms = set(content_stems(example['question']))
+            return max(len(terms & query) / max(1, len(terms | query))
+                       for query in queries)
+        selected, seen_groups = [], set()
+        for example in sorted(self.examples, key=relevance, reverse=True):
+            if example['group'] in seen_groups:
+                continue
+            seen_groups.add(example['group'])
+            selected.append('Transcript excerpt:\n' + example['context']
+                            + '\nQuestion: ' + example['question']
+                            + '\nOutput: ' + json.dumps({'1': example['output']}))
+            if len(selected) == self.example_count:
+                break
+        return ('Examples from other consultations. Match their evidence specificity; '
+                'do not use their facts for the new consultation.\n\n'
+                + '\n\n'.join(selected) + '\n\nNew consultation:\n')
+
+    def _predict(self, transcript: Transcript, questions: List[str]):
+        from mlx_lm import generate
+        from ..windows import calibrate
+
+        units = split_units(transcript)
+        if not units:
+            return [(True, None) for _ in questions]
+        content = QUOTE_PROMPT.format(
+            transcript='\n'.join(f'[{index}] {unit.text}'
+                                 for index, unit in enumerate(units)),
+            questions='\n'.join(f'{index + 1}. {question}'
+                                for index, question in enumerate(questions)),
+        )
+        prompt = self.tokenizer.apply_chat_template(
+            [{'role': 'system', 'content': 'Extract evidence from the provided transcript.'},
+             {'role': 'user', 'content': self._examples_prompt(questions) + content}],
+            tokenize=False, add_generation_prompt=True, enable_thinking=False,
+        )
+        started = time.perf_counter()
+        self.last_adjudication = ''
+        self.last_reply = generate(
+            self.model, self.tokenizer, prompt=prompt, sampler=self.sampler,
+            max_tokens=self.max_tokens, verbose=False,
+        )
+        predictions, self.last_valid_count = parse_quotes(self.last_reply, units, len(questions))
+        predictions = [(answer, calibrate(span, *self.calibration) if span else None)
+                   for answer, span in predictions]
+        if self.baseline is not None:
+            try:
+                predictions = self._adjudicate(transcript, questions, predictions)
+            except Exception:
+                logger.exception('Evidence adjudication failed; retaining quote predictions')
+        if self.trace_path is not None:
+            self.trace_path.parent.mkdir(parents=True, exist_ok=True)
+            with self.trace_path.open('a', encoding='utf-8') as handle:
+                handle.write(json.dumps({
+                    'model': self.model_name, 'asr': transcript.model,
+                    'questions': questions, 'reply': self.last_reply,
+                    'adjudication': self.last_adjudication,
+                    'valid_count': self.last_valid_count,
+                    'seconds': time.perf_counter() - started,
+                }) + '\n')
+        logger.info('Quote extraction: %d/%d valid answers, %d grounded spans',
+                    self.last_valid_count, len(questions),
+                    sum(span is not None for _, span in predictions))
+        return predictions
+
+    def _adjudicate(self, transcript, questions, predictions):
+        from mlx_lm import generate
+        from ..windows import calibrate
+        from utils import temporal_iou
+
+        prior = self.baseline.predict(transcript, questions)
+        pairs = []
+        def context(span, calibration):
+            if span is None:
+                return '<no passage>'
+            if self.raw_evidence_text:
+                scale, start_offset, end_offset = calibration
+                centre = (span[0] + span[1] - start_offset - end_offset) / 2
+                half = (span[1] - span[0] - end_offset + start_offset) / (2 * scale)
+                span = (max(0.0, centre - half - 1e-6), centre + half + 1e-6)
+            before = ''.join(word.word for word in transcript.words
+                             if span[0] - 5 <= (word.start + word.end) / 2 < span[0])
+            core = ''.join(word.word for word in transcript.words
+                           if span[0] <= (word.start + word.end) / 2 <= span[1])
+            after = ''.join(word.word for word in transcript.words
+                            if span[1] < (word.start + word.end) / 2 <= span[1] + 5)
+            return before + ' <evidence>' + core + '</evidence> ' + after
+
+        for index, ((answer, span), (_, other_span)) in enumerate(zip(predictions, prior)):
+            overlap = temporal_iou(span, other_span) if span is not None else 0.0
+            if not answer or (not self.review_transcript and overlap > 0.8):
+                continue
+            baseline_calibration = (self.baseline.width_scale, self.baseline.start_offset,
+                                    self.baseline.end_offset)
+            pairs.append(f'{index + 1}. {questions[index]}\nA: {context(span, self.calibration)}'
+                         f'\nB: {context(other_span, baseline_calibration)}')
+        if not pairs:
+            return predictions
+        rules = (
+            'Select the better evidence passage for each claim below. Both candidates '
+            'are excerpts from the SAME consultation; surrounding context is supplied, '
+            'but only text inside <evidence> is cited. Prefer the direct, complete '
+            'assertion of the requested fact over merely asking about it, naming the '
+            'topic, or using vague pronouns. Prefer an explicit prescription or finding '
+            'over a speculative discussion. Keep A if both equally support the claim. '
+            'Do not change the claim or answer from medical knowledge. '
+        )
+        if self.review_transcript:
+            units = split_units(transcript)
+            rules = (
+                'Review evidence for the true clinical claims below. Read the entire '
+                'consultation before choosing. The two proposed citations can both '
+                'refer to the wrong occurrence. Prefer the first direct clinical '
+                'assessment, finding or agreed prescription that establishes the '
+                'specific fact, not a later generic recap or a vague confirmation. '
+                'A mere request or speculative discussion is not a completed action. '
+                'For symptoms/history, cite the specific patient statement; for '
+                'assessment/treatment, cite the clinician establishing the fact. '
+                'Use a concise self-contained clause: bare yes/no or pronouns alone '
+                'lose the finding they refer to. Do not add unrelated details.\n'
+                'Return JSON keyed by question number with "choice":"A", "B", '
+                'or "C". Use A/B for a good existing citation. Use C when a different '
+                'passage or different phrase boundaries are needed, and also give '
+                '"unit": its starting line number and "quote": the exact contiguous '
+                'phrase from the transcript. Do not change the yes/no answers.\n\n'
+                'Full transcript:\n'
+                + '\n'.join(f'[{index}] {unit.text}' for index, unit in enumerate(units))
+                + '\n\nClaims and proposed citations:\n'
+            )
+        elif self.refine_evidence:
+            rules = (
+                'Select and refine a self-contained evidence phrase for each claim. '
+                'A and B are excerpts from the SAME consultation. The marked evidence '
+                'is a proposed citation, not necessarily the correct boundaries. '
+                'Use the surrounding context to resolve who or what was discussed. '
+                'A bare yes/no, "none", "both" or "exactly" is not a self-contained '
+                'citation: include the specific finding, medicine or plan it confirms. '
+                'Do not include unrelated symptoms or details. Prefer a direct statement '
+                'over a later paraphrase or generic recap. '
+                'Return JSON mapping question number to {"choice":"A" or "B",'
+                '"quote":"verbatim contiguous text copied from that excerpt"}. '
+                'You may expand or shorten the marked phrase within the supplied '
+                'excerpt, but do not invent text or mix A and B. Ignore the '
+                '<evidence> tags when copying. No explanations.\n\n'
+            )
+        elif self.reasoned_choice:
+            rules = (
+                'Compare two proposed evidence citations for each claim. Both excerpts '
+                'come from the same medical consultation. Only the words inside '
+                '<evidence> are returned as evidence; outside text is context only. '
+                'The claim is already judged true. Decide which citation most directly '
+                'and specifically establishes it. A later generic restatement or a '
+                'bare yes/no may refer to the fact without stating it. Prefer the '
+                'specific statement naming the finding, treatment or action. A question '
+                'with its confirmed premise can supply the specific evidence; the bare '
+                'reply alone often cannot. A proposal is not a completed prescription. '
+                'Do not favor A or B based on ordering. '
+                'For each question, first compare what A and B actually establish '
+                'in at most 30 words, then choose. Return JSON mapping the question '
+                'number to {"comparison":"brief comparison", "choice":"A" or "B"}. '
+                'Do not output any other text.\n\n'
+            )
+        else:
+            rules += 'Return JSON mapping question number to "A" or "B", nothing else.\n\n'
+        instruction = rules + '\n\n'.join(pairs)
+        prompt = self.tokenizer.apply_chat_template(
+            [{'role': 'user', 'content': instruction}], tokenize=False,
+            add_generation_prompt=True, enable_thinking=False,
+        )
+        reply = generate(self.model, self.tokenizer, prompt=prompt,
+                         sampler=self.sampler,
+                         max_tokens=1000 if (self.refine_evidence or self.reasoned_choice
+                                             or self.review_transcript) else 300,
+                         verbose=False)
+        self.last_adjudication = reply
+        try:
+            match = re.search(r'\{.*\}', reply, re.DOTALL)
+            choices = json.loads(match.group(0)) if match else {}
+        except json.JSONDecodeError:
+            choices = {}
+        if not isinstance(choices, dict):
+            choices = {}
+        result = []
+        for index, (answer, span) in enumerate(predictions):
+            original = span
+            selection = choices.get(str(index + 1))
+            if self.review_transcript and isinstance(selection, dict):
+                if selection.get('choice') == 'B':
+                    span = prior[index][1]
+                elif (selection.get('choice') == 'C' and type(selection.get('unit')) is int
+                      and isinstance(selection.get('quote'), str)):
+                    alternative = quote_span(units, selection['unit'], selection['quote'])
+                    if alternative is not None:
+                        span = calibrate(alternative, *self.calibration)
+            elif self.refine_evidence and isinstance(selection, dict):
+                candidate = prior[index][1] if selection.get('choice') == 'B' else span
+                quote = selection.get('quote')
+                if candidate is not None and isinstance(quote, str):
+                    words = [word for word in transcript.words
+                             if candidate[0] - 5 <= (word.start + word.end) / 2
+                             <= candidate[1] + 5]
+                    grounded = exact_quote_spans(words, quote)
+                    if len(grounded) == 1:
+                        span = calibrate(grounded[0], *self.calibration)
+            elif self.reasoned_choice and isinstance(selection, dict):
+                if selection.get('choice') == 'B':
+                    span = prior[index][1]
+            elif not self.refine_evidence and selection == 'B':
+                span = prior[index][1]
+            if self.pair_selector is not None and answer:
+                first_overlap = temporal_iou(span, original) if span is not None else 0.0
+                second_overlap = temporal_iou(span, prior[index][1]) if span is not None else 0.0
+                features = pair_features(transcript, questions[index], original,
+                                         prior[index][1], second_overlap > first_overlap)
+                span = (prior[index][1] if pair_advantage(features, self.pair_selector) > 0
+                        else original)
+            result.append((answer, span))
+        return result

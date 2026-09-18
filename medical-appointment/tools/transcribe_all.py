@@ -23,7 +23,6 @@ from utils import AUDIO_DIRECTORY  # noqa: E402
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--model', default=asr.DEFAULT_MODEL)
-    parser.add_argument('--beam-size', type=int, default=5)
     parser.add_argument('--force', action='store_true')
     parser.add_argument('--limit', type=int, default=0)
     args = parser.parse_args()
@@ -45,9 +44,7 @@ def main() -> int:
             continue
 
         started = time.time()
-        transcript = asr.transcribe_file(
-            str(path), model_name=args.model, beam_size=args.beam_size
-        )
+        transcript = asr.transcribe_file(str(path), model_name=args.model)
         elapsed = time.time() - started
         asr.save_cached(key, transcript, args.model)
 

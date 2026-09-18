@@ -1,8 +1,8 @@
 """The serving pipeline: audio in, answers and spans out.
 
-Transcription happens once per request and is shared by all ten questions, as
-the case intends. Everything is local — faster-whisper for the audio, and
-whichever answering approach is configured for the reading.
+Transcription happens once per request and is shared by all ten questions.
+Whisper and the quote reader run locally through MLX; the supporting neural
+evidence candidate uses PyTorch MPS on Apple Silicon.
 """
 
 from __future__ import annotations
@@ -20,8 +20,8 @@ logger = logging.getLogger(__name__)
 
 Span = Tuple[float, float]
 
-APPROACH = os.environ.get('APPROACH', 'neural')
-ASR_MODEL = os.environ.get('ASR_MODEL', 'large-v3')
+APPROACH = os.environ.get('APPROACH', 'quote_judge')
+ASR_MODEL = os.environ.get('ASR_MODEL', asr.DEFAULT_MODEL)
 
 # Cache transcripts by content hash. The service sends each conversation once,
 # so this buys nothing there; locally it makes a re-run of local_evaluator.py

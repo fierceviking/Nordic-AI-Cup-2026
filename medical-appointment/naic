@@ -1,0 +1,159 @@
+#!/usr/bin/env bash
+#
+# Nordic AI Cup — medical-appointment control CLI.
+#
+#   ./naic serve                 start the prediction server (port 9054)
+#   ./naic tunnel                open a quick tunnel and capture the URL
+#   ./naic url <https://.../>    point the CLI at a tunnel (path optional)
+#   ./naic status                team status and past attempts
+#   ./naic ping                  is the tunnel serving our app?
+#   ./naic verify                one-conversation format check
+#   ./naic validate              queue a validation run
+#   ./naic config                show what is currently set
+#
+# Evaluation is deliberately not implemented: there is exactly one attempt and
+# it is not something to trigger from a shell alias by accident.
+
+set -u -o pipefail
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SECRETS="$HERE/secrets.sh"
+PYTHON="$HOME/.pyenv/versions/dm/bin/python"
+PORT=9054
+
+[ -f "$SECRETS" ] && . "$SECRETS"
+
+NAIC_TOKEN="${NAIC_TOKEN:-}"
+NAIC_BASE="${NAIC_BASE:-https://cases.nordicaicup.com/api/v1/usecases/medical-appointment}"
+NAIC_PREDICT="${NAIC_PREDICT:-}"
+
+red()   { printf '\033[31m%s\033[0m\n' "$*"; }
+green() { printf '\033[32m%s\033[0m\n' "$*"; }
+dim()   { printf '\033[2m%s\033[0m\n' "$*"; }
+
+need_token() {
+  if [ -z "$NAIC_TOKEN" ]; then
+    red "NAIC_TOKEN is not set. Put it in $SECRETS"
+    exit 1
+  fi
+}
+
+need_predict() {
+  if [ -z "$NAIC_PREDICT" ]; then
+    red "No predict URL set. Run:  ./naic url https://<subdomain>.trycloudflare.com"
+    exit 1
+  fi
+}
+
+# Accepts a bare host or a full URL, with or without /predict, and normalises
+# it -- submitting the host alone is a silent zero, since the path is used
+# exactly as given.
+normalise() {
+  local url="$1"
+  url="${url%/}"
+  case "$url" in
+    http://*|https://*) ;;
+    *) url="https://$url" ;;
+  esac
+  case "$url" in
+    */predict) ;;
+    *) url="$url/predict" ;;
+  esac
+  printf '%s' "$url"
+}
+
+pretty() {
+  if command -v jq >/dev/null 2>&1; then jq .; else "$PYTHON" -m json.tool; fi
+}
+
+post_url() {
+  need_token; need_predict
+  curl -sS -X POST "$NAIC_BASE/$1" \
+    -H "x-token: $NAIC_TOKEN" \
+    -H 'Content-Type: application/json' \
+    -d "{\"url\":\"$NAIC_PREDICT\"}" | pretty
+}
+
+case "${1:-help}" in
+
+  serve)
+    cd "$HERE" || exit 1
+    dim "warming models, then serving on 0.0.0.0:$PORT"
+    exec "$PYTHON" api.py
+    ;;
+
+  tunnel)
+    command -v cloudflared >/dev/null 2>&1 || { red "brew install cloudflared"; exit 1; }
+    dim "starting quick tunnel -> http://127.0.0.1:$PORT"
+    dim "copy the https://....trycloudflare.com URL, then: ./naic url <that-url>"
+    exec cloudflared tunnel --url "http://127.0.0.1:$PORT"
+    ;;
+
+  url)
+    [ $# -ge 2 ] || { red "usage: ./naic url https://<subdomain>.trycloudflare.com"; exit 1; }
+    new="$(normalise "$2")"
+    touch "$SECRETS"
+    # Rewrite in place so the URL survives a new shell.
+    "$PYTHON" - "$SECRETS" "$new" <<'PY'
+import os, re, sys
+
+path, url = sys.argv[1], sys.argv[2]
+text = open(path).read() if os.path.exists(path) else ''
+line = f'export NAIC_PREDICT={url}'
+
+if re.search(r'^export NAIC_PREDICT=.*$', text, re.M):
+    text = re.sub(r'^export NAIC_PREDICT=.*$', line, text, flags=re.M)
+else:
+    text = (text.rstrip('\n') + '\n' + line).lstrip('\n')
+
+open(path, 'w').write(text.rstrip('\n') + '\n')
+PY
+    green "predict URL set to $new"
+    dim "run 'source secrets.sh' if you want it in this shell too"
+    ;;
+
+  ping)
+    need_predict
+    root="${NAIC_PREDICT%/predict}"
+    dim "GET $root"
+    code=$(curl -sS -o /tmp/naic_ping -w '%{http_code}' --max-time 20 "$root")
+    body=$(cat /tmp/naic_ping)
+    if [ "$code" = "200" ]; then green "$code  $body"; else red "$code  $body"; fi
+    ;;
+
+  status)
+    need_token
+    curl -sS -X GET "$NAIC_BASE/status" -H "x-token: $NAIC_TOKEN" | pretty
+    ;;
+
+  verify)
+    dim "format check against $NAIC_PREDICT"
+    post_url verify
+    ;;
+
+  validate)
+    dim "queueing validation against $NAIC_PREDICT"
+    post_url validate/queue
+    ;;
+
+  config)
+    printf 'base      %s\n' "$NAIC_BASE"
+    printf 'predict   %s\n' "${NAIC_PREDICT:-<unset>}"
+    if [ -n "$NAIC_TOKEN" ]; then
+      printf 'token     set (%s chars, ends %s)\n' "${#NAIC_TOKEN}" "${NAIC_TOKEN: -4}"
+    else
+      printf 'token     <unset>\n'
+    fi
+    printf 'python    %s\n' "$PYTHON"
+    ;;
+
+  evaluate|eval)
+    red "Not wired up on purpose: one attempt only, and it is final."
+    dim  "If you really mean it, POST to $NAIC_BASE/evaluate/queue by hand."
+    exit 1
+    ;;
+
+  *)
+    sed -n '3,20p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+    ;;
+esac

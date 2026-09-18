@@ -285,19 +285,11 @@ def declarative(question: str) -> str:
     }
 
     if leading in auxiliaries and len(words) > 2:
-        rest = words[1:]
-        if leading in ('do', 'does', 'did'):
-            statement = ' '.join(rest)
-        else:
-            # Subject, then the auxiliary, then the rest.
-            subject_end = 1
-            determiners = {'the', 'a', 'an', 'this', 'that', 'these', 'those',
-                           'his', 'her', 'their', 'any', 'no'}
-            if rest[0].lower() in determiners:
-                subject_end = min(len(rest), 3)
-            statement = ' '.join(
-                rest[:subject_end] + [leading] + rest[subject_end:]
-            )
+        # Dropping the fronted auxiliary keeps the word order intact. Moving it
+        # instead needs to know where the subject ends, and guessing at a fixed
+        # offset turned "Was the patient listened to" into "The patient listened
+        # was to" for about half the questions.
+        statement = ' '.join(words[1:])
         return statement[0].upper() + statement[1:] + '.'
 
     return text + '.'

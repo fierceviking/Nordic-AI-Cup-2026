@@ -1,0 +1,81 @@
+question_id,transcript_id,question,question_type,label,prediction,correct,gold_start,gold_end,pred_start,pred_end,tiou
+sample_4_yes_q03,sample_4,Did the patient attend for an annual asthma follow-up?,positive,1,1,1,21.62,26.24,21.688000000000002,26.191999999999997,0.9748917748917741
+sample_4_yes_q07,sample_4,Is the heart examination without abnormal findings?,positive,1,1,1,43.5,44.98,40.4884,45.031600000000005,0.3257615777425592
+sample_4_yes_q06,sample_4,Was the patient listened to with a stethoscope?,positive,1,1,1,28.520000000000003,42.72,28.800399999999996,32.5596,0.2647323943661978
+sample_4_yes_q05,sample_4,Were the lungs found to be normal on auscultation?,positive,1,1,1,40.68,44.98,40.464999999999996,42.715,0.45071982281284684
+sample_4_yes_q02,sample_4,Are the patient's asthma findings stable at this visit?,positive,1,1,1,51.48,54.4,51.4136,54.506400000000006,0.94412829798241
+sample_4_hard_no_q01,sample_4,Should the asthma medication dose be increased?,hard_negative,0,0,1,,,65.8176,67.34240000000001,
+sample_4_yes_q01,sample_4,Will the current treatment continue unchanged?,positive,1,1,1,55.64,61.64,58.8834,60.976600000000005,0.34886666666666716
+sample_4_yes_q04,sample_4,Does the visit concern asthma?,positive,1,1,1,24.88,26.24,24.756999999999998,26.222999999999995,0.9055967633175968
+sample_4_off_topic_q01,sample_4,Is there any discussion about cooking?,off_topic,0,0,1,,,,,
+sample_4_hard_no_q02,sample_4,Has an irregular heart rhythm been found?,hard_negative,0,0,1,,,40.464999999999996,42.715,
+sample_5_yes_q01,sample_5,Does the patient take pantoprazole for reflux?,positive,1,1,1,47.08,52.84,53.6504,54.4696,0.0
+sample_5_hard_no_q02,sample_5,Did the back pain begin after surgery for a lumbar disc prolapse?,hard_negative,0,0,1,,,27.552,30.487999999999996,
+sample_5_hard_no_q01,sample_5,Have the pains in the hands been attributed to gout?,hard_negative,0,0,1,,,81.0846,83.29539999999999,
+sample_5_yes_q05,sample_5,Is the patient still in pain despite regular Ibumetin and Panodil?,positive,1,1,1,36.42,41.58,42.86259999999999,44.87740000000001,0.0
+sample_5_yes_q02,sample_5,Will the NSAID treatment be continued under cover of a proton pump inhibitor?,positive,1,1,1,142.44,147.88,142.45720000000003,147.86280000000002,0.9936764705882344
+sample_5_yes_q06,sample_5,Did the patient undergo surgery for a cervical disc prolapse in 2017?,positive,1,1,1,32.06,34.98,32.2492,34.9108,0.9115068493150702
+sample_5_off_topic_q02,sample_5,Does the conversation mention the patient owning a digital camera?,off_topic,0,0,1,,,,,
+sample_5_yes_q03,sample_5,Was muscle tension found in the neck and shoulders?,positive,1,1,1,102.68,105.42,102.67060000000001,105.4694,0.9789909961412065
+sample_5_yes_q04,sample_5,Are the menopausal symptoms treated with Activelle?,positive,1,1,1,70.44,73.82,70.4366,73.8234,0.9979922050312943
+sample_5_off_topic_q01,sample_5,Is the patient discussing owning a cat?,off_topic,0,0,1,,,,,
+sample_6_yes_q03,sample_6,Was the patient's voice noted to sound congested?,positive,1,1,1,24.4,26.34,24.559800000000003,26.3002,0.8971134020618537
+sample_6_hard_no_q02,sample_6,Should the fungal infection be treated with Brentan gel?,hard_negative,0,0,1,,,73.2072,77.63279999999999,
+sample_6_off_topic_q01,sample_6,Does the patient talk about needing a new vehicle for their daily commute?,off_topic,0,0,1,,,,,
+sample_6_yes_q04,sample_6,Are four daily doses of one million IU of penicillin planned?,positive,1,1,1,62.9,69.68,63.04959999999999,69.67039999999999,0.9765191740412961
+sample_6_yes_q05,sample_6,Does the patient also have a fungal infection in the mouth?,positive,1,1,1,72.96,77.6,13.002200000000002,14.9778,0.0
+sample_6_yes_q07,sample_6,Did the patient ask for penicillin?,positive,1,1,1,17.9,19.18,17.8954,19.2046,0.9776963030858544
+sample_6_yes_q01,sample_6,Will the patient take Fluconazole 50 mg?,positive,1,1,1,73.52,77.6,73.2072,77.63279999999999,0.9219088937093295
+sample_6_hard_no_q01,sample_6,Does the patient want to avoid antibiotics?,hard_negative,0,0,1,,,17.8954,19.2046,
+sample_6_yes_q02,sample_6,Is the patient complaining of sinus symptoms?,positive,1,1,1,9.06,12.28,9.094800000000001,12.3052,0.9815111549365215
+sample_6_yes_q06,sample_6,Has penicillin been prescribed for seven days?,positive,1,1,1,64.18,69.68,65.3068,69.69319999999999,0.7932235362403004
+sample_10_hard_no_q01,sample_10,Has the doctor found the condition to be unstable?,hard_negative,0,0,1,,,60.3644,62.555600000000005,
+sample_10_hard_no_q04,sample_10,Did the patient report new breathing symptoms?,hard_negative,0,0,1,,,22.3348,23.585199999999997,
+sample_10_yes_q01,sample_10,Does the patient need continued treatment?,positive,1,1,1,63.18,64.58,62.964999999999996,65.21499999999999,0.6222222222222236
+sample_10_off_topic_q02,sample_10,Did the patient mention owning a specific pet?,off_topic,0,0,1,,,,,
+sample_10_off_topic_q01,sample_10,Was any problem with housing discussed?,off_topic,0,0,1,,,,,
+sample_10_hard_no_q05,sample_10,Is the stomach acid medication being discontinued?,hard_negative,0,0,1,,,78.4678,79.03219999999999,
+sample_10_hard_no_q03,sample_10,Were abnormal sounds heard over the lungs?,hard_negative,0,0,1,,,56.097,57.563,
+sample_10_yes_q02,sample_10,Were the lungs and heart normal on auscultation?,positive,1,1,1,53.76,57.56,53.803000000000004,55.857,0.5405263157894717
+sample_10_yes_q03,sample_10,"Are the patient's complaints unchanged, with nothing new reported?",positive,1,1,1,22.2,23.56,22.3348,23.585199999999997,0.8844932139763207
+sample_10_hard_no_q02,sample_10,Does the plan include a referral to a lung specialist?,hard_negative,0,0,1,,,,,
+sample_17_yes_q03,sample_17,Is the medicine to be taken after a meal?,positive,1,1,1,46.1,47.52,46.0376,47.562400000000004,0.931269674711435
+sample_17_hard_no_q06,sample_17,Has the patient been told that the condition needs no treatment?,hard_negative,0,0,1,,,36.581,38.439,
+sample_17_yes_q02,sample_17,Should the daily dose be 100 mg?,positive,1,1,1,42.84,44.42,41.7402,45.479800000000004,0.4225050807572995
+sample_17_hard_no_q05,sample_17,Were bacteria identified in the sample?,hard_negative,0,0,1,,,27.686600000000002,30.093400000000003,
+sample_17_hard_no_q03,sample_17,Did the swab come from the throat?,hard_negative,0,0,1,,,19.675800000000002,22.984199999999998,
+sample_17_hard_no_q02,sample_17,Was the prescribed dose 200 mg daily?,hard_negative,0,0,1,,,41.7402,45.479800000000004,
+sample_17_off_topic_q01,sample_17,Is there any mention of attending a concert?,off_topic,0,0,1,,,,,
+sample_17_hard_no_q01,sample_17,"The treatment is planned to run for six weeks, right?",hard_negative,0,0,1,,,41.7402,45.479800000000004,
+sample_17_hard_no_q04,sample_17,Should the tablets be taken on an empty stomach?,hard_negative,0,0,1,,,52.8544,54.06560000000001,
+sample_17_yes_q01,sample_17,Will the treatment last two weeks?,positive,1,1,1,48.18,50.7,41.7402,45.479800000000004,0.0
+sample_18_yes_q04,sample_18,Should kidney function be monitored?,positive,1,1,1,41.82,45.58,41.186800000000005,45.57320000000001,0.8543203132113295
+sample_18_off_topic_q01,sample_18,Is there any reference to the patient planning a specific fitness challenge?,off_topic,0,0,1,,,,,
+sample_18_yes_q02,sample_18,Did the patient ask for a renewal of the Ibumetin prescription?,positive,1,1,1,17.24,18.5,17.156200000000002,18.543799999999997,0.9080426635918173
+sample_18_yes_q01,sample_18,Has the Ibumetin prescription been issued?,positive,1,1,1,69.38,72.04,69.36860000000001,71.9714,0.9700531556487294
+sample_18_yes_q07,sample_18,Is the patient also taking Pantoprazole?,positive,1,1,1,20.92,26.3,25.1144,26.3256,0.21932810418824938
+sample_18_hard_no_q01,sample_18,Were liver values the focus of the planned blood tests?,hard_negative,0,0,1,,,62.2398,65.94019999999999,
+sample_18_hard_no_q02,sample_18,Should the blood pressure readings be taken at the clinic instead of at home?,hard_negative,0,0,1,,,50.66799999999999,55.172000000000004,
+sample_18_yes_q06,sample_18,Will the blood tests include cholesterol and blood sugar?,positive,1,1,1,62.5,65.94,62.2398,65.94019999999999,0.9296292292725136
+sample_18_yes_q03,sample_18,Does the doctor consider the NSAID use long-standing and high?,positive,1,1,1,33.0,38.66,32.78099999999999,38.559000000000005,0.9455689743153598
+sample_18_yes_q05,sample_18,Was blood pressure to be measured at home over three days?,positive,1,1,1,50.74,55.1,50.66799999999999,55.172000000000004,0.9680284191829458
+sample_19_yes_q04,sample_19,Is the patient still being treated for asthma?,positive,1,1,1,26.3,28.12,26.554599999999997,29.745400000000004,0.4543449236663385
+sample_19_off_topic_q01,sample_19,Did the patient discuss baking a cake in the conversation?,off_topic,0,0,1,,,,,
+sample_19_hard_no_q03,sample_19,Does the doctor describe the medication as unstable and in need of change?,hard_negative,0,0,1,,,43.316399999999994,44.723600000000005,
+sample_19_hard_no_q01,sample_19,"Alongside asthma, is the patient treated for diabetes?",hard_negative,0,0,1,,,,,
+sample_19_yes_q01,sample_19,Were three prescriptions renewed in total?,positive,1,1,1,68.24,71.64,68.3758,71.68419999999999,0.9477382265838241
+sample_19_off_topic_q02,sample_19,Did the conversation mention anything about the patient planning a trip?,off_topic,0,0,1,,,,,
+sample_19_yes_q02,sample_19,Has Esomeprazole been renewed as well?,positive,1,1,1,68.24,71.64,68.3758,71.68419999999999,0.9477382265838241
+sample_19_yes_q03,sample_19,Is Airomir among the renewed medicines?,positive,1,1,1,68.24,71.64,68.3758,71.68419999999999,0.9477382265838241
+sample_19_hard_no_q04,sample_19,Were the prescriptions stopped rather than renewed?,hard_negative,0,0,1,,,71.029,71.711,
+sample_19_hard_no_q02,sample_19,Was Pantoprazole the acid-reducing drug that was renewed?,hard_negative,0,0,1,,,75.95199999999998,76.928,
+sample_20_hard_no_q03,sample_20,Will the patient be referred to a pain clinic?,hard_negative,0,0,1,,,,,
+sample_20_off_topic_q02,sample_20,Was a specific recipe or cooking activity discussed?,off_topic,0,0,1,,,,,
+sample_20_off_topic_q01,sample_20,At any point does the patient talk about their experiences with a hobby?,off_topic,0,0,1,,,,,
+sample_20_yes_q01,sample_20,Was Ibumetin renewed as well?,positive,1,1,1,182.44,186.3,182.4214,186.27860000000004,0.9896870004640944
+sample_20_hard_no_q01,sample_20,Did the patient ask for morphine to be renewed?,hard_negative,0,0,1,,,,,
+sample_20_hard_no_q02,sample_20,Does the pain affect the lower back alone?,hard_negative,0,0,1,,,75.7658,83.9742,
+sample_20_yes_q05,sample_20,Is Pamol one of the medicines requested?,positive,1,1,1,182.44,184.98,42.4358,43.784200000000006,0.0
+sample_20_yes_q02,sample_20,Has the pain problem been described as stable?,positive,1,1,1,102.3,105.02,102.434,107.526,0.4948335246842708
+sample_20_yes_q04,sample_20,Does the patient still need pain relief?,positive,1,1,1,105.56,107.46,168.37339999999998,173.4066,0.0
+sample_20_yes_q03,sample_20,Were both prescriptions issued?,positive,1,1,1,182.44,184.5,182.4214,186.27860000000004,0.5340661619827812

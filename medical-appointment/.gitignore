@@ -2,6 +2,11 @@
 transcripts/
 models/
 
+# API token and the current tunnel URL. Never commit these.
+secrets.sh
+secrets.ps1
+.env
+
 # Generic Python files (Source: https://github.com/github/gitignore/blob/main/Python.gitignore)
 __pycache__/
 *.py[cod]
@@ -80,3 +85,5 @@ cython_debug/
 .vscode
 .devcontainer
 .jupyter
+
+.ps1

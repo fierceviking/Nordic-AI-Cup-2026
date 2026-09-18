@@ -1,0 +1,81 @@
+question_id,transcript_id,question,question_type,label,prediction,correct,gold_start,gold_end,pred_start,pred_end,tiou
+sample_6_yes_q03,sample_6,Was the patient's voice noted to sound congested?,positive,1,1,1,24.4,26.34,24.559800000000003,26.3002,0.8971134020618537
+sample_6_hard_no_q02,sample_6,Should the fungal infection be treated with Brentan gel?,hard_negative,0,0,1,,,,,
+sample_6_off_topic_q01,sample_6,Does the patient talk about needing a new vehicle for their daily commute?,off_topic,0,0,1,,,,,
+sample_6_yes_q04,sample_6,Are four daily doses of one million IU of penicillin planned?,positive,1,1,1,62.9,69.68,65.3068,69.69319999999999,0.6437614084672932
+sample_6_yes_q05,sample_6,Does the patient also have a fungal infection in the mouth?,positive,1,1,1,72.96,77.6,13.378400000000001,14.9816,0.0
+sample_6_yes_q07,sample_6,Did the patient ask for penicillin?,positive,1,1,1,17.9,19.18,17.8954,19.2046,0.9776963030858544
+sample_6_yes_q01,sample_6,Will the patient take Fluconazole 50 mg?,positive,1,1,1,73.52,77.6,73.2072,77.63279999999999,0.9219088937093295
+sample_6_hard_no_q01,sample_6,Does the patient want to avoid antibiotics?,hard_negative,0,0,1,,,,,
+sample_6_yes_q02,sample_6,Is the patient complaining of sinus symptoms?,positive,1,1,1,9.06,12.28,10.7184,12.3216,0.4787834191807698
+sample_6_yes_q06,sample_6,Has penicillin been prescribed for seven days?,positive,1,1,1,64.18,69.68,65.3068,69.69319999999999,0.7932235362403004
+sample_17_yes_q03,sample_17,Is the medicine to be taken after a meal?,positive,1,1,1,46.1,47.52,46.0376,47.562400000000004,0.931269674711435
+sample_17_hard_no_q06,sample_17,Has the patient been told that the condition needs no treatment?,hard_negative,0,0,1,,,37.076,38.444,
+sample_17_yes_q02,sample_17,Should the daily dose be 100 mg?,positive,1,1,1,42.84,44.42,41.7402,45.479800000000004,0.4225050807572995
+sample_17_hard_no_q05,sample_17,Were bacteria identified in the sample?,hard_negative,0,0,1,,,27.686600000000002,30.093400000000003,
+sample_17_hard_no_q03,sample_17,Did the swab come from the throat?,hard_negative,0,0,1,,,19.675800000000002,22.984199999999998,
+sample_17_hard_no_q02,sample_17,Was the prescribed dose 200 mg daily?,hard_negative,0,0,1,,,41.7402,45.479800000000004,
+sample_17_off_topic_q01,sample_17,Is there any mention of attending a concert?,off_topic,0,0,1,,,,,
+sample_17_hard_no_q01,sample_17,"The treatment is planned to run for six weeks, right?",hard_negative,0,0,1,,,42.78959999999999,45.4904,
+sample_17_hard_no_q04,sample_17,Should the tablets be taken on an empty stomach?,hard_negative,0,0,1,,,46.0376,47.562400000000004,
+sample_17_yes_q01,sample_17,Will the treatment last two weeks?,positive,1,1,1,48.18,50.7,42.78959999999999,45.4904,0.0
+sample_33_yes_q06,sample_33,"The visit is a follow-up on allergic rhinitis, correct?",positive,1,1,1,13.94,17.42,14.087,16.532999999999998,0.7028735632183898
+sample_33_hard_no_q01,sample_33,Does the doctor plan to refer the patient to an allergy specialist?,hard_negative,0,0,1,,,,,
+sample_33_hard_no_q02,sample_33,Were daily doses made mandatory going forward?,hard_negative,0,0,1,,,,,
+sample_33_off_topic_q01,sample_33,Is there any talk about the patient's recent purchase of a vehicle?,off_topic,0,0,1,,,,,
+sample_33_yes_q02,sample_33,Is the patient free of symptoms at the moment?,positive,1,1,1,27.02,31.5,27.221,29.079,0.41473214285714294
+sample_33_yes_q04,sample_33,Did the antihistamine work well?,positive,1,1,1,58.82,61.32,59.02460000000001,61.235400000000006,0.8843199999999996
+sample_33_yes_q03,sample_33,Has the medication helped the patient?,positive,1,1,1,55.34,58.28,25.889599999999998,26.6304,0.0
+sample_33_yes_q05,sample_33,Are the findings unremarkable?,positive,1,1,1,44.86,52.62,44.684799999999996,46.915200000000006,0.2589978828510946
+sample_33_yes_q01,sample_33,Should the patient carry on with the treatment as needed?,positive,1,1,1,69.06,71.0,68.86399999999999,71.01599999999999,0.9014869888475822
+sample_33_hard_no_q03,sample_33,Was anything abnormal picked up at the examination?,hard_negative,0,1,0,,,50.483999999999995,52.636,
+sample_43_yes_q02,sample_43,Does the patient have a sore throat?,positive,1,1,1,4.82,6.24,4.8166,6.243399999999999,0.9952340902719378
+sample_43_hard_no_q03,sample_43,Is the infection thought to be bacterial?,hard_negative,0,0,1,,,49.0144,50.2256,
+sample_43_yes_q05,sample_43,Did the examination find no pus in the throat?,positive,1,1,1,31.76,34.28,40.4282,41.031800000000004,0.0
+sample_43_off_topic_q01,sample_43,Are the speakers discussing the patient's pet?,off_topic,0,0,1,,,,,
+sample_43_yes_q04,sample_43,Was the strep test negative?,positive,1,1,1,23.06,23.78,23.01,23.79,0.923076923076929
+sample_43_yes_q01,sample_43,Is the infection considered to be viral?,positive,1,1,1,44.22,46.78,44.1092,46.7708,0.955069642054816
+sample_43_hard_no_q01,sample_43,Does the patient describe abdominal pain as the main problem?,hard_negative,0,0,1,,,,,
+sample_43_hard_no_q02,sample_43,Were the tonsils covered in coatings?,hard_negative,0,0,1,,,40.4282,41.031800000000004,
+sample_43_yes_q03,sample_43,Has the doctor decided against antibiotics?,positive,1,1,1,59.48,63.9,58.962599999999995,59.0174,0.0
+sample_43_hard_no_q04,sample_43,Did the doctor see pus in the throat?,hard_negative,0,0,1,,,40.4282,41.031800000000004,
+sample_52_yes_q02,sample_52,Did the doctor plan continued follow-up?,positive,1,1,1,83.42,86.4,83.4122,86.36779999999999,0.9866122230403573
+sample_52_hard_no_q06,sample_52,Has the patient been discharged from any further follow-up?,hard_negative,0,0,1,,,,,
+sample_52_yes_q03,sample_52,Was the patient seen as engaged during the consultation?,positive,1,1,1,59.06,62.7,60.841,62.69900000000001,0.5104395604395634
+sample_52_hard_no_q05,sample_52,Does the plan involve starting insulin?,hard_negative,0,0,1,,,,,
+sample_52_hard_no_q04,sample_52,Is the patient's grasp of the treatment considered inadequate?,hard_negative,0,0,1,,,,,
+sample_52_hard_no_q02,sample_52,Was the patient found to be poorly motivated?,hard_negative,0,0,1,,,,,
+sample_52_yes_q01,sample_52,"The patient understands the treatment well, right?",positive,1,1,1,70.22,75.36,70.0554,75.28459999999998,0.9547562492930646
+sample_52_hard_no_q03,sample_52,Were the classes the patient attended about hypertension?,hard_negative,0,0,1,,,,,
+sample_52_off_topic_q01,sample_52,Does the doctor ask about the patient's plans for the holidays?,off_topic,0,0,1,,,,,
+sample_52_hard_no_q01,sample_52,Did the patient skip the diabetes education?,hard_negative,0,0,1,,,,,
+sample_69_yes_q02,sample_69,Does the patient feel well?,positive,1,1,1,30.92,33.08,30.983399999999996,33.0766,0.969074074074077
+sample_69_yes_q01,sample_69,Was the blood pressure normal?,positive,1,1,1,42.5,43.68,42.512,45.448,0.39620081411126157
+sample_69_yes_q03,sample_69,Is the foot status normal?,positive,1,1,1,44.22,45.46,42.512,45.448,0.41655359565807376
+sample_69_yes_q04,sample_69,Will the regular check-ups be continued?,positive,1,1,1,68.26,69.96,68.2632,72.29679999999999,0.4203329369797865
+sample_69_yes_q06,sample_69,"The diabetes was judged to be stable, right?",positive,1,1,1,57.68,58.9,57.1964,60.5636,0.36231884057970937
+sample_69_yes_q05,sample_69,Are there no signs of complications?,positive,1,1,1,59.28,60.52,63.1852,63.4948,0.0
+sample_69_hard_no_q01,sample_69,Were wounds discovered on the feet?,hard_negative,0,0,1,,,50.156,51.524,
+sample_69_off_topic_q01,sample_69,Does the patient express interest in changing their work schedule?,off_topic,0,0,1,,,,,
+sample_69_hard_no_q02,sample_69,Is blood pressure medication being started?,hard_negative,0,0,1,,,,,
+sample_69_hard_no_q03,sample_69,Have early complications of the diabetes been detected?,hard_negative,0,0,1,,,57.1964,60.5636,
+sample_79_yes_q02,sample_79,Is chondromalacia patellae suspected on clinical grounds?,positive,1,1,1,82.96,87.4,81.8332,86.84679999999999,0.6982108212976923
+sample_79_hard_no_q03,sample_79,Has the patient been referred to a physiotherapist instead of further procedures?,hard_negative,0,0,1,,,125.49,128.23000000000002,
+sample_79_off_topic_q01,sample_79,Does the patient express interest in learning Spanish?,off_topic,0,0,1,,,,,
+sample_79_yes_q05,sample_79,Do the pains come and go rather than being constant?,positive,1,1,1,24.72,28.16,40.612,41.58800000000001,0.0
+sample_79_hard_no_q04,sample_79,Does the pain sit on the back of the thigh?,hard_negative,0,0,1,,,58.58519999999999,62.814800000000005,
+sample_79_yes_q03,sample_79,Does the patient have pain behind the kneecap?,positive,1,1,1,24.72,26.9,23.410399999999996,28.149599999999996,0.4599932478055367
+sample_79_yes_q01,sample_79,Did the patient show up in person for the consultation?,positive,1,1,1,0.0,2.8,0.23380000000000004,1.3861999999999999,0.41157142857142853
+sample_79_hard_no_q02,sample_79,Was the diagnosis of chondromalacia patellae confirmed by an MRI scan?,hard_negative,0,0,1,,,102.13239999999999,107.06759999999998,
+sample_79_hard_no_q01,sample_79,Are the knee pains constant throughout the day?,hard_negative,0,0,1,,,29.1576,32.6424,
+sample_79_yes_q04,sample_79,Was the suspicion reached without imaging?,positive,1,1,1,80.88,87.4,102.13239999999999,107.06759999999998,0.0
+sample_90_yes_q04,sample_90,Does the doctor consider the change harmless?,positive,1,1,1,27.84,28.98,,,0.0
+sample_90_hard_no_q01,sample_90,Did the doctor find the change suspicious?,hard_negative,0,1,0,,,,,
+sample_90_off_topic_q01,sample_90,Does the patient talk about their job responsibilities?,off_topic,0,1,0,,,,,
+sample_90_yes_q03,sample_90,Did the patient notice a new mole?,positive,1,1,1,14.46,16.42,,,0.0
+sample_90_hard_no_q03,sample_90,Is the new mole sitting on the back?,hard_negative,0,1,0,,,,,
+sample_90_yes_q01,sample_90,Was a photo sent in for assessment?,positive,1,1,1,10.46,12.1,,,0.0
+sample_90_yes_q05,sample_90,Has the doctor reviewed the photograph?,positive,1,1,1,20.08,21.92,,,0.0
+sample_90_off_topic_q02,sample_90,Does the patient mention owning a cat?,off_topic,0,1,0,,,,,
+sample_90_hard_no_q02,sample_90,Does the patient describe the mole as small and unchanged?,hard_negative,0,1,0,,,,,
+sample_90_yes_q02,sample_90,Is the mole located on the thigh?,positive,1,1,1,14.46,16.42,,,0.0

@@ -1,0 +1,71 @@
+question_id,transcript_id,question,question_type,label,prediction,correct,gold_start,gold_end,pred_start,pred_end,tiou
+sample_4_yes_q03,sample_4,Did the patient attend for an annual asthma follow-up?,positive,1,1,1,21.62,26.24,24.756999999999998,26.222999999999995,0.31731601731601694
+sample_4_yes_q07,sample_4,Is the heart examination without abnormal findings?,positive,1,1,1,43.5,44.98,40.464999999999996,42.715,0.0
+sample_4_yes_q06,sample_4,Was the patient listened to with a stethoscope?,positive,1,1,1,28.520000000000003,42.72,28.800399999999996,32.5596,0.2647323943661978
+sample_4_yes_q05,sample_4,Were the lungs found to be normal on auscultation?,positive,1,1,1,40.68,44.98,40.464999999999996,42.715,0.45071982281284684
+sample_4_yes_q02,sample_4,Are the patient's asthma findings stable at this visit?,positive,1,1,1,51.48,54.4,51.4136,54.506400000000006,0.94412829798241
+sample_4_hard_no_q01,sample_4,Should the asthma medication dose be increased?,hard_negative,0,0,1,,,65.8176,67.34240000000001,
+sample_4_yes_q01,sample_4,Will the current treatment continue unchanged?,positive,1,1,1,55.64,61.64,58.8834,60.976600000000005,0.34886666666666716
+sample_4_yes_q04,sample_4,Does the visit concern asthma?,positive,1,1,1,24.88,26.24,24.756999999999998,26.222999999999995,0.9055967633175968
+sample_4_off_topic_q01,sample_4,Is there any discussion about cooking?,off_topic,0,0,1,,,,,
+sample_4_hard_no_q02,sample_4,Has an irregular heart rhythm been found?,hard_negative,0,0,1,,,40.464999999999996,42.715,
+sample_5_yes_q01,sample_5,Does the patient take pantoprazole for reflux?,positive,1,1,1,47.08,52.84,,,0.0
+sample_5_hard_no_q02,sample_5,Did the back pain begin after surgery for a lumbar disc prolapse?,hard_negative,0,1,0,,,,,
+sample_5_hard_no_q01,sample_5,Have the pains in the hands been attributed to gout?,hard_negative,0,1,0,,,,,
+sample_5_yes_q05,sample_5,Is the patient still in pain despite regular Ibumetin and Panodil?,positive,1,1,1,36.42,41.58,,,0.0
+sample_5_yes_q02,sample_5,Will the NSAID treatment be continued under cover of a proton pump inhibitor?,positive,1,1,1,142.44,147.88,,,0.0
+sample_5_yes_q06,sample_5,Did the patient undergo surgery for a cervical disc prolapse in 2017?,positive,1,1,1,32.06,34.98,,,0.0
+sample_5_off_topic_q02,sample_5,Does the conversation mention the patient owning a digital camera?,off_topic,0,1,0,,,,,
+sample_5_yes_q03,sample_5,Was muscle tension found in the neck and shoulders?,positive,1,1,1,102.68,105.42,,,0.0
+sample_5_yes_q04,sample_5,Are the menopausal symptoms treated with Activelle?,positive,1,1,1,70.44,73.82,,,0.0
+sample_5_off_topic_q01,sample_5,Is the patient discussing owning a cat?,off_topic,0,1,0,,,,,
+sample_20_hard_no_q03,sample_20,Will the patient be referred to a pain clinic?,hard_negative,0,0,1,,,,,
+sample_20_off_topic_q02,sample_20,Was a specific recipe or cooking activity discussed?,off_topic,0,0,1,,,,,
+sample_20_off_topic_q01,sample_20,At any point does the patient talk about their experiences with a hobby?,off_topic,0,0,1,,,,,
+sample_20_yes_q01,sample_20,Was Ibumetin renewed as well?,positive,1,1,1,182.44,186.3,182.4214,186.27860000000004,0.9896870004640944
+sample_20_hard_no_q01,sample_20,Did the patient ask for morphine to be renewed?,hard_negative,0,0,1,,,,,
+sample_20_hard_no_q02,sample_20,Does the pain affect the lower back alone?,hard_negative,0,0,1,,,77.8448,83.99520000000001,
+sample_20_yes_q05,sample_20,Is Pamol one of the medicines requested?,positive,1,1,1,182.44,184.98,42.4358,43.784200000000006,0.0
+sample_20_yes_q02,sample_20,Has the pain problem been described as stable?,positive,1,1,1,102.3,105.02,168.9674,173.4126,0.0
+sample_20_yes_q04,sample_20,Does the patient still need pain relief?,positive,1,1,1,105.56,107.46,168.9674,173.4126,0.0
+sample_20_yes_q03,sample_20,Were both prescriptions issued?,positive,1,1,1,182.44,184.5,182.4214,186.27860000000004,0.5340661619827812
+sample_56_yes_q01,sample_56,Has the cause of the tiredness remained unexplained?,positive,1,1,1,61.66,64.2,67.01459999999999,68.24539999999999,0.0
+sample_56_off_topic_q01,sample_56,Was the doctor asking about the patient's upcoming movie night?,off_topic,0,0,1,,,,,
+sample_56_hard_no_q02,sample_56,Has iron treatment been started for the tiredness?,hard_negative,0,0,1,,,,,
+sample_56_yes_q02,sample_56,Did the COVID-19 test come back negative?,positive,1,1,1,48.84,50.82,49.1982,50.78180000000001,0.7997979797979867
+sample_56_hard_no_q04,sample_56,Was the patient's thyroid function found to be reduced?,hard_negative,0,0,1,,,44.799600000000005,46.52040000000001,
+sample_56_yes_q04,sample_56,"The patient's thyroid function was checked, wasn't it?",positive,1,1,1,44.92,46.5,44.799600000000005,46.52040000000001,0.918177591817756
+sample_56_hard_no_q01,sample_56,Is the patient complaining mainly of chest pain?,hard_negative,0,0,1,,,,,
+sample_56_hard_no_q03,sample_56,Will treatment for the fatigue begin straight away?,hard_negative,0,0,1,,,83.6824,85.6776,
+sample_56_yes_q03,sample_56,Will further measures be held off for the time being?,positive,1,1,1,81.92,85.66,87.04260000000001,89.0574,0.0
+sample_56_off_topic_q02,sample_56,Are the speakers discussing the weather?,off_topic,0,0,1,,,,,
+sample_66_hard_no_q02,sample_66,Was the patient given a pneumococcal vaccination?,hard_negative,0,0,1,,,,,
+sample_66_yes_q03,sample_66,Was the vaccination given as part of diabetes care?,positive,1,1,1,31.34,35.18,31.1828,35.177200000000006,0.9599719803862721
+sample_66_hard_no_q01,sample_66,Did a local reaction develop at the injection site?,hard_negative,0,1,0,,,97.6806,99.4994,
+sample_66_yes_q04,sample_66,"The diabetes status was described as stable, wasn't it?",positive,1,1,1,113.08,114.86,113.25859999999999,114.88139999999999,0.8889752414788632
+sample_66_hard_no_q03,sample_66,Was the patient's diabetes found to be unstable?,hard_negative,0,0,1,,,105.8534,108.9266,
+sample_66_off_topic_q01,sample_66,Is there any reference to the patient planning to watch a specific movie?,off_topic,0,0,1,,,,,
+sample_66_hard_no_q05,sample_66,Has follow-up been discontinued going forward?,hard_negative,0,0,1,,,125.3448,127.5752,
+sample_66_hard_no_q04,sample_66,Did the doctor decide to adjust the diabetes medication?,hard_negative,0,0,1,,,119.92960000000001,120.6704,
+sample_66_yes_q02,sample_66,Is the patient free of any reaction after the injection?,positive,1,1,1,93.14,96.36,93.2154,94.52459999999999,0.40658385093167404
+sample_66_yes_q01,sample_66,Will the treatment continue without changes?,positive,1,1,1,116.96,122.94,121.1408,122.97919999999999,0.298910154173312
+sample_75_off_topic_q01,sample_75,Does the conversation indicate the patient uses specific software?,off_topic,0,0,1,,,,,
+sample_75_yes_q01,sample_75,Does the patient deny any known exposure to COVID-19?,positive,1,1,1,45.06,46.48,45.2344,46.4456,0.8529577464788751
+sample_75_yes_q02,sample_75,Is the patient also feeling tired?,positive,1,1,1,31.08,31.94,29.8632,31.9368,0.41255778120185016
+sample_75_hard_no_q05,sample_75,Is a bacterial infection thought to be the most likely cause?,hard_negative,0,0,1,,,72.497,73.963,
+sample_75_yes_q04,sample_75,Were rest and fluids recommended?,positive,1,1,1,81.4,83.6,81.20779999999999,83.73219999999999,0.8714942164474682
+sample_75_hard_no_q02,sample_75,Did the patient report a known exposure to COVID-19?,hard_negative,0,0,1,,,45.2344,46.4456,
+sample_75_hard_no_q03,sample_75,Will the patient be starting a course of antibiotics?,hard_negative,0,0,1,,,84.21719999999999,87.66279999999999,
+sample_75_yes_q03,sample_75,Has the patient had a sore throat for a few days?,positive,1,1,1,29.62,35.9,32.171600000000005,33.1084,0.14917197452229275
+sample_75_hard_no_q04,sample_75,Was the patient found to have a fever?,hard_negative,0,0,1,,,56.7388,58.3812,
+sample_75_hard_no_q01,sample_75,Did the throat examination reveal pronounced swelling with pus?,hard_negative,0,0,1,,,52.256800000000005,55.6632,
+sample_84_hard_no_q01,sample_84,Is the check-up being done because the patient has symptoms from the heart?,hard_negative,0,1,0,,,,,
+sample_84_hard_no_q02,sample_84,Does the patient say that exercise is something they rarely do?,hard_negative,0,1,0,,,,,
+sample_84_off_topic_q01,sample_84,Was the patient referred to Doctor Strange for magical treatment?,off_topic,0,1,0,,,,,
+sample_84_yes_q02,sample_84,Was it the patient's grandfather who died of a heart attack?,positive,1,1,1,20.3,23.42,,,0.0
+sample_84_yes_q04,sample_84,Does the patient exercise regularly?,positive,1,1,1,78.28,79.52,,,0.0
+sample_84_yes_q06,sample_84,Will both blood tests and an ECG be carried out?,positive,1,1,1,193.64,201.3,,,0.0
+sample_84_yes_q05,sample_84,Was the blood pressure measured at 138 over 83?,positive,1,1,1,119.92,122.96,,,0.0
+sample_84_yes_q01,sample_84,Does the patient report cardiovascular disease in the family?,positive,1,1,1,27.86,31.68,,,0.0
+sample_84_yes_q03,sample_84,Did that grandfather die at the age of 52?,positive,1,1,1,20.3,25.38,,,0.0
+sample_84_yes_q07,sample_84,Is the patient otherwise healthy and living a healthy life?,positive,1,1,1,69.72,79.52,,,0.0

@@ -56,6 +56,21 @@ def _llm(**kwargs: Any):
     return LLMApproach(**kwargs)
 
 
+def _quote(**kwargs: Any):
+    from .llm import QuoteApproach
+
+    return QuoteApproach(**kwargs)
+
+
+def _quote_judge(**kwargs: Any):
+    kwargs.setdefault('model_name', 'mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit')
+    kwargs.setdefault('width_scale', 0.98)
+    kwargs.setdefault('start_offset', 0.22)
+    kwargs.setdefault('end_offset', 0.02)
+    kwargs.setdefault('adjudicate', True)
+    return _quote(**kwargs)
+
+
 REGISTRY: Dict[str, Callable[..., Approach]] = {
     'always_yes': _always_yes,
     'lexical': _lexical,
@@ -63,6 +78,8 @@ REGISTRY: Dict[str, Callable[..., Approach]] = {
     'feature_ml': _feature_ml,
     'neural': _neural,
     'llm': _llm,
+    'quote': _quote,
+    'quote_judge': _quote_judge,
 }
 
 

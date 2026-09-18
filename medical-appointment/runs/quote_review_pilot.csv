@@ -1,0 +1,81 @@
+question_id,transcript_id,question,question_type,label,prediction,correct,gold_start,gold_end,pred_start,pred_end,tiou
+sample_23_yes_q03,sample_23,Was a skin wart found under the right breast?,positive,1,1,1,23.12,25.66,23.0212,26.8588,0.6618720033354181
+sample_23_yes_q05,sample_23,Has the patient been informed about the risk of scarring and infection?,positive,1,1,1,75.26,79.54,75.2846,79.4554,0.9744859813084109
+sample_23_yes_q02,sample_23,Does the patient want the skin changes removed?,positive,1,1,1,85.28,88.5,64.93799999999999,66.502,0.0
+sample_23_off_topic_q02,sample_23,Is there any mention of the patient's pet?,off_topic,0,0,1,,,,,
+sample_23_hard_no_q01,sample_23,Has the patient been told that the procedure carries no risk of scarring?,hard_negative,0,0,1,,,75.2846,79.4554,
+sample_23_yes_q04,sample_23,Is an appointment for the removal going to be arranged?,positive,1,1,1,90.2,92.2,68.101,69.95899999999999,0.0
+sample_23_yes_q06,sample_23,Do the changes on the abdomen and lower leg resemble seborrheic keratoses?,positive,1,1,1,43.44,45.58,33.293,38.287000000000006,0.0
+sample_23_yes_q01,sample_23,Were the skin changes judged to be benign?,positive,1,1,1,53.3,56.2,60.8844,63.0756,0.0
+sample_23_off_topic_q01,sample_23,Does the patient talk about needing a new vehicle?,off_topic,0,0,1,,,,,
+sample_23_hard_no_q02,sample_23,Are the elements on the abdomen about 2 cm across?,hard_negative,0,0,1,,,33.293,38.287000000000006,
+sample_33_yes_q06,sample_33,"The visit is a follow-up on allergic rhinitis, correct?",positive,1,1,1,13.94,17.42,14.087,16.532999999999998,0.7028735632183898
+sample_33_hard_no_q01,sample_33,Does the doctor plan to refer the patient to an allergy specialist?,hard_negative,0,0,1,,,14.087,16.532999999999998,
+sample_33_hard_no_q02,sample_33,Were daily doses made mandatory going forward?,hard_negative,0,0,1,,,68.86399999999999,71.01599999999999,
+sample_33_off_topic_q01,sample_33,Is there any talk about the patient's recent purchase of a vehicle?,off_topic,0,0,1,,,,,
+sample_33_yes_q02,sample_33,Is the patient free of symptoms at the moment?,positive,1,1,1,27.02,31.5,32.0858,32.4542,0.0
+sample_33_yes_q04,sample_33,Did the antihistamine work well?,positive,1,1,1,58.82,61.32,59.02460000000001,61.235400000000006,0.8843199999999996
+sample_33_yes_q03,sample_33,Has the medication helped the patient?,positive,1,1,1,55.34,58.28,25.889599999999998,26.6304,0.0
+sample_33_yes_q05,sample_33,Are the findings unremarkable?,positive,1,1,1,44.86,52.62,50.483999999999995,52.636,0.2746913580246916
+sample_33_yes_q01,sample_33,Should the patient carry on with the treatment as needed?,positive,1,1,1,69.06,71.0,76.4932,77.5868,0.0
+sample_33_hard_no_q03,sample_33,Was anything abnormal picked up at the examination?,hard_negative,0,0,1,,,50.483999999999995,52.636,
+sample_37_yes_q05,sample_37,Is the skin intact?,positive,1,1,1,28.5,30.0,28.0024,29.997600000000002,0.7496996395674825
+sample_37_hard_no_q01,sample_37,Was erythema migrans seen around the bite?,hard_negative,0,0,1,,,30.7614,32.6586,
+sample_37_hard_no_q03,sample_37,Is the risk of Borrelia considered high?,hard_negative,0,0,1,,,44.7628,46.7972,
+sample_37_yes_q03,sample_37,Was erythema migrans absent?,positive,1,1,1,30.68,32.62,38.496399999999994,39.903600000000004,0.0
+sample_37_yes_q04,sample_37,Are redness and swelling absent?,positive,1,1,1,17.58,22.18,51.620200000000004,55.35980000000001,0.0
+sample_37_yes_q06,sample_37,"The plan involves no treatment, right?",positive,1,1,1,60.02,61.34,60.0156,61.34440000000001,0.9933774834437027
+sample_37_off_topic_q01,sample_37,Does the conversation indicate the patient discussed their employment as a freelancer?,off_topic,0,0,1,,,,,
+sample_37_hard_no_q02,sample_37,Has the bite area become red and swollen?,hard_negative,0,0,1,,,22.681,24.539,
+sample_37_yes_q01,sample_37,Did the patient get a tick bite?,positive,1,1,1,13.74,14.52,7.2432,9.3168,0.0
+sample_37_yes_q02,sample_37,Has the patient been told simply to keep an eye on the area?,positive,1,1,1,56.02,59.34,58.8272,59.332800000000006,0.1522891566265085
+sample_39_yes_q02,sample_39,Does the patient have pain in the lower back?,positive,1,1,1,22.64,23.92,22.596599999999995,24.0234,0.8971124194000546
+sample_39_hard_no_q04,sample_39,Has the patient been referred for surgery?,hard_negative,0,0,1,,,63.800000000000004,67.52000000000001,
+sample_39_off_topic_q02,sample_39,Is the patient discussing their pet?,off_topic,0,0,1,,,20.455999999999996,21.824,
+sample_39_off_topic_q01,sample_39,At any point does the patient express interest in learning digital photography techniques?,off_topic,0,0,1,,,20.455999999999996,21.824,
+sample_39_yes_q04,sample_39,Was reduced mobility found during the examination?,positive,1,1,1,47.34,53.04,47.339999999999996,51.06,0.6526315789473679
+sample_39_yes_q03,sample_39,Were painkillers part of the treatment plan?,positive,1,1,1,63.56,65.8,63.800000000000004,67.52000000000001,0.5050505050505022
+sample_39_hard_no_q01,sample_39,Does the pain radiate down the leg?,hard_negative,0,0,1,,,30.240199999999998,32.019800000000004,
+sample_39_yes_q01,sample_39,"The pain was assessed as nonspecific musculoskeletal pain, right?",positive,1,1,1,55.32,60.68,54.08819999999999,60.571799999999996,0.7967171334081724
+sample_39_hard_no_q03,sample_39,Did the doctor conclude that the pain came from a herniated disc?,hard_negative,0,0,1,,,54.08819999999999,60.571799999999996,
+sample_39_hard_no_q02,sample_39,Was the patient's mobility completely unaffected?,hard_negative,0,0,1,,,47.339999999999996,51.06,
+sample_42_yes_q02,sample_42,Was the blood pressure measured at 135/88?,positive,1,1,1,39.16,42.54,39.1164,42.4836,0.9707909802547043
+sample_42_yes_q07,sample_42,Did the doctor assess the patient as slightly overweight?,positive,1,1,1,62.26,65.16,62.1318,65.0482,0.9207449970279367
+sample_42_yes_q06,sample_42,Were exercise recommendations also part of the plan?,positive,1,1,1,89.86,93.12,89.69659999999999,93.0834,0.9415785476426897
+sample_42_yes_q05,sample_42,Does the patient have a BMI of 28?,positive,1,1,1,56.18,58.38,56.4204,58.21960000000001,0.8178181818181836
+sample_42_yes_q03,sample_42,Has the patient been given advice about diet?,positive,1,1,1,89.86,91.76,89.69659999999999,93.0834,0.5610015353726234
+sample_42_hard_no_q02,sample_42,Did the doctor consider the patient severely obese?,hard_negative,0,0,1,,,62.1318,65.0482,
+sample_42_yes_q01,sample_42,Is the patient feeling well?,positive,1,1,1,17.22,18.48,17.3736,18.5064,0.8600746268656719
+sample_42_yes_q04,sample_42,"The visit was a preventive health check, correct?",positive,1,1,1,11.92,14.14,11.9048,14.135200000000001,0.9910522548317826
+sample_42_hard_no_q01,sample_42,Was the blood pressure 155/98?,hard_negative,0,0,1,,,39.1164,42.4836,
+sample_42_off_topic_q01,sample_42,Does the patient talk about wanting to work part-time?,off_topic,0,0,1,,,,,
+sample_43_yes_q02,sample_43,Does the patient have a sore throat?,positive,1,1,1,4.82,6.24,4.8166,6.243399999999999,0.9952340902719378
+sample_43_hard_no_q03,sample_43,Is the infection thought to be bacterial?,hard_negative,0,0,1,,,49.0144,50.2256,
+sample_43_yes_q05,sample_43,Did the examination find no pus in the throat?,positive,1,1,1,31.76,34.28,31.6098,34.330200000000005,0.9263343625937344
+sample_43_off_topic_q01,sample_43,Are the speakers discussing the patient's pet?,off_topic,0,0,1,,,,,
+sample_43_yes_q04,sample_43,Was the strep test negative?,positive,1,1,1,23.06,23.78,23.01,23.79,0.923076923076929
+sample_43_yes_q01,sample_43,Is the infection considered to be viral?,positive,1,1,1,44.22,46.78,44.1092,46.7708,0.955069642054816
+sample_43_hard_no_q01,sample_43,Does the patient describe abdominal pain as the main problem?,hard_negative,0,0,1,,,,,
+sample_43_hard_no_q02,sample_43,Were the tonsils covered in coatings?,hard_negative,0,0,1,,,31.6098,34.330200000000005,
+sample_43_yes_q03,sample_43,Has the doctor decided against antibiotics?,positive,1,1,1,59.48,63.9,59.011799999999994,63.888200000000005,0.9018043451577276
+sample_43_hard_no_q04,sample_43,Did the doctor see pus in the throat?,hard_negative,0,0,1,,,31.6098,34.330200000000005,
+sample_47_yes_q03,sample_47,Has penicillin treatment been started?,positive,1,1,1,71.86,79.4,78.135,79.405,0.16766070245195497
+sample_47_hard_no_q04,sample_47,Is the patient able to swallow without any discomfort?,hard_negative,0,0,1,,,8.316200000000002,11.6638,
+sample_47_hard_no_q03,sample_47,Did the doctor prescribe erythromycin?,hard_negative,0,0,1,,,71.7064,74.0936,
+sample_47_hard_no_q01,sample_47,Does the patient complain of hoarseness as the main symptom?,hard_negative,0,0,1,,,8.316200000000002,11.6638,
+sample_47_hard_no_q05,sample_47,Was the patient told to manage with symptom relief only?,hard_negative,0,0,1,,,71.7064,74.0936,
+sample_47_off_topic_q01,sample_47,Does the conversation indicate the patient discussed their desire to learn digital photography techniques?,off_topic,0,0,1,,,,,
+sample_47_yes_q01,sample_47,Were coatings seen on the tonsils?,positive,1,1,1,25.72,28.66,25.811199999999996,28.668799999999997,0.96608790016278
+sample_47_hard_no_q06,sample_47,Has the throat problem been assessed as a viral infection?,hard_negative,0,0,1,,,50.083800000000004,52.2162,
+sample_47_yes_q02,sample_47,Does the patient have a sore throat?,positive,1,1,1,8.32,11.7,8.316200000000002,11.6638,0.9881789703883216
+sample_47_hard_no_q02,sample_47,Were the tonsils pale and free of coatings?,hard_negative,0,0,1,,,25.811199999999996,28.668799999999997,
+sample_48_hard_no_q02,sample_48,Does the doctor attribute the fatigue to a thyroid disorder?,hard_negative,0,0,1,,,48.066399999999994,52.4136,
+sample_48_off_topic_q01,sample_48,Does the doctor ask about the patient's experience with specific technology?,off_topic,0,0,1,,,,,
+sample_48_yes_q03,sample_48,Was the TSH normal?,positive,1,1,1,28.34,35.82,34.773999999999994,35.946,0.13752300815146026
+sample_48_yes_q06,sample_48,Did the glucose test come back normal too?,positive,1,1,1,38.96,43.04,41.617000000000004,43.083000000000006,0.34513703613873226
+sample_48_yes_q05,sample_48,Were both blood tests within normal limits?,positive,1,1,1,41.74,44.36,43.70859999999999,44.351400000000005,0.24534351145038777
+sample_48_hard_no_q01,sample_48,Is the tiredness described as brief and occasional?,hard_negative,0,0,1,,,14.052600000000002,17.0474,
+sample_48_yes_q04,sample_48,Has the patient been left without any specific treatment?,positive,1,1,1,77.42,81.2,77.5396,81.22039999999998,0.963161772445013
+sample_48_yes_q02,sample_48,Is the patient's tiredness persistent?,positive,1,1,1,11.18,18.78,18.0302,18.829800000000002,0.0980156343956705
+sample_48_yes_q07,sample_48,Does the doctor rule out an endocrine cause?,positive,1,1,1,48.06,52.34,48.066399999999994,52.4136,0.9816244027930928
+sample_48_yes_q01,sample_48,"The thyroid test gave a normal result, right?",positive,1,1,1,28.34,35.82,34.773999999999994,35.946,0.13752300815146026

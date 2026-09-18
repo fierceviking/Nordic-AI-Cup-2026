@@ -373,6 +373,14 @@ class Hive:
     # safety with foraging time, this spends less time fleeing.
     CHASE_BUDGET = 0.0         # 0 disables; seconds of sprint before we discount it
     CHASE_SPENT = 200.0        # effective distance added once the budget is spent
+    # Flee TOWARDS food that lies in the safe hemisphere.
+    # Ablations price predators at +625, and `wary` failed because it bought
+    # safety WITH foraging time. But escape direction is largely free inside the
+    # half-plane pointing away from the threat, so aiming that freedom at a known
+    # patch makes evasion and foraging the same motion instead of rivals.
+    FLEE_TO_FOOD = 0.0         # 0 disables; 1.0 aims straight at the target
+    FLEE_CONE = 1.2            # rad; ignore anything this far off the escape heading
+    FLEE_FOOD_RANGE = 420.0    # only consider food this close
     PRIORITIZE_FOOD = True
     FOOD_AWARE_BREEDING = False
     # Territory allocation: bind each agent to one patch to cut travel.
@@ -735,6 +743,21 @@ class Hive:
                     rx += w * ax / n
                     ry += w * ay / n
             flee = math.atan2(ry, rx) if (rx or ry) else mind.th
+            if self.FLEE_TO_FOOD > 0.0:
+                best_a, best_d = None, 1e9
+                for source in (world.fruits, world.trees):
+                    for rec in source.values():
+                        dx, dy = rec[0] - mind.x, rec[1] - mind.y
+                        d = math.hypot(dx, dy)
+                        if d < 1e-6 or d > self.FLEE_FOOD_RANGE or d >= best_d:
+                            continue
+                        a = math.atan2(dy, dx)
+                        # Only inside the safe cone, so this never steers toward
+                        # the threat to reach food.
+                        if abs(_wrap(a - flee)) <= self.FLEE_CONE:
+                            best_a, best_d = a, d
+                if best_a is not None:
+                    flee = _wrap(flee + self.FLEE_TO_FOOD * _wrap(best_a - flee))
             if nearest < CHASE_DIST and energy > max_energy * 0.21:
                 # Outrunning is quadratically expensive: matching the chaser
                 # (15/tick) costs 3.4 energy/tick, maxing out costs 5.5 for no

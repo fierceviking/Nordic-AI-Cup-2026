@@ -3,6 +3,7 @@ import hashlib
 import json
 import logging
 import math
+import os
 import time
 from contextlib import asynccontextmanager
 from logging.handlers import RotatingFileHandler
@@ -109,7 +110,6 @@ _FAILURES = 0
 _LAST_ERROR = None
 _POLICY_REVISION = hashlib.sha256(Path(expert_agent_policy.__file__).read_bytes()).hexdigest()[:12]
 
-
 def _finish_run(reason: str) -> None:
     global _RUN
     run = _RUN
@@ -153,11 +153,46 @@ app = FastAPI(title="Survival Simulator Agent Endpoint", lifespan=lifespan)
 # the population controller across ticks.  Hive.act() resets itself when
 # sim_time jumps backwards, so the three back-to-back evaluation runs are
 # handled without restarting the server.
-HIVE = Hive()
+def _load_program():
+    """RULE_PROGRAM may be inline JSON or a path to a rule_search.json.
+
+    Unset means the shipped Hive, so the default deploy path is unchanged.
+    """
+    raw = os.environ.get("RULE_PROGRAM", "").strip()
+    if not raw:
+        return None
+    data = json.loads(raw) if raw.startswith("[") else json.loads(
+        Path(raw).read_text(encoding="utf-8"))
+    if isinstance(data, list) and data and isinstance(data[-1], dict):
+        data = data[-1].get("final", data[-1]).get("program")
+    if not data:
+        return None
+
+    from rule_policy import ACTIONS, CONDITIONS
+    program = []
+    for cond, theta, action in data:
+        # Fail at startup rather than mid-evaluation on a typo.
+        if cond not in CONDITIONS or action not in ACTIONS:
+            raise ValueError(f"unknown rule ({cond}, {action})")
+        program.append((str(cond), float(theta), str(action)))
+    return program
+
+
+_PROGRAM = _load_program()
+if _PROGRAM:
+    from rule_policy import RuleHive
+    HIVE = RuleHive(program=_PROGRAM)
+    # Without this a searched policy reports the same revision as the Hive.
+    _POLICY_REVISION += "+" + hashlib.sha256(
+        json.dumps(_PROGRAM, sort_keys=True).encode()).hexdigest()[:8]
+else:
+    HIVE = Hive()
 
 
 def _policy_settings():
-    return {name: getattr(HIVE, name) for name in vars(Hive) if name.isupper()}
+    cls = type(HIVE)
+    return {name: getattr(HIVE, name)
+            for name in dir(cls) if name.isupper() and name != "PROGRAM"}
 
 
 class StepPayload(BaseModel):
@@ -301,7 +336,8 @@ async def predict(request: Request):
 @app.get("/")
 def index():
     return {"message": "Agent endpoint running!",
-            "controller": "expert_agent_policy.Hive",
+            "controller": type(HIVE).__module__ + "." + type(HIVE).__name__,
+            "rule_program": _PROGRAM,
             "policy_revision": _POLICY_REVISION,
             "policy_settings": _policy_settings(),
             "sim_time": HIVE.last_time,

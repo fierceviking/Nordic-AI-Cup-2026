@@ -1,0 +1,5 @@
+{
+  "baseline": {},
+  "pop_1": {"POP_MIN": 1, "POP_MAX": 1, "POP_SLACK": 1, "RESCUE_POP": 0},
+  "pop_3": {"POP_MIN": 3, "POP_MAX": 3}
+}

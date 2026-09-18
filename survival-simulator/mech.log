@@ -1,0 +1,17 @@
+=== MPC 30s lookahead (greedy baseline on these seeds = 1141.5, se 85) ===
+mean 1170.0 | median 1184.0 | sd 294.0 | se 93.0 | min 706.3 | max 1558.1 | survived 0/10
+deaths: eaten 306 | starved 1776 (15% predation)
+
+none             mean 1141.5 | median 1156.6 | sd 268.4 | se 84.9 | min 817.2 | max 1717.8 | survived 0/10
+                 deaths: eaten 527 | starved 1766 (23% predation)
+no_clamp         mean 1137.1 | median 1136.0 | sd 316.1 | se 100.0 | min 612.9 | max 1586.9 | survived 0/10
+                 deaths: eaten 543 | starved 2479 (18% predation)
+no_aging         mean 1255.7 | median 1249.8 | sd 126.3 | se 39.9 | min 971.6 | max 1427.3 | survived 0/10
+                 deaths: eaten 544 | starved 791 (41% predation)
+free_movement    mean 1396.2 | median 1276.3 | sd 432.1 | se 136.6 | min 620.6 | max 1972.6 | survived 0/10
+                 deaths: eaten 1722 | starved 1715 (50% predation)
+no_predators     mean 1766.9 | median 1830.7 | sd 465.7 | se 147.3 | min 1033.2 | max 2559.1 | survived 0/10
+                 deaths: eaten 0 | starved 2618 (0% predation)
+no_sprint_gate   mean 1117.0 | median 1097.2 | sd 290.2 | se 91.8 | min 747.4 | max 1608.0 | survived 0/10
+                 deaths: eaten 437 | starved 1806 (19% predation)
+ALL MECHANIC ABLATIONS COMPLETE

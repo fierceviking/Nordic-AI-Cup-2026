@@ -1,0 +1,41 @@
+[
+  {
+    "gen": 0,
+    "baseline": {
+      "mean": 709.0,
+      "eaten": 27.0,
+      "starved": 44.03333333333333,
+      "births": 70.96666666666667,
+      "distance": 360272,
+      "turning": 12471,
+      "sprint": 880,
+      "gated": 2028,
+      "encounters": 156.7,
+      "lethality": 0.1723
+    },
+    "best": {
+      "mean": 732.4,
+      "eaten": 29.133333333333333,
+      "starved": 44.4,
+      "births": 73.5,
+      "distance": 352353,
+      "turning": 12237,
+      "sprint": 983,
+      "gated": 1965,
+      "encounters": 160.2,
+      "lethality": 0.1818
+    },
+    "program": [
+      [
+        "time_after",
+        1200.0,
+        "flee"
+      ],
+      [
+        "always",
+        0.0,
+        "pursue_fruit"
+      ]
+    ]
+  }
+]

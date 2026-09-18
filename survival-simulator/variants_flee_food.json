@@ -1,0 +1,6 @@
+{
+  "baseline": {},
+  "flee_food_50": {"FLEE_TO_FOOD": 0.5},
+  "flee_food_100": {"FLEE_TO_FOOD": 1.0},
+  "flee_food_100_wide": {"FLEE_TO_FOOD": 1.0, "FLEE_CONE": 1.6, "FLEE_FOOD_RANGE": 600.0}
+}

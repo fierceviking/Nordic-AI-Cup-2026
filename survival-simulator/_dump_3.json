@@ -1,0 +1,405 @@
+{
+ "agents": [
+  {
+   "id": 16,
+   "x": null,
+   "energy": 236.138214,
+   "age": 127.6,
+   "obs": [
+    {
+     "type": "Agent",
+     "distance": 5.003284,
+     "angle": -0.04577,
+     "rel_dir": -0.04577,
+     "id": 33
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Tree",
+     "distance": 194.059162,
+     "angle": -0.451894
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "x": null,
+   "energy": 197.432056,
+   "age": 43.1,
+   "obs": [
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "x": null,
+   "energy": 449.443458,
+   "age": 25.2,
+   "obs": [
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Fruit",
+     "distance": 115.835216,
+     "angle": -0.110654
+    },
+    {
+     "type": "Fruit",
+     "distance": 143.701671,
+     "angle": -0.292639
+    },
+    {
+     "type": "Fruit",
+     "distance": 158.808492,
+     "angle": -0.437924
+    },
+    {
+     "type": "Fruit",
+     "distance": 177.561508,
+     "angle": -0.274159
+    },
+    {
+     "type": "Predator",
+     "distance": 128.792279,
+     "angle": -0.021557,
+     "rel_dir": 0.058634
+    },
+    {
+     "type": "Tree",
+     "distance": 182.822272,
+     "angle": -0.384417
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "x": null,
+   "energy": 319.171542,
+   "age": 15.8,
+   "obs": [
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Fruit",
+     "distance": 49.878575,
+     "angle": -0.989555
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "x": null,
+   "energy": 151.546647,
+   "age": 6.2,
+   "obs": [
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Tree",
+     "distance": 140.098228,
+     "angle": -0.323074
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "x": null,
+   "energy": 74.268096,
+   "age": 0.2,
+   "obs": [
+    {
+     "type": "Agent",
+     "distance": 5.003284,
+     "angle": -0.04577,
+     "rel_dir": -0.04577,
+     "id": 16
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Edge"
+    },
+    {
+     "type": "Predator",
+     "distance": 86.182364,
+     "angle": 0.00562,
+     "rel_dir": 0.027398
+    }
+   ]
+  }
+ ],
+ "minds": [
+  {
+   "aid": 16,
+   "x": -1083.116412,
+   "y": -992.854113,
+   "th": 1.770202,
+   "mode": "flee",
+   "localized": true,
+   "trees": 47,
+   "fruits": 56,
+   "world": 81904
+  },
+  {
+   "aid": 26,
+   "x": -530.100103,
+   "y": 458.608104,
+   "th": -2.82552,
+   "mode": "patrol",
+   "localized": true,
+   "trees": 28,
+   "fruits": 1,
+   "world": 55824
+  },
+  {
+   "aid": 30,
+   "x": -26.99979,
+   "y": -570.581781,
+   "th": 3.127215,
+   "mode": "flee",
+   "localized": true,
+   "trees": 47,
+   "fruits": 56,
+   "world": 81904
+  },
+  {
+   "aid": 31,
+   "x": -492.434982,
+   "y": -701.82696,
+   "th": 1.668775,
+   "mode": "flee",
+   "localized": true,
+   "trees": 47,
+   "fruits": 56,
+   "world": 81904
+  },
+  {
+   "aid": 32,
+   "x": -1025.066874,
+   "y": -944.718757,
+   "th": 1.962239,
+   "mode": "flee",
+   "localized": true,
+   "trees": 47,
+   "fruits": 56,
+   "world": 81904
+  },
+  {
+   "aid": 33,
+   "x": -1084.904131,
+   "y": -977.962128,
+   "th": 1.770202,
+   "mode": "flee",
+   "localized": true,
+   "trees": 47,
+   "fruits": 56,
+   "world": 81904
+  }
+ ]
+}
